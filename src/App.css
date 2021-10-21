@@ -1,0 +1,12 @@
+body {
+  margin: 2 0;
+}
+
+.cards-container {
+  background-color: #740001;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}

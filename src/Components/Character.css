@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+}
+
+.card {
+  font-size: 1.6rem;
+  color: white;
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  margin: 5rem 2rem;
+  box-shadow: 5px 5px 10px black;
+}
+
+.card img {
+  width: 11rem;
+  height: 13rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+
+.card-details {
+  margin-left: 2rem;
+  color: #740001;
+}
+
+.card-details h2 {
+  margin-bottom: 1rem;
+}
+
+/* Flip Effect */
+
+/* .flip-card {
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    /* position: relative; */
+
+/* text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/*
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: #bbb;
+    color: #740001;
+}
+.flip-card-back {
+    background-color: #740001;
+    color: #D3A625,;
+    transform: rotateY(180deg);
+  } */
