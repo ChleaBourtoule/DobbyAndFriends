@@ -95,7 +95,7 @@ const characters = [
 function App() {
   return (
     <div className="library">
-      <h1>Les personnages d&apos;Harry Potter</h1>
+      <h1 className="title">Harry Potter&apos;s characters</h1>
       <div className="cards-container">
         {characters.map((character) => (
           <Character
