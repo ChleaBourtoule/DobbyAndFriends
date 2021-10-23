@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Character from './Components/Character';
 import './App.css';
 
@@ -93,20 +93,67 @@ const characters = [
 ];
 
 function App() {
+  const [house, setHouse] = useState('');
+  function swithHouse(name) {
+    setHouse(name);
+  }
   return (
     <div className="library">
       <h1 className="title">Harry Potter&apos;s characters</h1>
+      <div className="house-container">
+        <div
+          onClick={() => swithHouse('Gryffindor')}
+          onKeyPress={() => swithHouse('Gryffindor')}
+          role="presentation"
+        >
+          <img src="./gryffindor.png" alt="hufflepuff logo" height="150px" />
+        </div>
+        <div
+          onClick={() => swithHouse('hufflepuff')}
+          onKeyPress={() => swithHouse('hufflepuff')}
+          role="presentation"
+        >
+          <img src="./hufflepuff.png" alt="hufflepuff logo" height="150px" />
+        </div>
+        <div
+          onClick={() => swithHouse('ravenclaw')}
+          onKeyPress={() => swithHouse('ravenclaw')}
+          role="presentation"
+        >
+          <img src="./ravenclaw.png" alt="ravenclaw logo" height="150px" />
+        </div>
+        <div
+          onClick={() => swithHouse('Slytherin')}
+          onKeyPress={() => swithHouse('Slytherin')}
+          role="presentation"
+        >
+          <img src="./slytherin.png" alt="slytherin logo" height="150px" />
+        </div>
+      </div>
       <div className="cards-container">
-        {characters.map((character) => (
-          <Character
-            // key={character.name}
-            name={character.name}
-            dateOfBirth={character.dateOfBirth}
-            species={character.species}
-            house={character.house}
-            image={character.image}
-          />
-        ))}
+        {house === ''
+          ? characters.map((character) => (
+              <Character
+                // key={character.name}
+                name={character.name}
+                dateOfBirth={character.dateOfBirth}
+                species={character.species}
+                house={character.house}
+                image={character.image}
+              />
+            ))
+          : characters
+              .filter((character) => character.house === house)
+              .map((character) => (
+                <Character
+                  // key={character.name}
+                  name={character.name}
+                  dateOfBirth={character.dateOfBirth}
+                  species={character.species}
+                  house={character.house}
+                  image={character.image}
+                />
+              ))}
       </div>
     </div>
   );
