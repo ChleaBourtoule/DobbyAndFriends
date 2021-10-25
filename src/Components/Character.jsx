@@ -1,7 +1,16 @@
 import React from 'react';
 import './Character.css';
 
-const Character = ({ name, dateOfBirth, species, house, image }) => {
+const Character = ({
+  name,
+  dateOfBirth,
+  species,
+  house,
+  image,
+  wand,
+  patronus,
+  ancestry,
+}) => {
   return (
     <div className="flip-card">
       <div className="flip-card-inner">
@@ -16,9 +25,43 @@ const Character = ({ name, dateOfBirth, species, house, image }) => {
             <div>House: {house}</div>
           </div>
         </div>
-        {/* <div className="card flip-card-back">
-          <span>Plus d&apos;infos</span>
-        </div> */}
+        <div className="card flip-card-back">
+          <div className="card-details">
+            <h2>{name}</h2>
+            {patronus === '' ? (
+              <div>Patronus: Not provided</div>
+            ) : (
+              <div>Patronus: {patronus}</div>
+            )}
+            {wand.wood === '' && wand.core === '' && wand.length === '' ? (
+              <div>Wand: Not provided</div>
+            ) : (
+              <div>
+                Wand:
+                {wand.wood === '' ? (
+                  <li>Wood: Not provided</li>
+                ) : (
+                  <li>Wood: Made of {wand.wood}</li>
+                )}
+                {wand.core === '' ? (
+                  <li>Core: Not provided</li>
+                ) : (
+                  <li>Core: Made of {wand.core}</li>
+                )}
+                {wand.length === '' ? (
+                  <li>Length: Not provided</li>
+                ) : (
+                  <li>Length: {wand.length}&apos;</li>
+                )}
+              </div>
+            )}
+            {ancestry === '' ? (
+              <div>Ancestry: Not provided</div>
+            ) : (
+              <div>Ancestry: {ancestry}</div>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
