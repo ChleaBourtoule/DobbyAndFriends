@@ -1,98 +1,17 @@
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Character from '../Components/Character';
 
-const characters = [
-  {
-    name: 'Harry Potter',
-    alternate_names: [''],
-    species: 'human',
-    gender: 'male',
-    house: 'Gryffindor',
-    dateOfBirth: '31-07-1980',
-    yearOfBirth: 1980,
-    wizard: true,
-    ancestry: 'half-blood',
-    eyeColour: 'green',
-    hairColour: 'black',
-    wand: { wood: 'holly', core: 'phoenix feather', length: 11 },
-    patronus: 'stag',
-    hogwarsStudnt: true,
-    hogwartsStaff: false,
-    actor: 'DanielRadcliffe',
-    alterate_actors: [''],
-    alive: true,
-    image: 'http://hp-api.herokuapp.com/images/harry.jpg',
-  },
-
-  {
-    name: 'Hermione Granger',
-    alternate_names: [''],
-    species: 'human',
-    gender: 'female',
-    house: 'Gryffindor',
-    dateOfBirth: '19-09-1979',
-    yearOfBirth: 1979,
-    wizard: true,
-    ancestry: 'muggleborn',
-    eyeColour: 'brown',
-    hairColour: 'brown',
-    wand: { wood: 'vine', core: 'dragon heartstring', length: '' },
-    patronus: 'otter',
-    hogwartsStudent: true,
-    hogwartsStaff: false,
-    actor: 'Emma Watson',
-    alternate_actors: [''],
-    alive: true,
-    image: 'http://hp-api.herokuapp.com/images/hermione.jpeg',
-  },
-
-  {
-    name: 'Draco Malfoy',
-    alternate_names: [''],
-    species: 'human',
-    gender: 'male',
-    house: 'Slytherin',
-    dateOfBirth: '05-06-1980',
-    yearOfBirth: 1980,
-    wizard: true,
-    ancestry: 'pure-blood',
-    eyeColour: 'grey',
-    hairColour: 'blonde',
-    wand: { wood: 'hawthorn', core: 'unicorn tail-hair', length: 10 },
-    patronus: '',
-    hogwartsStudent: true,
-    hogwartsStaff: false,
-    actor: 'Tom Felton',
-    alternate_actors: [''],
-    alive: true,
-    image: 'http://hp-api.herokuapp.com/images/draco.jpg',
-  },
-
-  {
-    name: 'Minerva McGonagall',
-    alternate_names: [''],
-    species: 'human',
-    gender: 'female',
-    house: 'Gryffindor',
-    dateOfBirth: '04-10-1925',
-    yearOfBirth: 1925,
-    wizard: true,
-    ancestry: '',
-    eyeColour: '',
-    hairColour: 'black',
-    wand: { wood: '', core: '', length: '' },
-    patronus: 'tabby cat',
-    hogwartsStudent: false,
-    hogwartsStaff: true,
-    actor: 'Dame Maggie Smith',
-    alternate_actors: [''],
-    alive: true,
-    image: 'http://hp-api.herokuapp.com/images/mcgonagall.jpg',
-  },
-];
-
 function Library() {
+  const [characters, setCharacters] = useState([]);
+  useEffect(() => {
+    axios
+      .get('http://hp-api.herokuapp.com/api/characters')
+      // 'http://hp-api.herokuapp.com/api/characters/house/gryffindor
+      .then((res) => res.data)
+      .then((data) => setCharacters(data));
+  }, []);
+
   const [house, setHouse] = useState('');
   function swithHouse(name) {
     setHouse(name);
@@ -109,15 +28,15 @@ function Library() {
           <img src="./gryffindor.png" alt="hufflepuff logo" height="150px" />
         </div>
         <div
-          onClick={() => swithHouse('hufflepuff')}
-          onKeyPress={() => swithHouse('hufflepuff')}
+          onClick={() => swithHouse('Hufflepuff')}
+          onKeyPress={() => swithHouse('Hufflepuff')}
           role="presentation"
         >
           <img src="./hufflepuff.png" alt="hufflepuff logo" height="150px" />
         </div>
         <div
-          onClick={() => swithHouse('ravenclaw')}
-          onKeyPress={() => swithHouse('ravenclaw')}
+          onClick={() => swithHouse('Ravenclaw')}
+          onKeyPress={() => swithHouse('Ravenclaw')}
           role="presentation"
         >
           <img src="./ravenclaw.png" alt="ravenclaw logo" height="150px" />
@@ -134,7 +53,6 @@ function Library() {
         {house === ''
           ? characters.map((character) => (
               <Character
-                // key={character.name}
                 name={character.name}
                 dateOfBirth={character.dateOfBirth}
                 species={character.species}
@@ -149,7 +67,6 @@ function Library() {
               .filter((character) => character.house === house)
               .map((character) => (
                 <Character
-                  // key={character.name}
                   name={character.name}
                   dateOfBirth={character.dateOfBirth}
                   species={character.species}
