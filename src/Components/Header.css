@@ -1,0 +1,24 @@
+.active {
+  color: rgb(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.Header {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  height: 3rem;
+  background-color: black;
+}
+
+.Header li {
+  display: inline-block;
+  color: white;
+  margin-right: 2rem;
+  text-decoration: none;
+  padding: 1rem 0;
+}
+
+.Header li:hover {
+  border-bottom: 2px white;
+}
