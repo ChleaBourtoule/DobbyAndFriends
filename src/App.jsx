@@ -1,6 +1,6 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
-
+import { Switch, Route } from 'react-router-dom';
+import Header from './Components/Header';
 import Library from './Pages/Library';
 import Home from './Pages/Home';
 
@@ -10,14 +10,7 @@ function App() {
   return (
     <div>
       {' '}
-      <ul className="Header">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/library">Library</Link>
-        </li>
-      </ul>
+      <Header />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/library" component={Library} />
