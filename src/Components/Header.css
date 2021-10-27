@@ -1,23 +1,23 @@
 .active {
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: none;
 }
 
 .Header {
-  height: 8rem;
+  height: 6rem;
   background-color: black;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
-  color: white;
+  padding-bottom: 20px;
 }
 
 .NavBar {
+  color: white;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  text-decoration: none;
 }
 
 .NavBar li {
@@ -26,7 +26,10 @@
   color: white;
   margin-right: 2rem;
   text-decoration: none;
-  padding: 1rem 0;
+}
+
+.NavBar li:visited {
+  text-decoration: none;
 }
 
 .NavBar li :hover {
