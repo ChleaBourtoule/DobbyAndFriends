@@ -1,0 +1,32 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1596426586791-1ec4ecf6083f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.cards-container {
+  background-color: #740001;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 20rem 20rem;
+  color: #d3a625;
+  font-size: 5rem;
+  text-shadow: 0 4px 0 black, 0 -4px 0 #740001;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.house-container {
+  display: flex;
+  justify-content: space-around;
+}

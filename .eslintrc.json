@@ -13,9 +13,11 @@
   },
   "plugins": ["react"],
   "rules": {
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "linebreak-style": ["error", "unix"],
+    "indent": "off",//["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["off"],
     "react/jsx-props-no-spreading": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types" : ["off"]
+    
   }
 }
