@@ -140,6 +140,9 @@ function Library() {
                 species={character.species}
                 house={character.house}
                 image={character.image}
+                wand={character.wand}
+                patronus={character.patronus}
+                ancestry={character.ancestry}
               />
             ))
           : characters
@@ -152,6 +155,9 @@ function Library() {
                   species={character.species}
                   house={character.house}
                   image={character.image}
+                  wand={character.wand}
+                  patronus={character.patronus}
+                  ancestry={character.ancestry}
                 />
               ))}
       </div>

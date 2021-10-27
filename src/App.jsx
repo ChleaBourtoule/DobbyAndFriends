@@ -8,7 +8,9 @@ import './App.css';
 
 function App() {
   return (
-    <ul className="Header">
+    <div>
+      {' '}
+      <ul className="Header">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -20,8 +22,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/library" component={Library} />
       </Switch>
+    </div>
 
-    <div className="library">
+    /*    <div className="library">
       <h1 className="title">Harry Potter&apos;s characters</h1>
       <div className="cards-container">
         {characters.map((character) => (
@@ -38,7 +41,7 @@ function App() {
           />
         ))}
       </div>
-    </div>
+    </div> */
   );
 }
 
