@@ -3,6 +3,9 @@ import './Header.css';
 
 const Header = () => (
   <div className="Header">
+    <div>
+      <img src="../logo-navbar.png" alt="Dobby" />
+    </div>
     <ul className="NavBar">
       <li>
         <NavLink activeClassName="active" exact to="/">

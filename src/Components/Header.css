@@ -1,26 +1,28 @@
-.active {
-  color: white;
-  text-decoration: none;
-}
-
 .Header {
-  height: 6rem;
+  height: 8rem;
   background-color: black;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.Header img {
+  height: 6rem;
+  padding-left: 50px;
 }
 
 .NavBar {
-  color: white;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.NavBar li {
+.NavBar li a {
   font-size: 2rem;
   text-transform: uppercase;
   color: white;
@@ -28,10 +30,22 @@
   text-decoration: none;
 }
 
-.NavBar li:visited {
-  text-decoration: none;
+.NavBar li a:hover {
+  border-bottom: solid 2px white;
 }
 
-.NavBar li :hover {
-  border-bottom: solid 2px white;
+.active {
+  color: red;
+  font-size: 4rem;
+}
+
+.NavBar li a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.NavBar li a:hover::after,
+.NavBar li a:focus::after {
+  transform: scale(1);
 }
