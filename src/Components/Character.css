@@ -27,7 +27,8 @@
 
 .card-details {
   margin-left: 2rem;
-  color: #740001;
+
+  /* color: #740001; */
   text-shadow: black 1px 1px 5px;
 }
 
