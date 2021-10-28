@@ -17,7 +17,14 @@ const Character = ({
       <div className="flip-card-inner">
         <div className="card flip-card-front">
           <div className="card-img">
-            <img alt="" src={image} />
+            {image === '' ? (
+              <img
+                alt={name}
+                src="../photoeffets.com__final_265151983864119616_.jpg"
+              />
+            ) : (
+              <img alt={name} src={image} />
+            )}
           </div>
           <div className="card-details">
             <h2>{name}</h2>
