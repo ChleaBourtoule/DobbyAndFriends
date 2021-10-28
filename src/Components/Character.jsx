@@ -11,6 +11,7 @@ const Character = ({
   wand,
   patronus,
   ancestry,
+  font,
 }) => {
   return (
     <div className="flip-card">
@@ -26,7 +27,7 @@ const Character = ({
               <img alt={name} src={image} />
             )}
           </div>
-          <div className="card-details">
+          <div className="card-details" style={font}>
             <h2>{name}</h2>
             <div>Date of Birth: {dateOfBirth}</div>
             <div>Species: {species}</div>
@@ -34,7 +35,7 @@ const Character = ({
           </div>
         </div>
         <div className="card flip-card-back">
-          <div className="card-details">
+          <div className="card-details" style={font}>
             <h2>{name}</h2>
             {patronus === '' ? (
               <div>Patronus: Not provided</div>
@@ -88,6 +89,9 @@ Character.propTypes = {
   }),
   patronus: PropTypes.string,
   ancestry: PropTypes.string,
+  font: PropTypes.shape({
+    color: PropTypes.string,
+  }),
 };
 
 Character.defaultProps = {
@@ -99,6 +103,7 @@ Character.defaultProps = {
   wand: '',
   patronus: 'stag',
   ancestry: 'half-blood',
+  font: 'black',
 };
 
 export default Character;

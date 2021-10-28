@@ -32,6 +32,23 @@ function Library() {
   };
   const [style, setStyle] = useState(library);
 
+  const gryffindorFont = {
+    color: '#740001',
+  };
+  const slytherinFont = {
+    color: '#1A472A',
+  };
+  const hufflepuffFont = {
+    color: '#af712a',
+  };
+  const ravenclawFont = {
+    color: '#0E1A40',
+  };
+  const libraryFont = {
+    color: '#740001',
+  };
+  const [font, setFont] = useState(libraryFont);
+
   function swithHouse(name) {
     setHouse(name);
   }
@@ -43,6 +60,7 @@ function Library() {
           onClick={() => {
             swithHouse('Gryffindor');
             setStyle(gryffindor);
+            setFont(gryffindorFont);
           }}
           onKeyPress={() => swithHouse('Gryffindor')}
           role="presentation"
@@ -58,6 +76,7 @@ function Library() {
           onClick={() => {
             swithHouse('Hufflepuff');
             setStyle(hufflepuff);
+            setFont(hufflepuffFont);
           }}
           onKeyPress={() => swithHouse('Hufflepuff')}
           role="presentation"
@@ -73,6 +92,7 @@ function Library() {
           onClick={() => {
             swithHouse('Ravenclaw');
             setStyle(ravenclaw);
+            setFont(ravenclawFont);
           }}
           onKeyPress={() => swithHouse('Ravenclaw')}
           role="presentation"
@@ -88,6 +108,7 @@ function Library() {
           onClick={() => {
             swithHouse('Slytherin');
             setStyle(slytherin);
+            setFont(slytherinFont);
           }}
           onKeyPress={() => swithHouse('Slytherin')}
           role="presentation"
@@ -113,6 +134,7 @@ function Library() {
               wand={character.wand}
               patronus={character.patronus}
               ancestry={character.ancestry}
+              font={font}
             />
           ))}
       </div>
