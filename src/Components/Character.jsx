@@ -1,5 +1,6 @@
 import React from 'react';
 import './Character.css';
+import PropTypes from 'prop-types';
 
 const Character = ({
   name,
@@ -65,6 +66,32 @@ const Character = ({
       </div>
     </div>
   );
+};
+
+Character.propTypes = {
+  name: PropTypes.string,
+  dateOfBirth: PropTypes.string,
+  species: PropTypes.string,
+  house: PropTypes.string,
+  image: PropTypes.string,
+  wand: PropTypes.shape({
+    core: PropTypes.string,
+    wood: PropTypes.string,
+    length: PropTypes.string,
+  }),
+  patronus: PropTypes.string,
+  ancestry: PropTypes.string,
+};
+
+Character.defaultProps = {
+  name: 'Harry',
+  dateOfBirth: '17/12/200',
+  species: 'human',
+  house: 'Gryffindor',
+  image: '',
+  wand: '',
+  patronus: 'stag',
+  ancestry: 'half-blood',
 };
 
 export default Character;
