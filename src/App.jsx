@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './Components/Header';
-import Library from './Pages/Library';
-import Home from './Pages/Home';
+import Library from './Components/Pages/Library';
+import Home from './Components/Pages/Home';
 
 import './App.css';
 
