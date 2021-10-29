@@ -8,6 +8,9 @@ const Header = () => (
         <img src="../logo-navbar.png" alt="Dobby" />
       </NavLink>
     </div>
+    <div>
+      <img src="../solemnly-swear.png" alt="I solemnly swear..." />
+    </div>
     <ul className="NavBar">
       <li>
         <NavLink activeClassName="active" exact to="/">
