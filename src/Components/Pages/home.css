@@ -1,19 +1,19 @@
 @import url('http://fonts.cdnfonts.com/css/harry-potter');
 
-.Home {
+.home {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
 }
 
-.Home-section {
+.home-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-.Home-div-texte {
+.home-div-texte {
   width: 550px;
   padding-right: 25px;
   display: flex;
@@ -25,14 +25,14 @@
   grid-row-end: 2;
 }
 
-.Home-div-texte h3 {
+.home-div-texte h3 {
   padding-top: 2rem;
   text-align: center;
   font-size: 3rem;
   font-family: 'Harry Potter', sans-serif;
 }
 
-.Home-div-texte button {
+.home-div-texte button {
   padding: 10px 0;
   width: 30%;
   font-size: 1.1rem;
@@ -45,13 +45,13 @@
   transition: transform 0.5s;
 }
 
-.Home-div-texte button:hover {
+.home-div-texte button:hover {
   background-color: black;
   color: white;
   transform: scale(1.2);
 }
 
-.Home-div-video {
+.home-div-video {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;

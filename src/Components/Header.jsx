@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => (
-  <div className="Header">
+  <div className="header">
     <div>
       <NavLink exact to="/">
         <img src="../logo-navbar.png" alt="Dobby" />
