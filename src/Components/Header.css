@@ -27,7 +27,7 @@ a {
 
 ================================================================================= */
 
-.Header {
+.header {
   height: 8rem;
   background-color: rgb(0, 0, 0, 1);
   display: flex;
@@ -38,7 +38,7 @@ a {
   z-index: 1;
 }
 
-.Header img {
+.header img {
   height: 7rem;
   padding-left: 50px;
   padding-bottom: 0.5rem;
