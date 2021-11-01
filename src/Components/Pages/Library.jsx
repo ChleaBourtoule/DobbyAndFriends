@@ -66,6 +66,7 @@ function Library() {
           role="presentation"
         >
           <img
+            className="cursor"
             id="gryffindorImg"
             src="./gryffindor.png"
             alt="hufflepuff logo"
@@ -83,6 +84,7 @@ function Library() {
         >
           <img
             id="hufflepuffImg"
+            className="cursor"
             src="./hufflepuff.png"
             alt="hufflepuff logo"
             height="150px"
@@ -99,6 +101,7 @@ function Library() {
         >
           <img
             id="ravenclawImg"
+            className="cursor"
             src="./ravenclaw.png"
             alt="ravenclaw logo"
             height="150px"
@@ -115,6 +118,7 @@ function Library() {
         >
           <img
             id="slytherinImg"
+            className="cursor"
             src="./slytherin.png"
             alt="slytherin logo"
             height="150px"

@@ -19,10 +19,8 @@ const Home = () => {
             veniam amet dolore ipsum aspernatur!
           </p>
 
-          <button type="button">
-            <NavLink activeClassName="" to="/library">
-              Go to library
-            </NavLink>
+          <button type="button" className="cursor">
+            <NavLink to="/library">Go to library</NavLink>
           </button>
         </div>
 

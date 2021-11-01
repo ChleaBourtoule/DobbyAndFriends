@@ -1,5 +1,9 @@
 @import url('http://fonts.cdnfonts.com/css/harry-potter');
 
+* {
+  cursor: url(./assets/cursor/dobby-cursor.png), auto;
+}
+
 .cards-container {
   background: transparent;
   padding: 2rem;
@@ -22,4 +26,8 @@
 .house-container {
   display: flex;
   justify-content: space-around;
+}
+
+.cursor {
+  cursor: url(./assets/cursor/sock-cursor.png), auto;
 }
