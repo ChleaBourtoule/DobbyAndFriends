@@ -1,7 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/harry-potter');
 
 * {
-  cursor: url(./assets/cursor/dobby-cursor.png), auto;
+  cursor: url(./assets/cursor/wand2.png), auto;
 }
 
 .cards-container {
@@ -26,8 +26,4 @@
 .house-container {
   display: flex;
   justify-content: space-around;
-}
-
-.cursor {
-  cursor: url(./assets/cursor/sock-cursor.png), auto;
 }
