@@ -5,7 +5,7 @@
 .card {
   font-size: 1.6rem;
   color: white;
-  width: 40vw;
+  width: 35vw;
   height: 40vh;
   display: flex;
   align-items: center;
@@ -40,10 +40,10 @@
 
 .flip-card {
   background-color: transparent;
-  width: 40vw;
+  width: 35vw;
   height: 40vh;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 3rem 3rem;
+  margin: 2rem 5rem;
 }
 
 /* This container is needed to position the front and back side */

@@ -4,7 +4,7 @@ import Header from './Components/Header';
 import Library from './Components/Pages/Library';
 import Home from './Components/Pages/Home';
 
-import './App.css';
+import './app.css';
 
 function App() {
   return (

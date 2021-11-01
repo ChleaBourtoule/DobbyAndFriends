@@ -29,6 +29,7 @@ const Home = () => {
         <div className="home-div-video">
           <ReactPlayer
             url="./video_home_library.mp4"
+            autoPlay="true"
             playing="true"
             loop="true"
             width="550px"
