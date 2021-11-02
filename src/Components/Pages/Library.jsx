@@ -48,7 +48,19 @@ function Library() {
     }
   }, [house]);
 
-  /*   const gryffindor = {
+  /*   
+  ==================================
+  
+  suggestion de Lydie =
+    // applique la classe correspondante à la div principale
+    // switch sur la maison
+
+    // document.getElementById.classname.toggle
+    // classname.toggle('gryffindor');
+
+  ===================================
+
+  const gryffindor = {
     backgroundImage: 'url(./gryfindor-hogwarts-house.jpg)',
   };
   const slytherin = {
@@ -78,7 +90,10 @@ function Library() {
     setHouse(name);
   }
   return (
-    <div id="library" className="library" /* style={style} */>
+    <div
+      id="library"
+      className="library" /* + "gryffindor" */ /* style={style} */
+    >
       <h1 className="title">Harry Potter&apos;s characters</h1>
       <div className="house-container">
         <div

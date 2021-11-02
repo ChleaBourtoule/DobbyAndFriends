@@ -1,14 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/harry-potter');
 
-.cards-container {
-  background: transparent;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  border-radius: 10px;
-}
-
 .title {
   text-align: center;
   padding: 15rem 0;
@@ -17,9 +8,4 @@
   text-shadow: 30px 30px 20px black;
   border-radius: 10px;
   font-family: 'Harry Potter', sans-serif;
-}
-
-.house-container {
-  display: flex;
-  justify-content: space-around;
 }
