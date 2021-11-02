@@ -55,6 +55,7 @@
   background-image: url(../../assets/slytherin-hogwarts-house.jpg);
 }
 
+
 .house-container {
   display: flex;
   justify-content: space-around;
@@ -68,3 +69,5 @@
   flex-wrap: wrap;
   border-radius: 10px;
 }
+
+
