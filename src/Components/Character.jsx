@@ -1,5 +1,5 @@
 import React from 'react';
-import './Character.css';
+import './character.css';
 import PropTypes from 'prop-types';
 
 const Character = ({
@@ -18,7 +18,7 @@ const Character = ({
       <div className="flip-card-inner">
         <div className="card flip-card-front">
           <div className="card-img">
-            {image === '' ? (
+            {!image ? (
               <img
                 alt={name}
                 src="../photoeffets.com__final_265151983864119616_.jpg"
@@ -37,34 +37,34 @@ const Character = ({
         <div className="card flip-card-back">
           <div className="card-details" style={font}>
             <h2>{name}</h2>
-            {patronus === '' ? (
+            {!patronus ? (
               <div>Patronus: Not provided</div>
             ) : (
               <div>Patronus: {patronus}</div>
             )}
-            {wand.wood === '' && wand.core === '' && wand.length === '' ? (
+            {!wand.wood && !wand.core && !wand.length ? (
               <div>Wand: Not provided</div>
             ) : (
               <div>
                 Wand:
-                {wand.wood === '' ? (
+                {!wand.wood ? (
                   <li>Wood: Not provided</li>
                 ) : (
                   <li>Wood: Made of {wand.wood}</li>
                 )}
-                {wand.core === '' ? (
+                {!wand.core ? (
                   <li>Core: Not provided</li>
                 ) : (
                   <li>Core: Made of {wand.core}</li>
                 )}
-                {wand.length === '' ? (
+                {!wand.length ? (
                   <li>Length: Not provided</li>
                 ) : (
                   <li>Length: {wand.length}&apos;</li>
                 )}
               </div>
             )}
-            {ancestry === '' ? (
+            {!ancestry ? (
               <div>Ancestry: Not provided</div>
             ) : (
               <div>Ancestry: {ancestry}</div>

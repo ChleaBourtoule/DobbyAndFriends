@@ -1,19 +1,65 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Character from '../Character';
-import './Library.css';
+import './library.css';
 
 function Library() {
+  /*   const library = {
+    backgroundImage:
+      'url(https://images.unsplash.com/photo-1596426586791-1ec4ecf6083f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80)',
+  }; */
+  const libraryFont = {
+    color: '#740001',
+  };
   const [characters, setCharacters] = useState([]);
+  const [house, setHouse] = useState('');
+  // const [style, setStyle] = useState('');
+  const [font, setFont] = useState(libraryFont);
+
   useEffect(() => {
     axios
       .get('http://hp-api.herokuapp.com/api/characters')
       // 'http://hp-api.herokuapp.com/api/characters/house/gryffindor
       .then((res) => res.data)
       .then((data) => setCharacters(data));
+
+    /* const myBody = document.querySelector('.library');
+    myBody.style.backgroundImage =
+      'url(https://images.unsplash.com/photo-1596426586791-1ec4ecf6083f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80)'; */
   }, []);
 
-  const [house, setHouse] = useState('');
+  useEffect(() => {
+    const myBody = document.querySelector('#library');
+    switch (house) {
+      case 'Gryffindor':
+        myBody.className = 'gryffindor-background';
+        break;
+      case 'Hufflepuff':
+        myBody.className = 'hufflepuff-background';
+        break;
+      case 'Ravenclaw':
+        myBody.className = 'ravenclaw-background';
+        break;
+      case 'Slytherin':
+        myBody.className = 'slytherin-background';
+        break;
+      default:
+        myBody.className = 'default-background';
+    }
+  }, [house]);
+
+  /*   
+  ==================================
+  
+  suggestion de Lydie =
+    // applique la classe correspondante à la div principale
+    // switch sur la maison
+
+    // document.getElementById.classname.toggle
+    // classname.toggle('gryffindor');
+
+  ===================================
+
   const gryffindor = {
     backgroundImage: 'url(./gryfindor-hogwarts-house.jpg)',
   };
@@ -25,12 +71,7 @@ function Library() {
   };
   const ravenclaw = {
     backgroundImage: 'url(./ravenclaw-a4dfcf4b993b250ddf660525cfbd042b.jpg)',
-  };
-  const library = {
-    backgroundImage:
-      'url(https://images.unsplash.com/photo-1596426586791-1ec4ecf6083f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80)',
-  };
-  const [style, setStyle] = useState(library);
+  }; */
 
   const gryffindorFont = {
     color: '#740001',
@@ -44,25 +85,24 @@ function Library() {
   const ravenclawFont = {
     color: '#0E1A40',
   };
-  const libraryFont = {
-    color: '#740001',
-  };
-  const [font, setFont] = useState(libraryFont);
 
-  function swithHouse(name) {
+  function switchHouse(name) {
     setHouse(name);
   }
   return (
-    <div className="library" style={style}>
+    <div
+      id="library"
+      className="library" /* + "gryffindor" */ /* style={style} */
+    >
       <h1 className="title">Harry Potter&apos;s characters</h1>
       <div className="house-container">
         <div
           onClick={() => {
-            swithHouse('Gryffindor');
-            setStyle(gryffindor);
+            switchHouse('Gryffindor');
+            /* setStyle(gryffindor); */
             setFont(gryffindorFont);
           }}
-          onKeyPress={() => swithHouse('Gryffindor')}
+          onKeyPress={() => switchHouse('Gryffindor')}
           role="presentation"
         >
           <img
@@ -75,11 +115,11 @@ function Library() {
         </div>
         <div
           onClick={() => {
-            swithHouse('Hufflepuff');
-            setStyle(hufflepuff);
+            switchHouse('Hufflepuff');
+            /* setStyle(hufflepuff); */
             setFont(hufflepuffFont);
           }}
-          onKeyPress={() => swithHouse('Hufflepuff')}
+          onKeyPress={() => switchHouse('Hufflepuff')}
           role="presentation"
         >
           <img
@@ -92,11 +132,11 @@ function Library() {
         </div>
         <div
           onClick={() => {
-            swithHouse('Ravenclaw');
-            setStyle(ravenclaw);
+            switchHouse('Ravenclaw');
+            /* setStyle(ravenclaw); */
             setFont(ravenclawFont);
           }}
-          onKeyPress={() => swithHouse('Ravenclaw')}
+          onKeyPress={() => switchHouse('Ravenclaw')}
           role="presentation"
         >
           <img
@@ -109,11 +149,11 @@ function Library() {
         </div>
         <div
           onClick={() => {
-            swithHouse('Slytherin');
-            setStyle(slytherin);
+            switchHouse('Slytherin');
+            /* setStyle(slytherin); */
             setFont(slytherinFont);
           }}
-          onKeyPress={() => swithHouse('Slytherin')}
+          onKeyPress={() => switchHouse('Slytherin')}
           role="presentation"
         >
           <img

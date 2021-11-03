@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
-import './Header.css';
+import './header.css';
 
 const Header = () => (
-  <div className="Header">
+  <div className="header">
     <div>
       <NavLink exact to="/">
         <img className="cursor" src="../logo-navbar.png" alt="Dobby" />
@@ -11,7 +11,7 @@ const Header = () => (
     <div>
       <img src="../solemnly-swear.png" alt="I solemnly swear..." />
     </div>
-    <ul className="NavBar">
+    <ul className="nav-bar">
       <li>
         <NavLink className="cursor" activeClassName="active" exact to="/">
           Home
