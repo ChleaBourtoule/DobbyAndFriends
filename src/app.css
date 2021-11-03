@@ -1,0 +1,19 @@
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
+
+* {
+  cursor: url(./assets/cursor/dobby-cursor.png), auto;
+}
+
+.cursor {
+  cursor: url(./assets/cursor/sock-cursor.png), auto;
+}
+
+.title {
+  text-align: center;
+  padding: 15rem 0;
+  color: #d3a625;
+  font-size: 8rem;
+  text-shadow: 30px 30px 20px black;
+  border-radius: 10px;
+  font-family: 'Harry Potter', sans-serif;
+}
