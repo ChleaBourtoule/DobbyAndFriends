@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/DobbyAndFriends/static/css/main.19b87274.chunk.css",
+    "main.js": "/DobbyAndFriends/static/js/main.7f34d206.chunk.js",
+    "main.js.map": "/DobbyAndFriends/static/js/main.7f34d206.chunk.js.map",
+    "runtime-main.js": "/DobbyAndFriends/static/js/runtime-main.4f001886.js",
+    "runtime-main.js.map": "/DobbyAndFriends/static/js/runtime-main.4f001886.js.map",
+    "static/js/2.2f7f712d.chunk.js": "/DobbyAndFriends/static/js/2.2f7f712d.chunk.js",
+    "static/js/2.2f7f712d.chunk.js.map": "/DobbyAndFriends/static/js/2.2f7f712d.chunk.js.map",
+    "index.html": "/DobbyAndFriends/index.html",
+    "static/css/main.19b87274.chunk.css.map": "/DobbyAndFriends/static/css/main.19b87274.chunk.css.map",
+    "static/js/2.2f7f712d.chunk.js.LICENSE.txt": "/DobbyAndFriends/static/js/2.2f7f712d.chunk.js.LICENSE.txt",
+    "static/media/library.css": "/DobbyAndFriends/static/media/slytherin-hogwarts-house.54d9b414.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f001886.js",
+    "static/js/2.2f7f712d.chunk.js",
+    "static/css/main.19b87274.chunk.css",
+    "static/js/main.7f34d206.chunk.js"
+  ]
+}
