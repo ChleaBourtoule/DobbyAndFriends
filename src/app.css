@@ -1,4 +1,12 @@
-@import url('http://fonts.cdnfonts.com/css/harry-potter');
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+* {
+  cursor: url(./assets/cursor/dobby-cursor.png), auto;
+}
+
+.cursor {
+  cursor: url(./assets/cursor/sock-cursor.png), auto;
+}
 
 .title {
   text-align: center;

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import './home.css';
 import { NavLink } from 'react-router-dom';
+import videoHomeLibrary from '../../assets/videos/video_home_library.mp4';
 
 const Home = () => {
   return (
@@ -32,17 +33,17 @@ const Home = () => {
             tarder notre page bibliothèque dédiée aux personnages de la saga
             Harry Potter.
           </p>
-          <button type="button">
-            <NavLink activeClassName="" to="/library">
-              Go to library
-            </NavLink>
+
+          <button type="button" className="cursor">
+            <NavLink to="/library">Go to library</NavLink>
           </button>
         </div>
 
         <div className="home-div-video">
           <ReactPlayer
-            url="./video_home_library.mp4"
-            autoPlay="true"
+            url={videoHomeLibrary}
+            volume="1"
+            muted="true"
             playing="true"
             loop="true"
             width="550px"

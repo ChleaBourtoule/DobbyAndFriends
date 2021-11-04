@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Character from '../Character';
 import './library.css';
+import gryffindorLogo from '../../assets/gryffindor.png';
+import ravenclawLogo from '../../assets/ravenclaw.png';
+import hufflepuffLogo from '../../assets/hufflepuff.png';
+import slytherinLogo from '../../assets/slytherin.png';
 
 function Library() {
   /*   const library = {
@@ -15,10 +19,12 @@ function Library() {
   const [house, setHouse] = useState('');
   // const [style, setStyle] = useState('');
   const [font, setFont] = useState(libraryFont);
+  const [firstNext, setFirstNext] = useState(0);
+  const [secondNext, setSecondNext] = useState(10);
 
   useEffect(() => {
     axios
-      .get('http://hp-api.herokuapp.com/api/characters')
+      .get('https://hp-api.herokuapp.com/api/characters')
       // 'http://hp-api.herokuapp.com/api/characters/house/gryffindor
       .then((res) => res.data)
       .then((data) => setCharacters(data));
@@ -98,6 +104,8 @@ function Library() {
             switchHouse('Gryffindor');
             /* setStyle(gryffindor); */
             setFont(gryffindorFont);
+            setFirstNext(0);
+            setSecondNext(10);
           }}
           onKeyPress={() => switchHouse('Gryffindor')}
           role="presentation"
@@ -108,7 +116,7 @@ function Library() {
             <img
               className="house"
               id="gryffindorImg"
-              src="./gryffindor.png"
+              src={gryffindorLogo}
               alt="hufflepuff logo"
               height="150px"
             />
@@ -120,6 +128,8 @@ function Library() {
             switchHouse('Hufflepuff');
             /* setStyle(hufflepuff); */
             setFont(hufflepuffFont);
+            setFirstNext(0);
+            setSecondNext(10);
           }}
           onKeyPress={() => switchHouse('Hufflepuff')}
           role="presentation"
@@ -129,7 +139,7 @@ function Library() {
             <img
               className="house"
               id="hufflepuffImg"
-              src="./hufflepuff.png"
+              src={hufflepuffLogo}
               alt="hufflepuff logo"
               height="150px"
             />
@@ -146,6 +156,8 @@ function Library() {
             switchHouse('Ravenclaw');
             /* setStyle(ravenclaw); */
             setFont(ravenclawFont);
+            setFirstNext(0);
+            setSecondNext(10);
           }}
           onKeyPress={() => switchHouse('Ravenclaw')}
           role="presentation"
@@ -156,7 +168,7 @@ function Library() {
             <img
               className="house"
               id="ravenclawImg"
-              src="./ravenclaw.png"
+              src={ravenclawLogo}
               alt="ravenclaw logo"
               height="150px"
             />
@@ -168,6 +180,8 @@ function Library() {
             switchHouse('Slytherin');
             /* setStyle(slytherin); */
             setFont(slytherinFont);
+            setFirstNext(0);
+            setSecondNext(10);
           }}
           onKeyPress={() => switchHouse('Slytherin')}
           role="presentation"
@@ -178,7 +192,7 @@ function Library() {
             <img
               className="house"
               id="slytherinImg"
-              src="./slytherin.png"
+              src={slytherinLogo}
               alt="slytherin logo"
               height="150px"
             />
@@ -188,7 +202,8 @@ function Library() {
       </div>
       <div className="cards-container">
         {characters
-          .filter((character) => house === '' || character.house === house)
+          .filter((character) => !house || character.house === house)
+          .slice(firstNext, secondNext)
           .map((character) => (
             <Character
               name={character.name}
@@ -202,6 +217,38 @@ function Library() {
               font={font}
             />
           ))}
+      </div>
+      <div className="button">
+        {firstNext <= 0 ? (
+          ''
+        ) : (
+          <button
+            type="button"
+            className="next cursor"
+            onClick={() => {
+              setFirstNext(firstNext - 10);
+              setSecondNext(secondNext - 10);
+            }}
+          >
+            Previous 10
+          </button>
+        )}
+        {secondNext >
+        characters.filter((character) => !house || character.house === house)
+          .length ? (
+          ''
+        ) : (
+          <button
+            type="button"
+            className="next cursor"
+            onClick={() => {
+              setFirstNext(firstNext + 10);
+              setSecondNext(secondNext + 10);
+            }}
+          >
+            Next 10
+          </button>
+        )}
       </div>
     </div>
   );
