@@ -1,6 +1,7 @@
 import React from 'react';
 import './character.css';
 import PropTypes from 'prop-types';
+import haveYouSeenThisWizard from '../assets/have-you-seen-this-wizard.jpg';
 
 const Character = ({
   name,
@@ -19,10 +20,7 @@ const Character = ({
         <div className="card flip-card-front">
           <div className="card-img">
             {!image ? (
-              <img
-                alt={name}
-                src="../photoeffets.com__final_265151983864119616_.jpg"
-              />
+              <img alt={name} src={haveYouSeenThisWizard} />
             ) : (
               <img alt={name} src={image} />
             )}
@@ -100,10 +98,10 @@ Character.defaultProps = {
   species: 'human',
   house: 'Gryffindor',
   image: '',
-  wand: '',
+  wand: { core: '', wood: '', length: '' },
   patronus: 'stag',
   ancestry: 'half-blood',
-  font: 'black',
+  font: { color: 'black' },
 };
 
 export default Character;

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../../assets/Albus.jpg");
+  background-position: bottom 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#start-quiz {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  margin-bottom: 5rem;
+  transition: transform 0.3s;
+}
+
+#start-quiz:hover {
+  transform: scale(1.1);
+  background-color: white;
+  box-shadow: 2px 2px 5px black;
+  color: black;
+}

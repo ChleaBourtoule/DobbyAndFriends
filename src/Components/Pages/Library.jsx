@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Character from '../Character';
 import './library.css';
+import gryffindorLogo from '../../assets/gryffindor.png';
+import ravenclawLogo from '../../assets/ravenclaw.png';
+import hufflepuffLogo from '../../assets/hufflepuff.png';
+import slytherinLogo from '../../assets/slytherin.png';
 
 function Library() {
   /*   const library = {
@@ -20,7 +24,7 @@ function Library() {
 
   useEffect(() => {
     axios
-      .get('http://hp-api.herokuapp.com/api/characters')
+      .get('https://hp-api.herokuapp.com/api/characters')
       // 'http://hp-api.herokuapp.com/api/characters/house/gryffindor
       .then((res) => res.data)
       .then((data) => setCharacters(data));
@@ -112,7 +116,7 @@ function Library() {
           <img
             className="cursor"
             id="gryffindorImg"
-            src="./gryffindor.png"
+            src={gryffindorLogo}
             alt="hufflepuff logo"
             height="150px"
           />
@@ -131,7 +135,7 @@ function Library() {
           <img
             id="hufflepuffImg"
             className="cursor"
-            src="./hufflepuff.png"
+            src={hufflepuffLogo}
             alt="hufflepuff logo"
             height="150px"
           />
@@ -150,7 +154,7 @@ function Library() {
           <img
             id="ravenclawImg"
             className="cursor"
-            src="./ravenclaw.png"
+            src={ravenclawLogo}
             alt="ravenclaw logo"
             height="150px"
           />
@@ -169,7 +173,7 @@ function Library() {
           <img
             id="slytherinImg"
             className="cursor"
-            src="./slytherin.png"
+            src={slytherinLogo}
             alt="slytherin logo"
             height="150px"
           />
@@ -177,7 +181,7 @@ function Library() {
       </div>
       <div className="cards-container">
         {characters
-          .filter((character) => house === '' || character.house === house)
+          .filter((character) => !house || character.house === house)
           .slice(firstNext, secondNext)
           .map((character) => (
             <Character
@@ -199,7 +203,7 @@ function Library() {
         ) : (
           <button
             type="button"
-            className="next"
+            className="next cursor"
             onClick={() => {
               setFirstNext(firstNext - 10);
               setSecondNext(secondNext - 10);
@@ -209,14 +213,13 @@ function Library() {
           </button>
         )}
         {secondNext >
-        characters.filter(
-          (character) => house === '' || character.house === house
-        ).length ? (
+        characters.filter((character) => !house || character.house === house)
+          .length ? (
           ''
         ) : (
           <button
             type="button"
-            className="next"
+            className="next cursor"
             onClick={() => {
               setFirstNext(firstNext + 10);
               setSecondNext(secondNext + 10);
