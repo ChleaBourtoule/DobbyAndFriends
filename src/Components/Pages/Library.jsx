@@ -90,10 +90,7 @@ function Library() {
     setHouse(name);
   }
   return (
-    <div
-      id="library"
-      className="library" /* + "gryffindor" */ /* style={style} */
-    >
+    <div id="library" className="library">
       <h1 className="title">Harry Potter&apos;s characters</h1>
       <div className="house-container">
         <div
@@ -105,12 +102,18 @@ function Library() {
           onKeyPress={() => switchHouse('Gryffindor')}
           role="presentation"
         >
-          <img
-            id="gryffindorImg"
-            src="./gryffindor.png"
-            alt="hufflepuff logo"
-            height="150px"
-          />
+          <div
+          // className="gryffindor_ghost"
+          >
+            <img
+              className="house"
+              id="gryffindorImg"
+              src="./gryffindor.png"
+              alt="hufflepuff logo"
+              height="150px"
+            />
+            <img className="ghost" src="./ghostGryffindor.png" alt="ghost" />
+          </div>
         </div>
         <div
           onClick={() => {
@@ -121,12 +124,22 @@ function Library() {
           onKeyPress={() => switchHouse('Hufflepuff')}
           role="presentation"
         >
-          <img
-            id="hufflepuffImg"
-            src="./hufflepuff.png"
-            alt="hufflepuff logo"
-            height="150px"
-          />
+          <div>
+            {/* // className="hufflepuff_ghost" */}
+            <img
+              className="house"
+              id="hufflepuffImg"
+              src="./hufflepuff.png"
+              alt="hufflepuff logo"
+              height="150px"
+            />
+            <img
+              className="ghost"
+              src="./ghostHufflepuff.png"
+              alt="ghost"
+              height="80px"
+            />
+          </div>
         </div>
         <div
           onClick={() => {
@@ -137,12 +150,18 @@ function Library() {
           onKeyPress={() => switchHouse('Ravenclaw')}
           role="presentation"
         >
-          <img
-            id="ravenclawImg"
-            src="./ravenclaw.png"
-            alt="ravenclaw logo"
-            height="150px"
-          />
+          <div
+          // className="ravenclaw_ghost house"
+          >
+            <img
+              className="house"
+              id="ravenclawImg"
+              src="./ravenclaw.png"
+              alt="ravenclaw logo"
+              height="150px"
+            />
+            <img className="ghost" src="./ghostRavenclaw.png" alt="ghost" />
+          </div>
         </div>
         <div
           onClick={() => {
@@ -153,12 +172,18 @@ function Library() {
           onKeyPress={() => switchHouse('Slytherin')}
           role="presentation"
         >
-          <img
-            id="slytherinImg"
-            src="./slytherin.png"
-            alt="slytherin logo"
-            height="150px"
-          />
+          <div
+          // className="slythering_ghost house"
+          >
+            <img
+              className="house"
+              id="slytherinImg"
+              src="./slytherin.png"
+              alt="slytherin logo"
+              height="150px"
+            />
+            <img className="ghost" src="./ghostSlytherin.png" alt="ghost" />
+          </div>
         </div>
       </div>
       <div className="cards-container">

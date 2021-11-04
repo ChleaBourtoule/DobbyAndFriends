@@ -1,16 +1,34 @@
 @import url('http://fonts.cdnfonts.com/css/harry-potter');
 
 .home {
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+}
+
+.home-video-div video {
+  grid-template-columns: none;
+  grid-template-rows: none;
+  position: relative;
+  margin-top: 40rem;
+}
+
+/* .home-video {
+  position: absolute;
+} */
+
+.title {
+  position: absolute;
 }
 
 .home-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+  margin: auto;
+  padding: auto;
 }
 
 .home-div-texte {
@@ -55,5 +73,5 @@
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 1;
 }
