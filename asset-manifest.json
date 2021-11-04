@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DobbyAndFriends/static/css/main.5af79fd7.chunk.css",
-    "main.js": "/DobbyAndFriends/static/js/main.ee0c7ad3.chunk.js",
-    "main.js.map": "/DobbyAndFriends/static/js/main.ee0c7ad3.chunk.js.map",
+    "main.js": "/DobbyAndFriends/static/js/main.73c40206.chunk.js",
+    "main.js.map": "/DobbyAndFriends/static/js/main.73c40206.chunk.js.map",
     "runtime-main.js": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js",
     "runtime-main.js.map": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js.map",
-    "static/js/2.40bfade8.chunk.js": "/DobbyAndFriends/static/js/2.40bfade8.chunk.js",
-    "static/js/2.40bfade8.chunk.js.map": "/DobbyAndFriends/static/js/2.40bfade8.chunk.js.map",
+    "static/js/2.998f3471.chunk.js": "/DobbyAndFriends/static/js/2.998f3471.chunk.js",
+    "static/js/2.998f3471.chunk.js.map": "/DobbyAndFriends/static/js/2.998f3471.chunk.js.map",
     "index.html": "/DobbyAndFriends/index.html",
     "static/css/main.5af79fd7.chunk.css.map": "/DobbyAndFriends/static/css/main.5af79fd7.chunk.css.map",
-    "static/js/2.40bfade8.chunk.js.LICENSE.txt": "/DobbyAndFriends/static/js/2.40bfade8.chunk.js.LICENSE.txt",
+    "static/js/2.998f3471.chunk.js.LICENSE.txt": "/DobbyAndFriends/static/js/2.998f3471.chunk.js.LICENSE.txt",
     "static/media/quiz.css": "/DobbyAndFriends/static/media/Albus.57397364.jpg",
     "static/media/gryffindor.64055a7b.png": "/DobbyAndFriends/static/media/gryffindor.64055a7b.png",
     "static/media/library.css": "/DobbyAndFriends/static/media/slytherin-hogwarts-house.54d9b414.jpg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.92fa3fcb.js",
-    "static/js/2.40bfade8.chunk.js",
+    "static/js/2.998f3471.chunk.js",
     "static/css/main.5af79fd7.chunk.css",
-    "static/js/main.ee0c7ad3.chunk.js"
+    "static/js/main.73c40206.chunk.js"
   ]
 }
