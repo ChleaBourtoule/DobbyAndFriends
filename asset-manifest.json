@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/github.io/DobbyAndFriends/static/css/main.e97294bf.chunk.css",
-    "main.js": "/github.io/DobbyAndFriends/static/js/main.b1e96eb6.chunk.js",
-    "main.js.map": "/github.io/DobbyAndFriends/static/js/main.b1e96eb6.chunk.js.map",
-    "runtime-main.js": "/github.io/DobbyAndFriends/static/js/runtime-main.27de40bf.js",
-    "runtime-main.js.map": "/github.io/DobbyAndFriends/static/js/runtime-main.27de40bf.js.map",
-    "static/js/2.d86d04d5.chunk.js": "/github.io/DobbyAndFriends/static/js/2.d86d04d5.chunk.js",
-    "static/js/2.d86d04d5.chunk.js.map": "/github.io/DobbyAndFriends/static/js/2.d86d04d5.chunk.js.map",
-    "index.html": "/github.io/DobbyAndFriends/index.html",
-    "static/css/main.e97294bf.chunk.css.map": "/github.io/DobbyAndFriends/static/css/main.e97294bf.chunk.css.map",
-    "static/js/2.d86d04d5.chunk.js.LICENSE.txt": "/github.io/DobbyAndFriends/static/js/2.d86d04d5.chunk.js.LICENSE.txt",
-    "static/media/library.css": "/github.io/DobbyAndFriends/static/media/slytherin-hogwarts-house.54d9b414.jpg"
+    "main.css": "/DobbyAndFriends/static/css/main.1ba8d20f.chunk.css",
+    "main.js": "/DobbyAndFriends/static/js/main.2bc06359.chunk.js",
+    "main.js.map": "/DobbyAndFriends/static/js/main.2bc06359.chunk.js.map",
+    "runtime-main.js": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js",
+    "runtime-main.js.map": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js.map",
+    "static/js/2.40bfade8.chunk.js": "/DobbyAndFriends/static/js/2.40bfade8.chunk.js",
+    "static/js/2.40bfade8.chunk.js.map": "/DobbyAndFriends/static/js/2.40bfade8.chunk.js.map",
+    "index.html": "/DobbyAndFriends/index.html",
+    "static/css/main.1ba8d20f.chunk.css.map": "/DobbyAndFriends/static/css/main.1ba8d20f.chunk.css.map",
+    "static/js/2.40bfade8.chunk.js.LICENSE.txt": "/DobbyAndFriends/static/js/2.40bfade8.chunk.js.LICENSE.txt",
+    "static/media/quiz.css": "/DobbyAndFriends/static/media/Albus.57397364.jpg",
+    "static/media/library.css": "/DobbyAndFriends/static/media/slytherin-hogwarts-house.54d9b414.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.27de40bf.js",
-    "static/js/2.d86d04d5.chunk.js",
-    "static/css/main.e97294bf.chunk.css",
-    "static/js/main.b1e96eb6.chunk.js"
+    "static/js/runtime-main.92fa3fcb.js",
+    "static/js/2.40bfade8.chunk.js",
+    "static/css/main.1ba8d20f.chunk.css",
+    "static/js/main.2bc06359.chunk.js"
   ]
 }
