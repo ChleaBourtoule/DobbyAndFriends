@@ -1,25 +1,30 @@
 @import url('http://fonts.cdnfonts.com/css/harry-potter');
 
-.home {
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed; */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.home-video-div video {
-  grid-template-columns: none;
-  grid-template-rows: none;
+.home-video-div {
+  height: 100%;
+  width: 100%;
   position: relative;
-  margin-top: 40rem;
 }
 
-/* .home-video {
+.home-video {
   position: absolute;
-} */
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  z-index: -1;
+}
 
-.title {
-  position: absolute;
+.home-video video {
+  object-fit: cover;
+}
+
+.home-video-div h1 {
+  z-index: 1;
 }
 
 .home-section {

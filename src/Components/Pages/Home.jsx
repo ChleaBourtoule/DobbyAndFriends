@@ -3,6 +3,9 @@ import ReactPlayer from 'react-player';
 import './home.css';
 import { NavLink } from 'react-router-dom';
 import videoHomeLibrary from '../../assets/videos/video_home_library.mp4';
+import videoHomeBattle from '../../assets/videos/home_video_section_battle.mp4';
+import videoHomeQuizz from '../../assets/videos/home_video_section_quizz.mp4';
+import videoHome from '../../assets/videos/HarryShots.mp4';
 
 const Home = () => {
   return (
@@ -10,15 +13,16 @@ const Home = () => {
       <div className="home-video-div">
         <h1 className="title">Welcome to Hogwarts</h1>
 
-        <div className="home-video">
-          <ReactPlayer
-            url="./home_video2.mp4"
-            autoPlay="true"
-            playing="true"
-            loop="true"
-            width="1820px"
-          />
-        </div>
+        <ReactPlayer
+          className="home-video"
+          url={videoHome}
+          volume="1"
+          muted="true"
+          playing
+          loop
+          width="100%"
+          height="100%"
+        />
       </div>
 
       <section className="home-section">
@@ -54,8 +58,9 @@ const Home = () => {
       <section className="home-section">
         <div className="home-div-video">
           <ReactPlayer
-            url="./home_video_section_quizz.mp4"
-            autoPlay="true"
+            url={videoHomeQuizz}
+            volume="1"
+            muted="true"
             playing="true"
             loop="true"
             width="550px"
@@ -102,8 +107,9 @@ const Home = () => {
 
         <div className="home-div-video">
           <ReactPlayer
-            url="./home_video_section_battle.mp4"
-            autoPlay="true"
+            url={videoHomeBattle}
+            volume="1"
+            muted="true"
             playing="true"
             loop="true"
             width="550px"
