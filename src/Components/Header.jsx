@@ -1,15 +1,17 @@
 import { NavLink } from 'react-router-dom';
 import './header.css';
+import logoNavbar from '../assets/logo-navbar.png';
+import solemnlySwear from '../assets/solemnly-swear.png';
 
 const Header = () => (
   <div className="header">
     <div>
       <NavLink exact to="/">
-        <img className="cursor" src="../logo-navbar.png" alt="Dobby" />
+        <img className="cursor" src={logoNavbar} alt="Dobby" />
       </NavLink>
     </div>
     <div>
-      <img src="../solemnly-swear.png" alt="I solemnly swear..." />
+      <img src={solemnlySwear} alt="I solemnly swear..." />
     </div>
     <ul className="nav-bar">
       <li>

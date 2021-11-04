@@ -2,6 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import './home.css';
 import { NavLink } from 'react-router-dom';
+import videoHomeLibrary from '../../assets/videos/video_home_library.mp4';
 
 const Home = () => {
   return (
@@ -26,8 +27,9 @@ const Home = () => {
 
         <div className="home-div-video">
           <ReactPlayer
-            url="./video_home_library.mp4"
-            autoPlay="true"
+            url={videoHomeLibrary}
+            volume="1"
+            muted="true"
             playing="true"
             loop="true"
             width="550px"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Quiz from './Components/Pages/Quiz/Quiz';
 import Header from './Components/Header';
 import Library from './Components/Pages/Library';
@@ -15,6 +15,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/quiz" component={Quiz} />
         <Route path="/library" component={Library} />
+        <Route path="*">
+          <Redirect exact to="/" />
+        </Route>
       </Switch>
     </div>
   );
