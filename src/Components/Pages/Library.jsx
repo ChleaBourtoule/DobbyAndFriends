@@ -198,9 +198,7 @@ function Library() {
           ))}
       </div>
       <div className="button">
-        {firstNext <= 0 ? (
-          ''
-        ) : (
+        {firstNext > 0 && (
           <button
             type="button"
             className="next cursor"
@@ -212,11 +210,9 @@ function Library() {
             Previous 10
           </button>
         )}
-        {secondNext >
-        characters.filter((character) => !house || character.house === house)
-          .length ? (
-          ''
-        ) : (
+        {secondNext <=
+          characters.filter((character) => !house || character.house === house)
+            .length && (
           <button
             type="button"
             className="next cursor"
