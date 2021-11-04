@@ -208,7 +208,10 @@ function Library() {
             Previous 10
           </button>
         )}
-        {secondNext > characters.length ? (
+        {secondNext >
+        characters.filter(
+          (character) => house === '' || character.house === house
+        ).length ? (
           ''
         ) : (
           <button
