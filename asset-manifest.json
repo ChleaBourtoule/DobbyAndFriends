@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DobbyAndFriends/static/css/main.5af79fd7.chunk.css",
-    "main.js": "/DobbyAndFriends/static/js/main.f6fb4bd6.chunk.js",
-    "main.js.map": "/DobbyAndFriends/static/js/main.f6fb4bd6.chunk.js.map",
+    "main.js": "/DobbyAndFriends/static/js/main.2a756b9d.chunk.js",
+    "main.js.map": "/DobbyAndFriends/static/js/main.2a756b9d.chunk.js.map",
     "runtime-main.js": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js",
     "runtime-main.js.map": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js.map",
     "static/js/2.40bfade8.chunk.js": "/DobbyAndFriends/static/js/2.40bfade8.chunk.js",
@@ -17,12 +17,13 @@
     "static/media/logo-navbar.a7c1ea8a.png": "/DobbyAndFriends/static/media/logo-navbar.a7c1ea8a.png",
     "static/media/ravenclaw.9610bcde.png": "/DobbyAndFriends/static/media/ravenclaw.9610bcde.png",
     "static/media/slytherin.2f1ae136.png": "/DobbyAndFriends/static/media/slytherin.2f1ae136.png",
+    "static/media/solemnly-swear.5324c408.png": "/DobbyAndFriends/static/media/solemnly-swear.5324c408.png",
     "static/media/video_home_library.7a544003.mp4": "/DobbyAndFriends/static/media/video_home_library.7a544003.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.92fa3fcb.js",
     "static/js/2.40bfade8.chunk.js",
     "static/css/main.5af79fd7.chunk.css",
-    "static/js/main.f6fb4bd6.chunk.js"
+    "static/js/main.2a756b9d.chunk.js"
   ]
 }
