@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DobbyAndFriends/static/css/main.5af79fd7.chunk.css",
-    "main.js": "/DobbyAndFriends/static/js/main.d3881f12.chunk.js",
-    "main.js.map": "/DobbyAndFriends/static/js/main.d3881f12.chunk.js.map",
+    "main.js": "/DobbyAndFriends/static/js/main.2f9e073c.chunk.js",
+    "main.js.map": "/DobbyAndFriends/static/js/main.2f9e073c.chunk.js.map",
     "runtime-main.js": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js",
     "runtime-main.js.map": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js.map",
     "static/js/2.40bfade8.chunk.js": "/DobbyAndFriends/static/js/2.40bfade8.chunk.js",
@@ -11,13 +11,17 @@
     "static/css/main.5af79fd7.chunk.css.map": "/DobbyAndFriends/static/css/main.5af79fd7.chunk.css.map",
     "static/js/2.40bfade8.chunk.js.LICENSE.txt": "/DobbyAndFriends/static/js/2.40bfade8.chunk.js.LICENSE.txt",
     "static/media/quiz.css": "/DobbyAndFriends/static/media/Albus.57397364.jpg",
+    "static/media/gryffindor.64055a7b.png": "/DobbyAndFriends/static/media/gryffindor.64055a7b.png",
     "static/media/library.css": "/DobbyAndFriends/static/media/slytherin-hogwarts-house.54d9b414.jpg",
-    "static/media/logo-navbar.a7c1ea8a.png": "/DobbyAndFriends/static/media/logo-navbar.a7c1ea8a.png"
+    "static/media/hufflepuff.dc9c2866.png": "/DobbyAndFriends/static/media/hufflepuff.dc9c2866.png",
+    "static/media/logo-navbar.a7c1ea8a.png": "/DobbyAndFriends/static/media/logo-navbar.a7c1ea8a.png",
+    "static/media/ravenclaw.9610bcde.png": "/DobbyAndFriends/static/media/ravenclaw.9610bcde.png",
+    "static/media/slytherin.2f1ae136.png": "/DobbyAndFriends/static/media/slytherin.2f1ae136.png"
   },
   "entrypoints": [
     "static/js/runtime-main.92fa3fcb.js",
     "static/js/2.40bfade8.chunk.js",
     "static/css/main.5af79fd7.chunk.css",
-    "static/js/main.d3881f12.chunk.js"
+    "static/js/main.2f9e073c.chunk.js"
   ]
 }
