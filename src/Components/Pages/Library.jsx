@@ -15,6 +15,8 @@ function Library() {
   const [house, setHouse] = useState('');
   // const [style, setStyle] = useState('');
   const [font, setFont] = useState(libraryFont);
+  const [firstNext, setFirstNext] = useState(0);
+  const [secondNext, setSecondNext] = useState(10);
 
   useEffect(() => {
     axios
@@ -101,6 +103,8 @@ function Library() {
             switchHouse('Gryffindor');
             /* setStyle(gryffindor); */
             setFont(gryffindorFont);
+            setFirstNext(0);
+            setSecondNext(10);
           }}
           onKeyPress={() => switchHouse('Gryffindor')}
           role="presentation"
@@ -118,6 +122,8 @@ function Library() {
             switchHouse('Hufflepuff');
             /* setStyle(hufflepuff); */
             setFont(hufflepuffFont);
+            setFirstNext(0);
+            setSecondNext(10);
           }}
           onKeyPress={() => switchHouse('Hufflepuff')}
           role="presentation"
@@ -135,6 +141,8 @@ function Library() {
             switchHouse('Ravenclaw');
             /* setStyle(ravenclaw); */
             setFont(ravenclawFont);
+            setFirstNext(0);
+            setSecondNext(10);
           }}
           onKeyPress={() => switchHouse('Ravenclaw')}
           role="presentation"
@@ -152,6 +160,8 @@ function Library() {
             switchHouse('Slytherin');
             /* setStyle(slytherin); */
             setFont(slytherinFont);
+            setFirstNext(0);
+            setSecondNext(10);
           }}
           onKeyPress={() => switchHouse('Slytherin')}
           role="presentation"
@@ -168,6 +178,7 @@ function Library() {
       <div className="cards-container">
         {characters
           .filter((character) => house === '' || character.house === house)
+          .slice(firstNext, secondNext)
           .map((character) => (
             <Character
               name={character.name}
@@ -181,6 +192,39 @@ function Library() {
               font={font}
             />
           ))}
+      </div>
+      <div className="button">
+        {firstNext <= 0 ? (
+          ''
+        ) : (
+          <button
+            type="button"
+            className="next"
+            onClick={() => {
+              setFirstNext(firstNext - 10);
+              setSecondNext(secondNext - 10);
+            }}
+          >
+            Previous 10
+          </button>
+        )}
+        {secondNext >
+        characters.filter(
+          (character) => house === '' || character.house === house
+        ).length ? (
+          ''
+        ) : (
+          <button
+            type="button"
+            className="next"
+            onClick={() => {
+              setFirstNext(firstNext + 10);
+              setSecondNext(secondNext + 10);
+            }}
+          >
+            Next 10
+          </button>
+        )}
       </div>
     </div>
   );
