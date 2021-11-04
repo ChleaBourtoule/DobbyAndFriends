@@ -98,10 +98,10 @@ Character.defaultProps = {
   species: 'human',
   house: 'Gryffindor',
   image: '',
-  wand: '',
+  wand: { core: '', wood: '', length: '' },
   patronus: 'stag',
   ancestry: 'half-blood',
-  font: 'black',
+  font: { color: 'black' },
 };
 
 export default Character;

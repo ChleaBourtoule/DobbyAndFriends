@@ -181,7 +181,7 @@ function Library() {
       </div>
       <div className="cards-container">
         {characters
-          .filter((character) => house === '' || character.house === house)
+          .filter((character) => !house || character.house === house)
           .slice(firstNext, secondNext)
           .map((character) => (
             <Character
@@ -203,7 +203,7 @@ function Library() {
         ) : (
           <button
             type="button"
-            className="next"
+            className="next cursor"
             onClick={() => {
               setFirstNext(firstNext - 10);
               setSecondNext(secondNext - 10);
@@ -213,14 +213,13 @@ function Library() {
           </button>
         )}
         {secondNext >
-        characters.filter(
-          (character) => house === '' || character.house === house
-        ).length ? (
+        characters.filter((character) => !house || character.house === house)
+          .length ? (
           ''
         ) : (
           <button
             type="button"
-            className="next"
+            className="next cursor"
             onClick={() => {
               setFirstNext(firstNext + 10);
               setSecondNext(secondNext + 10);
