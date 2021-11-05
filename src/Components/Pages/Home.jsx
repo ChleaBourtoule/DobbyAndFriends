@@ -37,7 +37,6 @@ const Home = () => {
             Discover without further ado our library page dedicated to the
             characters of Harry Potter&apos;s series.
           </p>
-
           <button type="button" className="cursor">
             <NavLink to="/library">Go to library</NavLink>
           </button>
@@ -76,10 +75,9 @@ const Home = () => {
             challenge themselves with a new top-level quizz that only the most
             complete fans will be able to accomplish.
           </p>
-
-          <button type="button">
-            <NavLink activeClassName="" to="/quizz">
-              Go to quizz
+          <button type="button" className="cursor">
+            <NavLink className="cursor" to="/quiz">
+              Go to quiz
             </NavLink>
           </button>
         </div>
@@ -97,11 +95,8 @@ const Home = () => {
             Discover without further ado our library page dedicated to the
             characters of Harry Potter&apos;s series.
           </p>
-
-          <button type="button">
-            <NavLink activeClassName="" to="/battle">
-              Go to battle
-            </NavLink>
+          <button type="button" className="cursor">
+            <NavLink to="/battle">Go to battle</NavLink>
           </button>
         </div>
 
