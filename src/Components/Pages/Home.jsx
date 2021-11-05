@@ -29,13 +29,13 @@ const Home = () => {
         <div className="home-div-texte-library">
           <h3>Discover the library</h3>
           <p>
-            «Ce qui compte, ce n’est pas la naissance, mais ce que l’on
-            devient», disait Albus Dumbledore, le célèbre directeur de Poudlard.
-            Vingt ans plus tard, la magie d’Harry Potter opère toujours. Les
-            aventures du sorcier aux lunettes rondes ont émerveillé des millions
-            de lecteurs et spectateurs à travers le monde. Découvrez sans plus
-            tarder notre page bibliothèque dédiée aux personnages de la saga
-            Harry Potter.
+            &quot;It matters not what somebody is born but what they grow to
+            be&quot; once said Albus Dumbledore, the famous headteacher of
+            Hogwarts. Twenty years later, Harry Potter&apos;s magic is still
+            operating. The adventures of the wizard with round glasses have
+            enthralled millions of readers and viewers around the world.
+            Discover without further ado our library page dedicated to the
+            characters of Harry Potter&apos;s series.
           </p>
 
           <button type="button" className="cursor">
@@ -70,11 +70,11 @@ const Home = () => {
         <div className="home-div-texte-quizz">
           <h3>Discover the quizz</h3>
           <p>
-            Le temps passe, et les fans de Harry Potter restent. J.K Rowling a
-            réussi à créer un monde si complet que les fans purs et durs de sa
-            saga continuent de ne jurer que par ce dernier. Aujourd&apos;hui,
-            nous leur proposons de se mettre au défi avec un nouveau quiz de
-            haut niveau, que seuls les fans les plus absolus pourront réussir.
+            Time flies and Harry Potter&apos;s fans stay loyal. J.K. Rowling
+            managed to create a world so totally complete that diehard fans of
+            the series continue to only swear to it. Today, we suggest they
+            challenge themselves with a new top-level quizz that only the most
+            complete fans will be able to accomplish.
           </p>
 
           <button type="button">
@@ -89,13 +89,13 @@ const Home = () => {
         <div className="home-div-texte-battle">
           <h3>Discover the battle</h3>
           <p>
-            «Ce qui compte, ce n’est pas la naissance, mais ce que l’on
-            devient», disait Albus Dumbledore, le célèbre directeur de Poudlard.
-            Vingt ans plus tard, la magie d’Harry Potter opère toujours. Les
-            aventures du sorcier aux lunettes rondes ont émerveillé des millions
-            de lecteurs et spectateurs à travers le monde. Découvrez sans plus
-            tarder notre page bibliothèque dédiée aux personnages de la saga
-            Harry Potter.
+            &quot;It matters not what somebody is born but what they grow to
+            be&quot; once said Albus Dumbledore, the famous headteacher of
+            Hogwarts. Twenty years later, Harry Potter&apos;s magic is still
+            operating. The adventures of the wizard with round glasses have
+            enthralled millions of readers and viewers around the world.
+            Discover without further ado our library page dedicated to the
+            characters of Harry Potter&apos;s series.
           </p>
 
           <button type="button">
