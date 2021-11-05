@@ -25,8 +25,8 @@ const Home = () => {
         />
       </div>
 
-      <section className="home-section">
-        <div className="home-div-texte">
+      <section className="home-section-library">
+        <div className="home-div-texte-library">
           <h3>Discover the library</h3>
           <p>
             «Ce qui compte, ce n’est pas la naissance, mais ce que l’on
@@ -43,31 +43,31 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="home-div-video">
+        <div className="home-div-video-library">
           <ReactPlayer
             url={videoHomeLibrary}
             volume="1"
             muted="true"
             playing="true"
             loop="true"
-            width="550px"
+            width="650px"
           />
         </div>
       </section>
 
-      <section className="home-section">
-        <div className="home-div-video">
+      <section className="home-section-quizz">
+        <div className="home-div-video-quizz">
           <ReactPlayer
             url={videoHomeQuizz}
             volume="1"
             muted="true"
             playing="true"
             loop="true"
-            width="550px"
+            width="650px"
           />
         </div>
 
-        <div className="home-div-texte">
+        <div className="home-div-texte-quizz">
           <h3>Discover the quizz</h3>
           <p>
             Le temps passe, et les fans de Harry Potter restent. J.K Rowling a
@@ -85,9 +85,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="home-section">
-        <div className="home-div-texte">
-          <h3>Discover the library</h3>
+      <section className="home-section-battle">
+        <div className="home-div-texte-battle">
+          <h3>Discover the battle</h3>
           <p>
             «Ce qui compte, ce n’est pas la naissance, mais ce que l’on
             devient», disait Albus Dumbledore, le célèbre directeur de Poudlard.
@@ -105,14 +105,14 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="home-div-video">
+        <div className="home-div-video-battle">
           <ReactPlayer
             url={videoHomeBattle}
             volume="1"
             muted="true"
             playing="true"
             loop="true"
-            width="550px"
+            width="650px"
           />
         </div>
       </section>
