@@ -62,8 +62,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s;
 }
 
 .answer:hover {
   border: solid 2px black;
+  transform: scale(1.1);
 }

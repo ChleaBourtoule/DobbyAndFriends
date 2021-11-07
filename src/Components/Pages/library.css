@@ -1,5 +1,4 @@
 .house-container div img {
-  margin-top: 40rem;
   width: 20vw;
   height: 45vh;
   transition: transform 0.2s;
@@ -7,10 +6,6 @@
 
 .house-container div img:hover {
   transform: scale(1.1);
-}
-
-h1 {
-  display: block;
 }
 
 .library {
