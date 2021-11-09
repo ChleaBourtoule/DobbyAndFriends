@@ -10,6 +10,7 @@ import ghostGryffindor from '../../assets/ghostGryffindor.png';
 import ghostHufflepuff from '../../assets/ghostHufflepuff.png';
 import ghostRavenclaw from '../../assets/ghostRavenclaw.png';
 import ghostSlytherin from '../../assets/ghostSlytherin.png';
+import homelessLogo from '../../assets/homeles-logo.png';
 
 function Library() {
   const libraryFont = {
@@ -60,6 +61,9 @@ function Library() {
   const ravenclawFont = {
     color: '#0E1A40',
   };
+  const homeless = {
+    color: 'black',
+  };
 
   function switchHouse(name) {
     setHouse(name);
@@ -68,6 +72,25 @@ function Library() {
     <div id="library" className="library">
       <h1 className="title">Harry Potter&apos;s characters</h1>
       <div className="house-container">
+        <div
+          onClick={() => {
+            switchHouse(`""`);
+            setFont(homeless);
+            setFirstNext(0);
+            setSecondNext(10);
+          }}
+          onKeyPress={() => switchHouse(`""`)}
+          role="presentation"
+        >
+          <div>
+            <img
+              id="homelessImg"
+              src={homelessLogo}
+              alt="homeless logo"
+              height="150px"
+            />
+          </div>
+        </div>
         <div
           onClick={() => {
             switchHouse('Gryffindor');
@@ -160,7 +183,10 @@ function Library() {
       </div>
       <div className="cards-container">
         {characters
-          .filter((character) => !house || character.house === house)
+          .filter(
+            (character) =>
+              character.house === '' || !house || character.house === house
+          )
           .slice(firstNext, secondNext)
           .map((character) => (
             <Character
@@ -190,8 +216,10 @@ function Library() {
           </button>
         )}
         {secondNext <=
-          characters.filter((character) => !house || character.house === house)
-            .length && (
+          characters.filter(
+            (character) =>
+              character.house === '' || !house || character.house === house
+          ).length && (
           <button
             type="button"
             className="next cursor"
