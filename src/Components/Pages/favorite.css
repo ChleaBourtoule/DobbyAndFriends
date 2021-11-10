@@ -22,7 +22,11 @@ form {
 
 form select,
 span {
-  height: 2rem;
+  height: 4rem;
+  width: 12rem;
+  border-radius: 25px;
+  text-align: center;
+  font-size: larger;
 }
 
 form span {

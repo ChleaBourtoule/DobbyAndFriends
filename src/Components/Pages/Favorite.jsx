@@ -88,7 +88,12 @@ const Favorite = () => {
         <form>
           <div>
             <span>House:</span>
-            <select name="house" id="" onChange={(e) => handleChange(e)}>
+            <select
+              className="cursor"
+              name="house"
+              id=""
+              onChange={(e) => handleChange(e)}
+            >
               <option selected>Please Select</option>
               {house.map((el) => (
                 <option key={el} value={el}>
@@ -101,7 +106,12 @@ const Favorite = () => {
           <div>
             <span>Species:</span>
 
-            <select name="species" id="" onChange={(e) => handleChange(e)}>
+            <select
+              className="cursor"
+              name="species"
+              id=""
+              onChange={(e) => handleChange(e)}
+            >
               <option selected>Please Select</option>
               {specy.map((el) => (
                 <option key={el} value={el}>
@@ -114,7 +124,12 @@ const Favorite = () => {
           <div>
             <span>Ancestry:</span>
 
-            <select name="ancestry" id="" onChange={(e) => handleChange(e)}>
+            <select
+              className="cursor"
+              name="ancestry"
+              id=""
+              onChange={(e) => handleChange(e)}
+            >
               <option selected>Please Select</option>
               {ancestry.map((el) => (
                 <option key={el} value={el}>
