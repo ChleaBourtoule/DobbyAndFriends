@@ -13,12 +13,16 @@ function App() {
     <div>
       <Header />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/quiz" component={Quiz} />
-        <Route exact path="/library" component={Library} />
-        <Route exact path="/quiz/start" component={QuizStart} />
+        <Route exact path="/DobbyAnfFriends/" component={Home} />
+        <Route exact path="/DobbyAnfFriends/quiz/" component={Quiz} />
+        <Route exact path="/DobbyAnfFriends/library/" component={Library} />
+        <Route
+          exact
+          path="/DobbyAnfFriends/quiz/start/"
+          component={QuizStart}
+        />
         <Route path="*">
-          <Redirect exact to="/" />
+          <Redirect exact to="/DobbyAnfFriends/" />
         </Route>
       </Switch>
     </div>
