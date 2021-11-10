@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DobbyAndFriends/static/css/main.2e4cb8f3.chunk.css",
-    "main.js": "/DobbyAndFriends/static/js/main.d3e80e43.chunk.js",
-    "main.js.map": "/DobbyAndFriends/static/js/main.d3e80e43.chunk.js.map",
+    "main.js": "/DobbyAndFriends/static/js/main.9571450f.chunk.js",
+    "main.js.map": "/DobbyAndFriends/static/js/main.9571450f.chunk.js.map",
     "runtime-main.js": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js",
     "runtime-main.js.map": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js.map",
-    "static/js/2.5f83a734.chunk.js": "/DobbyAndFriends/static/js/2.5f83a734.chunk.js",
-    "static/js/2.5f83a734.chunk.js.map": "/DobbyAndFriends/static/js/2.5f83a734.chunk.js.map",
+    "static/js/2.01128b60.chunk.js": "/DobbyAndFriends/static/js/2.01128b60.chunk.js",
+    "static/js/2.01128b60.chunk.js.map": "/DobbyAndFriends/static/js/2.01128b60.chunk.js.map",
     "index.html": "/DobbyAndFriends/index.html",
     "static/css/main.2e4cb8f3.chunk.css.map": "/DobbyAndFriends/static/css/main.2e4cb8f3.chunk.css.map",
-    "static/js/2.5f83a734.chunk.js.LICENSE.txt": "/DobbyAndFriends/static/js/2.5f83a734.chunk.js.LICENSE.txt",
+    "static/js/2.01128b60.chunk.js.LICENSE.txt": "/DobbyAndFriends/static/js/2.01128b60.chunk.js.LICENSE.txt",
     "static/media/quiz.css": "/DobbyAndFriends/static/media/Albus.57397364.jpg",
     "static/media/HarryShots.52d1d724.mp4": "/DobbyAndFriends/static/media/HarryShots.52d1d724.mp4",
     "static/media/ghostGryffindor.41cbfc23.png": "/DobbyAndFriends/static/media/ghostGryffindor.41cbfc23.png",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.92fa3fcb.js",
-    "static/js/2.5f83a734.chunk.js",
+    "static/js/2.01128b60.chunk.js",
     "static/css/main.2e4cb8f3.chunk.css",
-    "static/js/main.d3e80e43.chunk.js"
+    "static/js/main.9571450f.chunk.js"
   ]
 }
