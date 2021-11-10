@@ -111,27 +111,34 @@
   .flip-card {
     background-color: transparent;
     width: 45vw;
-    height: 55vh;
+    height: 58vh;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin: 2rem 2rem;
+  }
+
+  .flip-card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .card img {
     width: 8rem;
     height: 10rem;
-    margin-left: 1rem;
     border-radius: 10px;
-    margin-top: 2rem;
   }
 
   .card {
     flex-direction: column;
   }
 
-  .flip-card-back .card-details {
+  .flip-card-back {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20% 10% 10% 0;
+  }
+
+  .flip-card-front .card-details h2 {
+    text-align: center;
   }
 }
