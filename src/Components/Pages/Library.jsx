@@ -17,7 +17,7 @@ function Library() {
     color: '#740001',
   };
   const [characters, setCharacters] = useState([]);
-  const [house, setHouse] = useState('');
+  const [house, setHouse] = useState('null');
   const [font, setFont] = useState(libraryFont);
   const [firstNext, setFirstNext] = useState(0);
   const [secondNext, setSecondNext] = useState(10);
@@ -75,12 +75,12 @@ function Library() {
         <div className="house-container">
           <div
             onClick={() => {
-              switchHouse(`""`);
+              switchHouse('');
               setFont(homeless);
               setFirstNext(0);
               setSecondNext(10);
             }}
-            onKeyPress={() => switchHouse(`""`)}
+            onKeyPress={() => switchHouse('')}
             role="presentation"
           >
             <div>
@@ -187,7 +187,9 @@ function Library() {
             {characters
               .filter(
                 (character) =>
-                  character.house === '' || !house || character.house === house
+                  house === 'null' ||
+                  character.house === !house ||
+                  character.house === house
               )
               .slice(firstNext, secondNext)
               .map((character) => (
@@ -221,8 +223,8 @@ function Library() {
               {secondNext <=
                 characters.filter(
                   (character) =>
-                    character.house === '' ||
-                    !house ||
+                    character.house === 'null' ||
+                    character.house === !house ||
                     character.house === house
                 ).length && (
                 <button
@@ -241,7 +243,7 @@ function Library() {
               type="button"
               className="next cursor"
               onClick={() => {
-                switchHouse(``);
+                switchHouse('null');
                 setFont(gryffindorFont);
                 setFirstNext(0);
                 setSecondNext(10);
