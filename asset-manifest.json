@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/DobbyAndFriends/static/css/main.2e4cb8f3.chunk.css",
-    "main.js": "/DobbyAndFriends/static/js/main.4acfd133.chunk.js",
-    "main.js.map": "/DobbyAndFriends/static/js/main.4acfd133.chunk.js.map",
+    "main.js": "/DobbyAndFriends/static/js/main.d3e80e43.chunk.js",
+    "main.js.map": "/DobbyAndFriends/static/js/main.d3e80e43.chunk.js.map",
     "runtime-main.js": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js",
     "runtime-main.js.map": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js.map",
     "static/js/2.5f83a734.chunk.js": "/DobbyAndFriends/static/js/2.5f83a734.chunk.js",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.92fa3fcb.js",
     "static/js/2.5f83a734.chunk.js",
     "static/css/main.2e4cb8f3.chunk.css",
-    "static/js/main.4acfd133.chunk.js"
+    "static/js/main.d3e80e43.chunk.js"
   ]
 }
