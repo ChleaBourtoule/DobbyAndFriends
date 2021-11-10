@@ -224,7 +224,7 @@ function Library() {
               {secondNext <=
                 characters.filter(
                   (character) =>
-                    character.house === 'null' ||
+                    house === 'null' ||
                     character.house === !house ||
                     character.house === house
                 ).length && (
