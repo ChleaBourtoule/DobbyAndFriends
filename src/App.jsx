@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import QuizStart from './Components/Pages/Quiz/QuizStart';
 import Quiz from './Components/Pages/Quiz/Quiz';
 import Header from './Components/Header';
 import Library from './Components/Pages/Library';
@@ -12,11 +13,16 @@ function App() {
     <div>
       <Header />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/quiz" component={Quiz} />
-        <Route path="/library" component={Library} />
+        <Route exact path="/DobbyAnfFriends/" component={Home} />
+        <Route exact path="/DobbyAnfFriends/quiz/" component={Quiz} />
+        <Route exact path="/DobbyAnfFriends/library/" component={Library} />
+        <Route
+          exact
+          path="/DobbyAnfFriends/quiz/start/"
+          component={QuizStart}
+        />
         <Route path="*">
-          <Redirect exact to="/" />
+          <Redirect exact to="/DobbyAnfFriends/" />
         </Route>
       </Switch>
     </div>

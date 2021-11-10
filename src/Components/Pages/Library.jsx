@@ -86,7 +86,7 @@ function Library() {
               alt="hufflepuff logo"
               height="150px"
             />
-            <img className="ghost" src={ghostGryffindor} alt="ghost" />
+            <img className="ghost cursor" src={ghostGryffindor} alt="ghost" />
           </div>
         </div>
         <div
@@ -108,7 +108,7 @@ function Library() {
               height="150px"
             />
             <img
-              className="ghost"
+              className="ghost cursor"
               src={ghostHufflepuff}
               alt="ghost"
               height="80px"
@@ -133,7 +133,7 @@ function Library() {
               alt="ravenclaw logo"
               height="150px"
             />
-            <img className="ghost" src={ghostRavenclaw} alt="ghost" />
+            <img className="ghost cursor" src={ghostRavenclaw} alt="ghost" />
           </div>
         </div>
         <div
@@ -154,7 +154,7 @@ function Library() {
               alt="slytherin logo"
               height="150px"
             />
-            <img className="ghost" src={ghostSlytherin} alt="ghost" />
+            <img className="ghost cursor" src={ghostSlytherin} alt="ghost" />
           </div>
         </div>
       </div>
