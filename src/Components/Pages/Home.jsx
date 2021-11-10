@@ -10,7 +10,7 @@ import videoHome from '../../assets/videos/HarryShots.mp4';
 const Home = () => {
   return (
     <div className="home">
-      <div className="home-video-div">
+      <div className="home-div-video">
         <h1 className="title">Welcome to Hogwarts</h1>
 
         <ReactPlayer
@@ -26,7 +26,7 @@ const Home = () => {
       </div>
 
       <section className="home-section-library">
-        <div className="home-div-texte-library">
+        <div className="home-div-library-texte">
           <h3>Discover the library</h3>
           <p>
             &quot;It matters not what somebody is born but what they grow to
@@ -44,7 +44,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="home-div-video-library">
+        <div className="home-div-library-video">
           <ReactPlayer
             url={videoHomeLibrary}
             volume="1"
@@ -57,7 +57,7 @@ const Home = () => {
       </section>
 
       <section className="home-section-quizz">
-        <div className="home-div-video-quizz">
+        <div className="home-div-quizz-video">
           <ReactPlayer
             url={videoHomeQuizz}
             volume="1"
@@ -68,7 +68,7 @@ const Home = () => {
           />
         </div>
 
-        <div className="home-div-texte-quizz">
+        <div className="home-div-quizz-texte">
           <h3>Discover the quizz</h3>
           <p>
             Time flies and Harry Potter&apos;s fans stay loyal. J.K. Rowling
@@ -86,7 +86,7 @@ const Home = () => {
       </section>
 
       <section className="home-section-battle">
-        <div className="home-div-texte-battle">
+        <div className="home-div-battle-texte">
           <h3>Discover the battle</h3>
           <p>
             &quot;It matters not what somebody is born but what they grow to
@@ -104,7 +104,7 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="home-div-video-battle">
+        <div className="home-div-battle-video">
           <ReactPlayer
             url={videoHomeBattle}
             volume="1"

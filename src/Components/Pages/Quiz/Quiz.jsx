@@ -1,4 +1,3 @@
-import React from 'react';
 import './quiz.css';
 import { NavLink } from 'react-router-dom';
 
