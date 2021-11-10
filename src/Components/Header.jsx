@@ -42,6 +42,15 @@ const Header = () => (
           Library
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          className="cursor nav-link"
+          activeClassName="active"
+          to="/favorite"
+        >
+          Your Character
+        </NavLink>
+      </li>
     </ul>
   </div>
 );
