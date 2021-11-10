@@ -71,166 +71,187 @@ function Library() {
   return (
     <div id="library" className="library">
       <h1 className="title">Harry Potter&apos;s characters</h1>
-      <div className="house-container">
-        <div
-          onClick={() => {
-            switchHouse(`""`);
-            setFont(homeless);
-            setFirstNext(0);
-            setSecondNext(10);
-          }}
-          onKeyPress={() => switchHouse(`""`)}
-          role="presentation"
-        >
-          <div>
-            <img
-              id="homelessImg"
-              src={homelessLogo}
-              alt="homeless logo"
-              height="150px"
-            />
-          </div>
-        </div>
-        <div
-          onClick={() => {
-            switchHouse('Gryffindor');
-            setFont(gryffindorFont);
-            setFirstNext(0);
-            setSecondNext(10);
-          }}
-          onKeyPress={() => switchHouse('Gryffindor')}
-          role="presentation"
-        >
-          <div>
-            <img
-              className="house"
-              id="gryffindorImg"
-              src={gryffindorLogo}
-              alt="hufflepuff logo"
-              height="150px"
-            />
-            <img className="ghost" src={ghostGryffindor} alt="ghost" />
-          </div>
-        </div>
-        <div
-          onClick={() => {
-            switchHouse('Hufflepuff');
-            setFont(hufflepuffFont);
-            setFirstNext(0);
-            setSecondNext(10);
-          }}
-          onKeyPress={() => switchHouse('Hufflepuff')}
-          role="presentation"
-        >
-          <div>
-            <img
-              className="house"
-              id="hufflepuffImg"
-              src={hufflepuffLogo}
-              alt="hufflepuff logo"
-              height="150px"
-            />
-            <img
-              className="ghost"
-              src={ghostHufflepuff}
-              alt="ghost"
-              height="80px"
-            />
-          </div>
-        </div>
-        <div
-          onClick={() => {
-            switchHouse('Ravenclaw');
-            setFont(ravenclawFont);
-            setFirstNext(0);
-            setSecondNext(10);
-          }}
-          onKeyPress={() => switchHouse('Ravenclaw')}
-          role="presentation"
-        >
-          <div>
-            <img
-              className="house"
-              id="ravenclawImg"
-              src={ravenclawLogo}
-              alt="ravenclaw logo"
-              height="150px"
-            />
-            <img className="ghost" src={ghostRavenclaw} alt="ghost" />
-          </div>
-        </div>
-        <div
-          onClick={() => {
-            switchHouse('Slytherin');
-            setFont(slytherinFont);
-            setFirstNext(0);
-            setSecondNext(10);
-          }}
-          onKeyPress={() => switchHouse('Slytherin')}
-          role="presentation"
-        >
-          <div>
-            <img
-              className="house"
-              id="slytherinImg"
-              src={slytherinLogo}
-              alt="slytherin logo"
-              height="150px"
-            />
-            <img className="ghost" src={ghostSlytherin} alt="ghost" />
-          </div>
-        </div>
-      </div>
-      <div className="cards-container">
-        {characters
-          .filter(
-            (character) =>
-              character.house === '' || !house || character.house === house
-          )
-          .slice(firstNext, secondNext)
-          .map((character) => (
-            <Character
-              name={character.name}
-              dateOfBirth={character.dateOfBirth}
-              species={character.species}
-              house={character.house}
-              image={character.image}
-              wand={character.wand}
-              patronus={character.patronus}
-              ancestry={character.ancestry}
-              font={font}
-            />
-          ))}
-      </div>
-      <div className="button">
-        {firstNext > 0 && (
-          <button
-            type="button"
-            className="next cursor"
+      <div className="library-container">
+        <div className="house-container">
+          <div
             onClick={() => {
-              setFirstNext(firstNext - 10);
-              setSecondNext(secondNext - 10);
+              switchHouse(`""`);
+              setFont(homeless);
+              setFirstNext(0);
+              setSecondNext(10);
             }}
+            onKeyPress={() => switchHouse(`""`)}
+            role="presentation"
           >
-            Previous 10
-          </button>
-        )}
-        {secondNext <=
-          characters.filter(
-            (character) =>
-              character.house === '' || !house || character.house === house
-          ).length && (
-          <button
-            type="button"
-            className="next cursor"
+            <div>
+              <img
+                id="homelessImg"
+                src={homelessLogo}
+                alt="homeless logo"
+                height="150px"
+              />
+            </div>
+          </div>
+          <div
             onClick={() => {
-              setFirstNext(firstNext + 10);
-              setSecondNext(secondNext + 10);
+              switchHouse('Gryffindor');
+              setFont(gryffindorFont);
+              setFirstNext(0);
+              setSecondNext(10);
             }}
+            onKeyPress={() => switchHouse('Gryffindor')}
+            role="presentation"
           >
-            Next 10
-          </button>
-        )}
+            <div>
+              <img
+                className="house"
+                id="gryffindorImg"
+                src={gryffindorLogo}
+                alt="hufflepuff logo"
+                height="150px"
+              />
+              <img className="ghost" src={ghostGryffindor} alt="ghost" />
+            </div>
+          </div>
+          <div
+            onClick={() => {
+              switchHouse('Hufflepuff');
+              setFont(hufflepuffFont);
+              setFirstNext(0);
+              setSecondNext(10);
+            }}
+            onKeyPress={() => switchHouse('Hufflepuff')}
+            role="presentation"
+          >
+            <div>
+              <img
+                className="house"
+                id="hufflepuffImg"
+                src={hufflepuffLogo}
+                alt="hufflepuff logo"
+                height="150px"
+              />
+              <img
+                className="ghost"
+                src={ghostHufflepuff}
+                alt="ghost"
+                height="80px"
+              />
+            </div>
+          </div>
+          <div
+            onClick={() => {
+              switchHouse('Ravenclaw');
+              setFont(ravenclawFont);
+              setFirstNext(0);
+              setSecondNext(10);
+            }}
+            onKeyPress={() => switchHouse('Ravenclaw')}
+            role="presentation"
+          >
+            <div>
+              <img
+                className="house"
+                id="ravenclawImg"
+                src={ravenclawLogo}
+                alt="ravenclaw logo"
+                height="150px"
+              />
+              <img className="ghost" src={ghostRavenclaw} alt="ghost" />
+            </div>
+          </div>
+          <div
+            onClick={() => {
+              switchHouse('Slytherin');
+              setFont(slytherinFont);
+              setFirstNext(0);
+              setSecondNext(10);
+            }}
+            onKeyPress={() => switchHouse('Slytherin')}
+            role="presentation"
+          >
+            <div>
+              <img
+                className="house"
+                id="slytherinImg"
+                src={slytherinLogo}
+                alt="slytherin logo"
+                height="150px"
+              />
+              <img className="ghost" src={ghostSlytherin} alt="ghost" />
+            </div>
+          </div>
+        </div>
+        <div className="card-button-container">
+          <div className="cards-container">
+            {characters
+              .filter(
+                (character) =>
+                  character.house === '' || !house || character.house === house
+              )
+              .slice(firstNext, secondNext)
+              .map((character) => (
+                <Character
+                  name={character.name}
+                  dateOfBirth={character.dateOfBirth}
+                  species={character.species}
+                  house={character.house}
+                  image={character.image}
+                  wand={character.wand}
+                  patronus={character.patronus}
+                  ancestry={character.ancestry}
+                  font={font}
+                />
+              ))}
+          </div>
+          <div className="btn_return">
+            <div className="button">
+              {firstNext > 0 && (
+                <button
+                  type="button"
+                  className="next cursor"
+                  onClick={() => {
+                    setFirstNext(firstNext - 10);
+                    setSecondNext(secondNext - 10);
+                  }}
+                >
+                  Previous 10
+                </button>
+              )}
+              {secondNext <=
+                characters.filter(
+                  (character) =>
+                    character.house === '' ||
+                    !house ||
+                    character.house === house
+                ).length && (
+                <button
+                  type="button"
+                  className="next cursor"
+                  onClick={() => {
+                    setFirstNext(firstNext + 10);
+                    setSecondNext(secondNext + 10);
+                  }}
+                >
+                  Next 10
+                </button>
+              )}
+            </div>
+            <button
+              type="button"
+              className="next cursor"
+              onClick={() => {
+                switchHouse(``);
+                setFont(gryffindorFont);
+                setFirstNext(0);
+                setSecondNext(10);
+              }}
+              onKeyPress={() => switchHouse(``)}
+            >
+              Return
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 .house-container div img {
-  margin-top: 40rem;
-  width: 20vw;
-  height: 45vh;
+  width: 7vw;
+  height: 15vh;
   transition: transform 0.2s;
 }
 
@@ -64,7 +63,13 @@ h1 {
 
 .house-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  float: left;
+  margin-left: 2rem;
+  bottom: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10rem;
 }
 
 .cards-container {
@@ -78,7 +83,6 @@ h1 {
 
 .ghost {
   position: relative;
-  left: 35px;
   opacity: 0;
   z-index: 0;
 }
@@ -108,11 +112,17 @@ h1 {
   justify-content: center;
 }
 
+.btn_return {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 12rem;
+}
+
 .next {
   padding: 10px 0;
-  width: 10%;
+  width: 10rem;
   font-size: 1.1rem;
-  margin: 5rem 1rem 3rem 1rem;
+  margin: 5rem 1rem 5rem 1rem;
   border-radius: 10px;
   background-color: white;
   color: black;
