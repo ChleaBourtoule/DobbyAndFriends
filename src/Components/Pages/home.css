@@ -136,7 +136,7 @@
   font-family: 'Harry Potter', sans-serif;
 }
 
-button {
+.home button {
   padding: 10px 0;
   width: 30%;
   font-size: 1.1rem;
@@ -149,7 +149,7 @@ button {
   transition: transform 0.5s;
 }
 
-button:hover {
+.home button:hover {
   background-color: black;
   color: white;
   transform: scale(1.2);
