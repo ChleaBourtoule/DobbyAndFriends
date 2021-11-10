@@ -17,7 +17,7 @@ function Library() {
     color: '#740001',
   };
   const [characters, setCharacters] = useState([]);
-  const [house, setHouse] = useState('null');
+  const [house, setHouse] = useState(null);
   const [font, setFont] = useState(libraryFont);
   const [firstNext, setFirstNext] = useState(0);
   const [secondNext, setSecondNext] = useState(10);
@@ -188,7 +188,7 @@ function Library() {
             {characters
               .filter(
                 (character) =>
-                  house === 'null' ||
+                  house === null ||
                   character.house === !house ||
                   character.house === house
               )
@@ -224,7 +224,7 @@ function Library() {
               {secondNext <=
                 characters.filter(
                   (character) =>
-                    house === 'null' ||
+                    house === null ||
                     character.house === !house ||
                     character.house === house
                 ).length && (
@@ -244,7 +244,7 @@ function Library() {
               type="button"
               className="next cursor"
               onClick={() => {
-                switchHouse('null');
+                switchHouse(null);
                 setFont(gryffindorFont);
                 setFirstNext(0);
                 setSecondNext(10);
