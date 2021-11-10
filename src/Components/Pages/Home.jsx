@@ -38,7 +38,7 @@ const Home = () => {
             characters of Harry Potter&apos;s series.
           </p>
           <button type="button" className="cursor">
-            <NavLink to="/DobbyAnfFriends/library/" classname="nav-link">
+            <NavLink to="/DobbyAndFriends/library/" classname="nav-link">
               Go to library
             </NavLink>
           </button>
@@ -78,7 +78,7 @@ const Home = () => {
             complete fans will be able to accomplish.
           </p>
           <button type="button" className="cursor">
-            <NavLink classname="nav-link" to="/DobbyAnfFriends/quiz/">
+            <NavLink classname="nav-link" to="/DobbyAndFriends/quiz/">
               Go to quiz
             </NavLink>
           </button>
@@ -98,7 +98,7 @@ const Home = () => {
             characters of Harry Potter&apos;s series.
           </p>
           <button type="button" className="cursor">
-            <NavLink classname="nav-link" to="/DobbyAnfFriends/battle/">
+            <NavLink classname="nav-link" to="/DobbyAndFriends/battle/">
               Go to battle
             </NavLink>
           </button>
