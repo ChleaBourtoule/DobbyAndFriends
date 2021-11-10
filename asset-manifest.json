@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/DobbyAndFriends/static/css/main.2e4cb8f3.chunk.css",
-    "main.js": "/DobbyAndFriends/static/js/main.40986f94.chunk.js",
-    "main.js.map": "/DobbyAndFriends/static/js/main.40986f94.chunk.js.map",
+    "main.css": "/DobbyAndFriends/static/css/main.c5229ac7.chunk.css",
+    "main.js": "/DobbyAndFriends/static/js/main.0b5a5ace.chunk.js",
+    "main.js.map": "/DobbyAndFriends/static/js/main.0b5a5ace.chunk.js.map",
     "runtime-main.js": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js",
     "runtime-main.js.map": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js.map",
     "static/js/2.01128b60.chunk.js": "/DobbyAndFriends/static/js/2.01128b60.chunk.js",
     "static/js/2.01128b60.chunk.js.map": "/DobbyAndFriends/static/js/2.01128b60.chunk.js.map",
     "index.html": "/DobbyAndFriends/index.html",
-    "static/css/main.2e4cb8f3.chunk.css.map": "/DobbyAndFriends/static/css/main.2e4cb8f3.chunk.css.map",
+    "static/css/main.c5229ac7.chunk.css.map": "/DobbyAndFriends/static/css/main.c5229ac7.chunk.css.map",
     "static/js/2.01128b60.chunk.js.LICENSE.txt": "/DobbyAndFriends/static/js/2.01128b60.chunk.js.LICENSE.txt",
     "static/media/quiz.css": "/DobbyAndFriends/static/media/Albus.57397364.jpg",
     "static/media/HarryShots.52d1d724.mp4": "/DobbyAndFriends/static/media/HarryShots.52d1d724.mp4",
@@ -22,6 +22,7 @@
     "static/media/have-you-seen-this-wizard.2b9687fa.jpg": "/DobbyAndFriends/static/media/have-you-seen-this-wizard.2b9687fa.jpg",
     "static/media/home_video_section_battle.75104439.mp4": "/DobbyAndFriends/static/media/home_video_section_battle.75104439.mp4",
     "static/media/home_video_section_quizz.39e6dcb9.mp4": "/DobbyAndFriends/static/media/home_video_section_quizz.39e6dcb9.mp4",
+    "static/media/homeles-logo.e5c4d829.png": "/DobbyAndFriends/static/media/homeles-logo.e5c4d829.png",
     "static/media/hufflepuff.dc9c2866.png": "/DobbyAndFriends/static/media/hufflepuff.dc9c2866.png",
     "static/media/logo-navbar.a7c1ea8a.png": "/DobbyAndFriends/static/media/logo-navbar.a7c1ea8a.png",
     "static/media/quizStart.css": "/DobbyAndFriends/static/media/quiz-bg.928f99f0.jpg",
@@ -33,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.92fa3fcb.js",
     "static/js/2.01128b60.chunk.js",
-    "static/css/main.2e4cb8f3.chunk.css",
-    "static/js/main.40986f94.chunk.js"
+    "static/css/main.c5229ac7.chunk.css",
+    "static/js/main.0b5a5ace.chunk.js"
   ]
 }
