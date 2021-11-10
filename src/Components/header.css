@@ -91,3 +91,44 @@ a {
 .nav-bar a:focus::after {
   background-color: rgb(255, 255, 255, 0.5);
 }
+
+/* -------------------------------------VERSION MOBILE------------------------------------------ */
+
+/* ----------------------******-----VERSION MOBILE min-width: 200px and max 650px -------*******------------------------------ */
+@media only screen and (min-width: 200px) and (max-width: 650px) {
+  .header {
+    height: 10rem;
+    background-color: rgb(0, 0, 0, 1);
+    display: flex;
+
+    /* align-items: flex-end; */
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    /* flex-wrap: wrap; */
+    align-items: center;
+  }
+
+  .nav-bar {
+    list-style: none;
+
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  .sup-img {
+    display: none;
+  }
+
+  .navbar-burger {
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: inherit;
+  }
+}

@@ -64,7 +64,8 @@ const Home = () => {
             muted="true"
             playing="true"
             loop="true"
-            width="650px"
+            width="90%"
+            height="100%"
           />
         </div>
 
@@ -111,7 +112,8 @@ const Home = () => {
             muted="true"
             playing="true"
             loop="true"
-            width="650px"
+            width="100%"
+            height="80%"
           />
         </div>
       </section>

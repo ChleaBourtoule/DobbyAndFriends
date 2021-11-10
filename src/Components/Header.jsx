@@ -11,7 +11,7 @@ const Header = () => (
       </NavLink>
     </div>
     <div>
-      <img src={solemnlySwear} alt="I solemnly swear..." />
+      <img classename="sup-img" src={solemnlySwear} alt="I solemnly swear..." />
     </div>
     <ul className="nav-bar">
       <li>
@@ -42,6 +42,7 @@ const Header = () => (
           Library
         </NavLink>
       </li>
+      {/* <button className="navbar-burger" type="button" /> */}
     </ul>
   </div>
 );
