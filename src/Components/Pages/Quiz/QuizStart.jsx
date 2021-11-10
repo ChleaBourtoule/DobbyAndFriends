@@ -1,8 +1,15 @@
 import React from 'react';
+// import axios from 'axios';
 import './quizStart.css';
 import photoTest from '../../../assets/harryPotterPhotoBomb.jpg';
 
 const QuizStart = () => {
+  /*   const [characterName, setCharacterName] = useState('this character');
+  const [characterImg, setCharacterImg] = useState(photoTest);
+  const [result, setResult] = useState([]);
+  setCharacterName('this Character');
+  setCharacterImg(photoTest); */
+
   return (
     <div className="quiz-start">
       <div className="quiz-rules">

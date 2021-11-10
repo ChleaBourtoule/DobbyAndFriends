@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.home-video-div {
+.home-div-video {
   height: 100%;
   width: 100%;
   position: relative;
@@ -23,7 +23,7 @@
   object-fit: cover;
 }
 
-.home-video-div h1 {
+.home-div-video h1 {
   z-index: 1;
 }
 
@@ -38,44 +38,20 @@
   padding: 5rem;
 }
 
-.home-div-texte-library {
+.home-div-library-texte {
   width: 550px;
   padding-right: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
-  /* grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2; */
 }
 
-.home-div-texte-library h3 {
+.home-div-library-texte h3 {
   padding-top: 2rem;
   text-align: center;
   font-size: 3rem;
   font-family: 'Harry Potter', sans-serif;
 }
-
-/* .home-div-texte-library button {
-  padding: 10px 0;
-  width: 30%;
-  font-size: 1.1rem;
-  margin: 0 auto 3rem auto;
-  border-radius: 10px;
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  border: black solid 2px;
-  transition: transform 0.5s;
-} */
-
-/* .home-div-texte-library button:hover {
-  background-color: black;
-  color: white;
-  transform: scale(1.2);
-} */
 
 .home-div-video-library {
   grid-column-start: 2;
@@ -96,21 +72,24 @@
 
 .home-div-texte-quizz {
   width: 100%;
+}
 
-  /* padding-right: 25px; */
+.home-div-quizz-texte {
+  width: 550px;
+  padding-right: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.home-div-texte-quizz h3 {
+.home-div-quizz-texte h3 {
   padding-top: 2rem;
   text-align: center;
   font-size: 3rem;
   font-family: 'Harry Potter', sans-serif;
 }
 
-.home-div-video-quizz {
+.home-div-quizz-video {
   width: 100%;
   grid-row-start: 1;
   grid-row-end: 1;
@@ -125,7 +104,7 @@
   padding: 5rem;
 }
 
-.home-div-texte-battle {
+.home-div-battle-texte {
   width: 550px;
   padding-right: 25px;
   display: flex;
@@ -133,7 +112,7 @@
   justify-content: space-around;
 }
 
-.home-div-texte-battle h3 {
+.home-div-battle-texte h3 {
   padding-top: 2rem;
   text-align: center;
   font-size: 3rem;
@@ -159,7 +138,7 @@
   transform: scale(1.2);
 }
 
-.home-div-video-battle {
+.home-div-battle-video {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;

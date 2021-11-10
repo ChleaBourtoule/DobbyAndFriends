@@ -6,7 +6,7 @@ import solemnlySwear from '../assets/solemnly-swear.png';
 const Header = () => (
   <div className="header">
     <div>
-      <NavLink classname="nav-link" exact to="/DobbyAnfFriends/">
+      <NavLink className="nav-link" exact to="/">
         <img className="cursor" src={logoNavbar} alt="Dobby" />
       </NavLink>
     </div>
@@ -19,7 +19,7 @@ const Header = () => (
           className="cursor nav-link"
           activeClassName="active"
           exact
-          to="/DobbyAnfFriends/"
+          to="/"
         >
           Home
         </NavLink>
@@ -28,7 +28,7 @@ const Header = () => (
         <NavLink
           className="cursor nav-link"
           activeClassName="active"
-          to="/DobbyAnfFriends/quiz/"
+          to="/quiz"
         >
           Quiz
         </NavLink>
@@ -37,12 +37,20 @@ const Header = () => (
         <NavLink
           className="cursor nav-link"
           activeClassName="active"
-          to="/DobbyAnfFriends/library/"
+          to="/library"
         >
           Library
         </NavLink>
       </li>
-      {/* <button className="navbar-burger" type="button" /> */}
+      <li>
+        <NavLink
+          className="cursor nav-link"
+          activeClassName="active"
+          to="/favorite"
+        >
+          Your Character
+        </NavLink>
+      </li>
     </ul>
   </div>
 );
