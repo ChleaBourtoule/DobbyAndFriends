@@ -5,8 +5,8 @@
 .card {
   font-size: 1.6rem;
   color: white;
-  width: 30%;
-  height: 20%;
+  width: 45%;
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -93,4 +93,45 @@
 .wand li {
   padding-left: 1rem;
   font-size: 1.2rem;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 691px) and (max-width: 1310px) {
+  .flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 250px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .flip-card {
+    background-color: transparent;
+    width: 45vw;
+    height: 55vh;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 2rem 2rem;
+  }
+
+  .card img {
+    width: 8rem;
+    height: 10rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .flip-card-back .card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20% 10% 10% 0;
+  }
 }
