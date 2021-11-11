@@ -17,19 +17,16 @@ const QuizStart = () => {
   const [questionNb, setQuestionNb] = useState(0);
   const [trueAnswer, setTrueAnswer] = useState(false);
 
-  useEffect(() => {
-    axios
+  useEffect(async () => {
+    await axios
       .get('https://hp-api.herokuapp.com/api/characters')
       .then((res) => res.data)
-      .then((data) => setCharacters(data));
+      .then((data) =>
+        setCharacters(
+          data.filter((character) => character.house && character.image)
+        )
+      );
     console.log(characters);
-  }, []);
-
-  useEffect(() => {
-    setCharacters(
-      characters.filter((character) => character.house && character.image)
-    );
-    console.log(characters, `Console log useEffect`);
   }, []);
 
   useEffect(() => {
