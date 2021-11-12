@@ -27,6 +27,22 @@
   margin-bottom: 5vh;
 }
 
+#start {
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  transition: transform 0.3s;
+}
+
+#start:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+}
+
 .img-question-answers {
   width: 80%;
   height: 80%;
@@ -44,7 +60,8 @@
 .img img {
   background-color: black;
   padding: 5px;
-  height: 50vh;
+  height: 400px;
+  width: 300px;
 }
 
 .question-answers {
@@ -78,6 +95,7 @@
   align-items: center;
   transition: transform 0.3s;
   position: relative;
+  font-size: 1.4rem;
 }
 
 .answer img {

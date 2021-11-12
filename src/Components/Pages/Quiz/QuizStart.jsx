@@ -1,21 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './quizStart.css';
-import photoTest from '../../../assets/harryPotterPhotoBomb.jpg';
-import gryffindorLogo from '../../../assets/gryffindor.png';
-import ravenclawLogo from '../../../assets/ravenclaw.png';
-import hufflepuffLogo from '../../../assets/hufflepuff.png';
-import slytherinLogo from '../../../assets/slytherin.png';
+import QuestionAnswer from './QuestionAnswers';
 
 const QuizStart = () => {
   const [characters, setCharacters] = useState([{}]);
   const [randomNb, setRandomNb] = useState(0);
   const [characterName, setCharacterName] = useState('this character');
-  const [characterImg, setCharacterImg] = useState(photoTest);
+  const [characterImg, setCharacterImg] = useState('photoTest');
   const [characterHouse, setCharacterHouse] = useState('');
   const [result, setResult] = useState(0);
   const [questionNb, setQuestionNb] = useState(0);
   const [trueAnswer, setTrueAnswer] = useState(false);
+  const [start, setStart] = useState(false);
 
   useEffect(async () => {
     await axios
@@ -25,21 +22,20 @@ const QuizStart = () => {
         setCharacters(
           data.filter((character) => character.house && character.image)
         )
-      );
-    console.log(characters);
+      )
+      .catch((error) => console.log(error));
   }, []);
 
   useEffect(() => {
     const random = Math.floor(Math.random() * characters.length);
     setRandomNb(random);
-    console.log(randomNb);
     setCharacterName(characters[randomNb].name);
     setCharacterHouse(characters[randomNb].house);
     setCharacterImg(characters[randomNb].image);
     setTrueAnswer(false);
-  }, [questionNb]);
+  }, [start, questionNb]);
 
-  function isItRightAnswer(e) {
+  const isItRightAnswer = (e) => {
     if (e === characterHouse) {
       setResult(result + 1);
       setQuestionNb(questionNb + 1);
@@ -47,7 +43,8 @@ const QuizStart = () => {
     } else {
       setQuestionNb(questionNb + 1);
     }
-  }
+  };
+
   return (
     <div className="quiz-start">
       <div className="quiz-rules">
@@ -55,86 +52,23 @@ const QuizStart = () => {
           Answer 5 questions and find out how well you know Dobby&apos;s friends
         </h2>
       </div>
-
-      <div className="img-question-answers">
-        <div className="img">
-          <img src={!characterImg ? photoTest : characterImg} alt="" />
-        </div>
-
-        <div className="question-answers">
-          <div className="question">
-            <p>
-              Can you guess the house{' '}
-              {!characterName ? 'this character' : characterName} belongs to ?
-            </p>
-          </div>
-
-          <div className="answers">
-            <button
-              type="button"
-              id="button-1"
-              value="Gryffindor"
-              className={
-                trueAnswer ? 'answer cursor true-answer' : 'answer cursor'
-              }
-              onClick={(e) => isItRightAnswer(e.target.value)}
-            >
-              Gryffindor
-              <img
-                className="house"
-                id="gryffindorImg"
-                src={gryffindorLogo}
-                alt="hufflepuff logo"
-              />
-            </button>
-            <button
-              type="button"
-              id="button-2"
-              value="Ravenclaw"
-              className="answer cursor"
-              onClick={(e) => isItRightAnswer(e.target.value)}
-            >
-              Ravenclaw
-              <img
-                className="house"
-                id="ravenclawImg"
-                src={ravenclawLogo}
-                alt="ravenclaw logo"
-              />
-            </button>
-            <button
-              type="button"
-              id="button-3"
-              value="Hufflepuff"
-              className="answer cursor"
-              onClick={(e) => isItRightAnswer(e.target.value)}
-            >
-              Hufflepuff
-              <img
-                className="house"
-                id="hufflepuffImg"
-                src={hufflepuffLogo}
-                alt="hufflepuff logo"
-              />
-            </button>
-            <button
-              type="button"
-              id="button-4"
-              value="Slytherin"
-              className="answer cursor"
-              onClick={(e) => isItRightAnswer(e.target.value)}
-            >
-              Slytherin
-              <img
-                className="house"
-                id="slytherinImg"
-                src={slytherinLogo}
-                alt="slytherin logo"
-              />
-            </button>
-          </div>
-        </div>
-      </div>
+      {!start ? (
+        <button
+          className="cursor"
+          type="button"
+          id="start"
+          onClick={() => setStart(!start)}
+        >
+          Start
+        </button>
+      ) : (
+        <QuestionAnswer
+          isItRightAnswer={isItRightAnswer}
+          characterName={characterName}
+          characterImg={characterImg}
+          trueAnswer={trueAnswer}
+        />
+      )}
     </div>
   );
 };
