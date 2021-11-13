@@ -11,7 +11,7 @@ const Header = () => (
       </NavLink>
     </div>
     <div>
-      <img classename="sup-img" src={solemnlySwear} alt="I solemnly swear..." />
+      <img className="sup-img" src={solemnlySwear} alt="I solemnly swear..." />
     </div>
     <ul className="nav-bar">
       <li>
