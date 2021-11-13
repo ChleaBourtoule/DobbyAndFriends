@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './quizStart.css';
 import QuestionAnswer from './QuestionAnswers';
+import ResultPage from './ResultPage';
 
 const QuizStart = () => {
   const [characters, setCharacters] = useState([{}]);
@@ -46,28 +47,35 @@ const QuizStart = () => {
   };
 
   return (
-    <div className="quiz-start">
-      <div className="quiz-rules">
-        <h2>
-          Answer 5 questions and find out how well you know Dobby&apos;s friends
-        </h2>
-      </div>
-      {!start ? (
-        <button
-          className="cursor"
-          type="button"
-          id="start"
-          onClick={() => setStart(!start)}
-        >
-          Start
-        </button>
+    <div className="quiz-page">
+      {questionNb < 5 ? (
+        <div className="quiz-start">
+          <div className="quiz-rules">
+            <h2>
+              Answer 5 questions and find out how well you know Dobby&apos;s
+              friends
+            </h2>
+          </div>
+          {!start ? (
+            <button
+              className="cursor"
+              type="button"
+              id="start"
+              onClick={() => setStart(!start)}
+            >
+              Start
+            </button>
+          ) : (
+            <QuestionAnswer
+              isItRightAnswer={isItRightAnswer}
+              characterName={characterName}
+              characterImg={characterImg}
+              trueAnswer={trueAnswer}
+            />
+          )}
+        </div>
       ) : (
-        <QuestionAnswer
-          isItRightAnswer={isItRightAnswer}
-          characterName={characterName}
-          characterImg={characterImg}
-          trueAnswer={trueAnswer}
-        />
+        <ResultPage result={result} />
       )}
     </div>
   );
