@@ -190,18 +190,18 @@ function Library() {
         <div className="card-button-container">
           <div className="cards-container">
             {characters
-              // .filter(
-              //   (character) =>
-              //     house === null ||
-              //     character.house === !house ||
-              //     character.house === house
-              // )
+              .filter(
+                (character) =>
+                  house === null ||
+                  character.house === !house ||
+                  character.house === house
+              )
 
               .filter((character) =>
                 character.name.toUpperCase().includes(searchName.toUpperCase())
               )
 
-              // .slice(firstNext, secondNext)
+              .slice(firstNext, secondNext)
               .map((character) => (
                 <Character
                   name={character.name}
