@@ -30,15 +30,22 @@ const QuizStart = () => {
   }, []);
 
   useEffect(() => {
-    console.log(randomArray instanceof Array);
-    console.log(characters);
     if (characters.length > 1) {
-      while (randomArray.includes(random)) {
-        setRandom(Math.floor(Math.random() * characters.length));
+      for (let i = 0; i < 5; i += 1) {
+        console.log(randomArray);
+        console.log(random);
+        while (randomArray.includes(random)) {
+          setRandom(Math.floor(Math.random() * characters.length));
+        }
+        if (!randomArray.includes(random)) {
+          setRandomArray(randomArray.push(random));
+        }
       }
-      if (!randomArray.includes(random)) {
-        setRandomArray(randomArray.push(random));
-      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (characters.length > 1) {
       setRandomNb(randomArray[nbArray]);
       setNbArray(nbArray + 1);
       setCharacterName(characters[randomNb].name);
