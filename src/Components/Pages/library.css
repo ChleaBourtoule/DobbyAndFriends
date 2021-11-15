@@ -160,6 +160,11 @@
 }
 
 @media screen and (max-width: 690px) {
+  .button {
+    display: flex;
+    margin-top: 1rem;
+  }
+
   .btn_return {
     display: flex;
     flex-direction: column;
@@ -168,17 +173,13 @@
   }
 
   .house-container div img {
-    width: 17vw;
+    width: 15vw;
     height: 12vh;
   }
 
   .next {
-    width: 4.5rem;
-    font-size: 0.6rem;
-    margin: 2rem 1rem 0 1rem;
-  }
-
-  .next-return {
-    margin-bottom: 1rem;
+    width: 7rem;
+    font-size: 1rem;
+    margin: 2rem 1rem 1.5rem 1rem;
   }
 }
