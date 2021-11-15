@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './header.css';
+import ReactAudioPlayer from 'react-audio-player';
+import music from '../assets/music/music.ogg';
 import logoNavbar from '../assets/logo-navbar.png';
 import solemnlySwear from '../assets/solemnly-swear.png';
 
@@ -13,6 +15,11 @@ const Header = () => (
     <div>
       <img src={solemnlySwear} alt="I solemnly swear..." />
     </div>
+    <ReactAudioPlayer
+      src={music}
+      autoPlay
+      onPlay={() => console.log('onPlay')}
+    />
     <ul className="nav-bar">
       <li>
         <NavLink
