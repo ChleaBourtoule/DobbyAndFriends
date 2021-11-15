@@ -76,7 +76,6 @@ const Favorite = () => {
         break;
       default:
     }
-    console.log(e.target.value, e.target.name);
   }
 
   return (
