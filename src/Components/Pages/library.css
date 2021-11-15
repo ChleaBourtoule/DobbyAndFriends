@@ -163,10 +163,18 @@
   .btn_return {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .house-container div img {
+    width: 17vw;
+    height: 12vh;
   }
 
   .next {
-    margin: 2rem 1rem 1rem 1rem;
+    width: 4.5rem;
+    font-size: 0.6rem;
+    margin: 2rem 1rem 2rem 1rem;
   }
 }
