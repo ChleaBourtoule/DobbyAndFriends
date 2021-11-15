@@ -160,13 +160,26 @@
 }
 
 @media screen and (max-width: 690px) {
+  .button {
+    display: flex;
+    margin-top: 1rem;
+  }
+
   .btn_return {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+  }
+
+  .house-container div img {
+    width: 15vw;
+    height: 12vh;
   }
 
   .next {
-    margin: 2rem 1rem 1rem 1rem;
+    width: 7rem;
+    font-size: 1rem;
+    margin: 2rem 1rem 1.5rem 1rem;
   }
 }

@@ -16,8 +16,8 @@ const Home = () => {
         <ReactPlayer
           className="home-video"
           url={videoHome}
-          volume="1"
-          muted="true"
+          volume={1}
+          muted
           playing
           loop
           width="100%"
@@ -47,10 +47,10 @@ const Home = () => {
         <div className="home-div-library-video">
           <ReactPlayer
             url={videoHomeLibrary}
-            volume="1"
-            muted="true"
-            playing="true"
-            loop="true"
+            volume={1}
+            muted
+            playing
+            loop
             width="100%"
             height="100%"
           />
@@ -61,10 +61,10 @@ const Home = () => {
         <div className="home-div-quizz-video">
           <ReactPlayer
             url={videoHomeQuizz}
-            volume="1"
-            muted="true"
-            playing="true"
-            loop="true"
+            volume={1}
+            muted
+            playing
+            loop
             width="100%"
             height="100%"
           />
@@ -109,10 +109,10 @@ const Home = () => {
         <div className="home-div-battle-video">
           <ReactPlayer
             url={videoHomeBattle}
-            volume="1"
-            muted="true"
-            playing="true"
-            loop="true"
+            volume={1}
+            muted
+            playing
+            loop
             width="100%"
             height="80%"
           />

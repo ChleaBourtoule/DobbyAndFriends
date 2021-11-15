@@ -1,10 +1,11 @@
 import axios from 'axios';
+
 import { useEffect, useState } from 'react';
 import Character from '../Character';
 
 import './favorite.css';
 
-const Favorite = () => {
+const Favori = () => {
   const [characters, setCharacters] = useState([]);
   const [house, setHouse] = useState([]);
   const [specy, setSpecy] = useState([]);
@@ -27,6 +28,7 @@ const Favorite = () => {
 
   useEffect(() => {
     // Load house data from Characters
+
     for (let i = 0; i < characters.length; i += 1) {
       Object.entries(characters[i]).forEach((entry) => {
         if (entry[0] === 'house') {
@@ -76,7 +78,6 @@ const Favorite = () => {
         break;
       default:
     }
-    console.log(e.target.value, e.target.name);
   }
 
   return (
@@ -164,4 +165,4 @@ const Favorite = () => {
   );
 };
 
-export default Favorite;
+export default Favori;

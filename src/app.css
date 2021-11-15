@@ -13,8 +13,14 @@
   text-align: center;
   padding: 15rem 0;
   color: #d3a625;
-  font-size: 8rem;
+  font-size: 7rem;
   text-shadow: 30px 30px 20px black;
   border-radius: 10px;
   font-family: 'Harry Potter', sans-serif;
+}
+
+@media screen and (max-width: 690px) {
+  .title {
+    font-size: 4rem;
+  }
 }
