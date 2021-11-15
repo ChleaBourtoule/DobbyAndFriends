@@ -242,7 +242,7 @@ function Library() {
             </div>
             <button
               type="button"
-              className="next cursor"
+              className="next next-return cursor"
               onClick={() => {
                 switchHouse(null);
                 setFont(gryffindorFont);
