@@ -196,11 +196,9 @@ function Library() {
                   character.house === !house ||
                   character.house === house
               )
-
               .filter((character) =>
                 character.name.toUpperCase().includes(searchName.toUpperCase())
               )
-
               .slice(firstNext, secondNext)
               .map((character) => (
                 <Character
