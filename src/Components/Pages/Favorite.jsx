@@ -1,4 +1,5 @@
 import axios from 'axios';
+
 import { useEffect, useState } from 'react';
 import Character from '../Character';
 
@@ -16,7 +17,12 @@ const Favorite = () => {
   const speciesTemp = [];
   const ancestryTemp = [];
 
-  useEffect(async () => {
+
+const Favorite = () => {
+  const [characters, setCharacters] = useState([]);
+  const [house, setHouse] = useState([]);
+  const houseTemp = [];
+      useEffect(async () => {
     await axios
       .get('http://hp-api.herokuapp.com/api/characters')
       // 'http://hp-api.herokuapp.com/api/characters/house/gryffindor
@@ -27,6 +33,7 @@ const Favorite = () => {
 
   useEffect(() => {
     // Load house data from Characters
+
     for (let i = 0; i < characters.length; i += 1) {
       Object.entries(characters[i]).forEach((entry) => {
         if (entry[0] === 'house') {
