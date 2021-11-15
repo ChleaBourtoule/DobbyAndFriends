@@ -1,0 +1,133 @@
+.result-page {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url(../../../assets/final-score.jpg);
+  background-size: cover;
+  background-color: #fbeee6;
+  background-attachment: fixed;
+}
+
+.result-section {
+  height: 60vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: solid 3px black;
+}
+
+.result-page h2 {
+  display: inline-block;
+  padding: 8vh 0 4vh 0;
+  margin: 0;
+  font-size: 4rem;
+}
+
+.final-score-5-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 14vh;
+  width: 35vw;
+  text-align: center;
+}
+
+.final-score-5-div h3 {
+  font-size: 1.5rem;
+}
+
+.final-score-5-div p {
+  font-size: 1.5rem;
+}
+
+.final-score-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.final-score-div h3,
+.final-score-div p {
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.play-again-button {
+  width: 15vw;
+  height: 10vh;
+  background-color: firebrick;
+  color: floralwhite;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 4%;
+  border-radius: 2vh;
+  transition: transform 0.3s;
+}
+
+.play-again-button:hover {
+  transform: scale(1.1);
+}
+
+#harry-flying {
+  position: absolute;
+  height: 25vh;
+  left: 0;
+  top: 50vh;
+  animation-name: slideIn;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  transition: transform linear;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(19vw, -20vh);
+  }
+
+  20% {
+    transform: translate(19vw, -19vh);
+  }
+
+  30% {
+    transform: translate(19vw, -20vh);
+  }
+
+  40% {
+    transform: translate(19vw, -19vh);
+  }
+
+  50% {
+    transform: translate(19vw, -20vh);
+  }
+
+  60% {
+    transform: translate(67vw, 11vh);
+  }
+
+  70% {
+    transform: translate(67vw, 12vh);
+  }
+
+  80% {
+    transform: translate(67vw, 11vh);
+  }
+
+  90% {
+    transform: translate(67vw, 12vh);
+  }
+
+  100% {
+    transform: translate(150vw, -100vh);
+  }
+}
