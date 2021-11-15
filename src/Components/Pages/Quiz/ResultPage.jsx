@@ -1,13 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './resultPage.css';
+import { NavLink, useLocation } from 'react-router-dom';
 import flyingHarry from '../../../assets/harry-potter-flying.png';
 
-const ResultPage = (props) => {
-  const { result } = props;
-  function refreshPage() {
-    window.location.reload(true);
-  }
+const ResultPage = () => {
+  const location = useLocation();
+  const result = location.resultProps;
+  console.log(result);
+
   return (
     <div className="result-page">
       <div className="result-section">
@@ -28,24 +28,14 @@ const ResultPage = (props) => {
             <p>Dobby has faith in you !</p>
           </div>
         )}
-        <button
-          type="button"
-          className="play-again-button cursor"
-          onClick={refreshPage}
-        >
-          Try again
+        <button type="button" className="play-again-button cursor">
+          <NavLink className="nav-link" exact to="/quiz-start">
+            Try again
+          </NavLink>
         </button>
       </div>
     </div>
   );
-};
-
-ResultPage.propTypes = {
-  result: PropTypes.number,
-};
-
-ResultPage.defaultProps = {
-  result: 0,
 };
 
 export default ResultPage;

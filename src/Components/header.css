@@ -28,8 +28,8 @@ a {
 ================================================================================= */
 
 .header {
-  height: 8rem;
-  background-color: rgb(0, 0, 0, 1);
+  height: 15vh;
+  background-color: rgb(0, 0, 0, 0.9);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;

@@ -17,8 +17,10 @@ const Header = () => (
     </div>
     <ReactAudioPlayer
       src={music}
+      volume={1}
       autoPlay
-      onPlay={() => console.log('onPlay')}
+      loop
+      onPlay={console.log('playing')}
     />
     <ul className="nav-bar">
       <li>

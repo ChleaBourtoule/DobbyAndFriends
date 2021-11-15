@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import gryffindorLogo from '../../../assets/gryffindor.png';
 import ravenclawLogo from '../../../assets/ravenclaw.png';
 import hufflepuffLogo from '../../../assets/hufflepuff.png';
@@ -7,7 +8,14 @@ import slytherinLogo from '../../../assets/slytherin.png';
 import photoBomb from '../../../assets/harryPotterPhotoBomb.jpg';
 
 const QuestionAnswer = (props) => {
-  const { characterName, characterImg, isItRightAnswer, trueAnswer } = props;
+  const {
+    characterName,
+    characterImg,
+    isItRightAnswer,
+    trueAnswer,
+    questionNb,
+    result,
+  } = props;
   return (
     <div className="img-question-answers">
       <div className="img">
@@ -32,7 +40,21 @@ const QuestionAnswer = (props) => {
             }
             onClick={(e) => isItRightAnswer(e.target.value)}
           >
-            Gryffindor
+            {questionNb < 4 ? (
+              'Gryffindor'
+            ) : (
+              <NavLink
+                className="nav-link"
+                exact
+                to={{
+                  pathname: '/quiz-result',
+                  resultProps: result,
+                }}
+              >
+                Gryffindor
+              </NavLink>
+            )}
+
             <img
               className="house cursor"
               id="gryffindorImg"
@@ -47,7 +69,18 @@ const QuestionAnswer = (props) => {
             className="answer cursor"
             onClick={(e) => isItRightAnswer(e.target.value)}
           >
-            Ravenclaw
+            {questionNb < 4 ? (
+              'Ravenclaw'
+            ) : (
+              <NavLink
+                className="nav-link"
+                exact
+                to="/quiz-result"
+                result={result}
+              >
+                Ravenclaw
+              </NavLink>
+            )}
             <img
               className="house cursor"
               id="ravenclawImg"
@@ -62,7 +95,18 @@ const QuestionAnswer = (props) => {
             className="answer cursor"
             onClick={(e) => isItRightAnswer(e.target.value)}
           >
-            Hufflepuff
+            {questionNb < 4 ? (
+              'Hufflepuff'
+            ) : (
+              <NavLink
+                className="nav-link"
+                exact
+                to="/quiz-result"
+                result={result}
+              >
+                Hufflepuff
+              </NavLink>
+            )}
             <img
               className="house cursor"
               id="hufflepuffImg"
@@ -77,7 +121,18 @@ const QuestionAnswer = (props) => {
             className="answer cursor"
             onClick={(e) => isItRightAnswer(e.target.value)}
           >
-            Slytherin
+            {questionNb < 4 ? (
+              'Slytherin'
+            ) : (
+              <NavLink
+                className="nav-link"
+                exact
+                to="/quiz-result"
+                result={result}
+              >
+                Slytherin
+              </NavLink>
+            )}
             <img
               className="house cursor"
               id="slytherinImg"
@@ -96,6 +151,8 @@ QuestionAnswer.propTypes = {
   characterImg: PropTypes.string,
   trueAnswer: PropTypes.bool,
   isItRightAnswer: PropTypes.func,
+  questionNb: PropTypes.number,
+  result: PropTypes.number,
 };
 
 QuestionAnswer.defaultProps = {
@@ -103,6 +160,8 @@ QuestionAnswer.defaultProps = {
   characterImg: photoBomb,
   trueAnswer: false,
   isItRightAnswer: () => {},
+  questionNb: 0,
+  result: 0,
 };
 
 export default QuestionAnswer;

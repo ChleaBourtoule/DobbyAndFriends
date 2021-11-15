@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './quizStart.css';
 import QuestionAnswer from './QuestionAnswers';
-import ResultPage from './ResultPage';
 
 const QuizStart = () => {
-  const [characters, setCharacters] = useState([{}]);
+  const [characters, setCharacters] = useState([]);
   const [randomNb, setRandomNb] = useState(0);
   const [characterName, setCharacterName] = useState('this character');
   const [characterImg, setCharacterImg] = useState('photoTest');
@@ -14,6 +13,9 @@ const QuizStart = () => {
   const [questionNb, setQuestionNb] = useState(0);
   const [trueAnswer, setTrueAnswer] = useState(false);
   const [start, setStart] = useState(false);
+  const [randomArray, setRandomArray] = useState([]);
+  const [random, setRandom] = useState(0);
+  const [nbArray, setNbArray] = useState(0);
 
   useEffect(async () => {
     await axios
@@ -28,12 +30,22 @@ const QuizStart = () => {
   }, []);
 
   useEffect(() => {
-    const random = Math.floor(Math.random() * characters.length);
-    setRandomNb(random);
-    setCharacterName(characters[randomNb].name);
-    setCharacterHouse(characters[randomNb].house);
-    setCharacterImg(characters[randomNb].image);
-    setTrueAnswer(false);
+    console.log(randomArray instanceof Array);
+    console.log(characters);
+    if (characters.length > 1) {
+      while (randomArray.includes(random)) {
+        setRandom(Math.floor(Math.random() * characters.length));
+      }
+      if (!randomArray.includes(random)) {
+        setRandomArray(randomArray.push(random));
+      }
+      setRandomNb(randomArray[nbArray]);
+      setNbArray(nbArray + 1);
+      setCharacterName(characters[randomNb].name);
+      setCharacterHouse(characters[randomNb].house);
+      setCharacterImg(characters[randomNb].image);
+      setTrueAnswer(false);
+    }
   }, [start, questionNb]);
 
   const isItRightAnswer = (e) => {
@@ -48,35 +60,34 @@ const QuizStart = () => {
 
   return (
     <div className="quiz-page">
-      {questionNb < 5 ? (
-        <div className="quiz-start">
-          <div className="quiz-rules">
-            <h2>
-              Answer 5 questions and find out how well you know Dobby&apos;s
-              friends
-            </h2>
-          </div>
-          {!start ? (
-            <button
-              className="cursor"
-              type="button"
-              id="start"
-              onClick={() => setStart(!start)}
-            >
-              Start
-            </button>
-          ) : (
-            <QuestionAnswer
-              isItRightAnswer={isItRightAnswer}
-              characterName={characterName}
-              characterImg={characterImg}
-              trueAnswer={trueAnswer}
-            />
-          )}
+      <div className="quiz-start">
+        <div className="quiz-rules">
+          <h2>
+            Answer 5 questions and find out how well you know Dobby&apos;s
+            friends
+          </h2>
         </div>
-      ) : (
-        <ResultPage result={result} />
-      )}
+        {!start ? (
+          <button
+            className="cursor"
+            type="button"
+            id="start"
+            onClick={() => setStart(!start)}
+          >
+            Start
+          </button>
+        ) : (
+          <QuestionAnswer
+            isItRightAnswer={isItRightAnswer}
+            characterName={characterName}
+            characterImg={characterImg}
+            trueAnswer={trueAnswer}
+            questionNb={questionNb}
+            result={result}
+          />
+        )}
+      </div>
+      )
     </div>
   );
 };
