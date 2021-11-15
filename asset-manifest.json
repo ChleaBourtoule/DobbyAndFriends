@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/DobbyAndFriends/static/css/main.e490e237.chunk.css",
-    "main.js": "/DobbyAndFriends/static/js/main.5ddc204c.chunk.js",
-    "main.js.map": "/DobbyAndFriends/static/js/main.5ddc204c.chunk.js.map",
+    "main.css": "/DobbyAndFriends/static/css/main.eec6aea5.chunk.css",
+    "main.js": "/DobbyAndFriends/static/js/main.e0a75dc1.chunk.js",
+    "main.js.map": "/DobbyAndFriends/static/js/main.e0a75dc1.chunk.js.map",
     "runtime-main.js": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js",
     "runtime-main.js.map": "/DobbyAndFriends/static/js/runtime-main.92fa3fcb.js.map",
-    "static/js/2.01128b60.chunk.js": "/DobbyAndFriends/static/js/2.01128b60.chunk.js",
-    "static/js/2.01128b60.chunk.js.map": "/DobbyAndFriends/static/js/2.01128b60.chunk.js.map",
+    "static/js/2.c3ea18b4.chunk.js": "/DobbyAndFriends/static/js/2.c3ea18b4.chunk.js",
+    "static/js/2.c3ea18b4.chunk.js.map": "/DobbyAndFriends/static/js/2.c3ea18b4.chunk.js.map",
     "index.html": "/DobbyAndFriends/index.html",
-    "static/css/main.e490e237.chunk.css.map": "/DobbyAndFriends/static/css/main.e490e237.chunk.css.map",
-    "static/js/2.01128b60.chunk.js.LICENSE.txt": "/DobbyAndFriends/static/js/2.01128b60.chunk.js.LICENSE.txt",
+    "static/css/main.eec6aea5.chunk.css.map": "/DobbyAndFriends/static/css/main.eec6aea5.chunk.css.map",
+    "static/js/2.c3ea18b4.chunk.js.LICENSE.txt": "/DobbyAndFriends/static/js/2.c3ea18b4.chunk.js.LICENSE.txt",
     "static/media/quiz.css": "/DobbyAndFriends/static/media/Albus.57397364.jpg",
     "static/media/HarryShots.52d1d724.mp4": "/DobbyAndFriends/static/media/HarryShots.52d1d724.mp4",
+    "static/media/favorite.css": "/DobbyAndFriends/static/media/fav_background.43a2d095.jpg",
+    "static/media/resultPage.css": "/DobbyAndFriends/static/media/final-score.96266ce4.jpg",
     "static/media/ghostGryffindor.41cbfc23.png": "/DobbyAndFriends/static/media/ghostGryffindor.41cbfc23.png",
     "static/media/ghostHufflepuff.a0436161.png": "/DobbyAndFriends/static/media/ghostHufflepuff.a0436161.png",
     "static/media/ghostRavenclaw.60afaec6.png": "/DobbyAndFriends/static/media/ghostRavenclaw.60afaec6.png",
     "static/media/ghostSlytherin.75a6ef1d.png": "/DobbyAndFriends/static/media/ghostSlytherin.75a6ef1d.png",
     "static/media/gryffindor.64055a7b.png": "/DobbyAndFriends/static/media/gryffindor.64055a7b.png",
     "static/media/library.css": "/DobbyAndFriends/static/media/slytherin-hogwarts-house.54d9b414.jpg",
+    "static/media/harry-potter-flying.5b71d52f.png": "/DobbyAndFriends/static/media/harry-potter-flying.5b71d52f.png",
     "static/media/harryPotterPhotoBomb.e807cb51.jpg": "/DobbyAndFriends/static/media/harryPotterPhotoBomb.e807cb51.jpg",
     "static/media/have-you-seen-this-wizard.2b9687fa.jpg": "/DobbyAndFriends/static/media/have-you-seen-this-wizard.2b9687fa.jpg",
     "static/media/home_video_section_battle.75104439.mp4": "/DobbyAndFriends/static/media/home_video_section_battle.75104439.mp4",
@@ -25,6 +28,7 @@
     "static/media/homeles-logo.e5c4d829.png": "/DobbyAndFriends/static/media/homeles-logo.e5c4d829.png",
     "static/media/hufflepuff.dc9c2866.png": "/DobbyAndFriends/static/media/hufflepuff.dc9c2866.png",
     "static/media/logo-navbar.a7c1ea8a.png": "/DobbyAndFriends/static/media/logo-navbar.a7c1ea8a.png",
+    "static/media/music.9ea5e17a.ogg": "/DobbyAndFriends/static/media/music.9ea5e17a.ogg",
     "static/media/quizStart.css": "/DobbyAndFriends/static/media/quiz-bg.928f99f0.jpg",
     "static/media/ravenclaw.9610bcde.png": "/DobbyAndFriends/static/media/ravenclaw.9610bcde.png",
     "static/media/slytherin.2f1ae136.png": "/DobbyAndFriends/static/media/slytherin.2f1ae136.png",
@@ -33,8 +37,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.92fa3fcb.js",
-    "static/js/2.01128b60.chunk.js",
-    "static/css/main.e490e237.chunk.css",
-    "static/js/main.5ddc204c.chunk.js"
+    "static/js/2.c3ea18b4.chunk.js",
+    "static/css/main.eec6aea5.chunk.css",
+    "static/js/main.e0a75dc1.chunk.js"
   ]
 }
