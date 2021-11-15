@@ -163,7 +163,7 @@
   .btn_return {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin: 0;
   }
 
@@ -175,6 +175,10 @@
   .next {
     width: 4.5rem;
     font-size: 0.6rem;
-    margin: 2rem 1rem 2rem 1rem;
+    margin: 2rem 1rem 0 1rem;
+  }
+
+  .next-return {
+    margin-bottom: 1rem;
   }
 }
