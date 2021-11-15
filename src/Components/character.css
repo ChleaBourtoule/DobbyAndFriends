@@ -5,11 +5,10 @@
 .card {
   font-size: 1.6rem;
   color: white;
-  width: 45%;
-  height: 30%;
+  width: 35vw;
+  height: 40vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   background:
 
     linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
@@ -20,23 +19,20 @@
 }
 
 .card img {
-  width: 10rem;
-  height: 12rem;
+  width: 11rem;
+  height: 13rem;
   margin-left: 1rem;
   border-radius: 10px;
 }
 
 .card-details {
   margin-left: 2rem;
-  font-size: 1.5rem;
-  padding-right: 1rem;
 
   /* color: #740001; */
   text-shadow: black 1px 1px 5px;
 }
 
 .card-details h2 {
-  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -44,8 +40,8 @@
 
 .flip-card {
   background-color: transparent;
-  width: 30vw;
-  height: 35vh;
+  width: 35vw;
+  height: 40vh;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin: 2rem 5rem;
 }
@@ -76,69 +72,4 @@
 /* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
-  padding-left: 2rem;
-}
-
-.wand-div {
-  font-size: 1.5rem;
-}
-
-.wand {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.wand li {
-  padding-left: 1rem;
-  font-size: 1.2rem;
-}
-
-/* Responsive */
-
-@media screen and (min-width: 691px) and (max-width: 1310px) {
-  .flip-card {
-    background-color: transparent;
-    width: 500px;
-    height: 250px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    margin: 2rem 2rem;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  .flip-card {
-    background-color: transparent;
-    width: 45vw;
-    height: 58vh;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    margin: 2rem 2rem;
-  }
-
-  .flip-card-front {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .card img {
-    width: 8rem;
-    height: 10rem;
-    border-radius: 10px;
-  }
-
-  .card {
-    flex-direction: column;
-  }
-
-  .flip-card-back {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .flip-card-front .card-details h2 {
-    text-align: center;
-  }
 }
