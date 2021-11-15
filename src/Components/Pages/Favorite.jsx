@@ -5,7 +5,7 @@ import Character from '../Character';
 
 import './favorite.css';
 
-const Favorite = () => {
+const Favori = () => {
   const [characters, setCharacters] = useState([]);
   const [house, setHouse] = useState([]);
   const [specy, setSpecy] = useState([]);
@@ -17,12 +17,7 @@ const Favorite = () => {
   const speciesTemp = [];
   const ancestryTemp = [];
 
-
-const Favorite = () => {
-  const [characters, setCharacters] = useState([]);
-  const [house, setHouse] = useState([]);
-  const houseTemp = [];
-      useEffect(async () => {
+  useEffect(async () => {
     await axios
       .get('http://hp-api.herokuapp.com/api/characters')
       // 'http://hp-api.herokuapp.com/api/characters/house/gryffindor
@@ -170,4 +165,4 @@ const Favorite = () => {
   );
 };
 
-export default Favorite;
+export default Favori;
