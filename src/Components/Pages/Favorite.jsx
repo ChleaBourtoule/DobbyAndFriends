@@ -93,9 +93,10 @@ const Favori = () => {
               className="cursor"
               name="house"
               id=""
+              defaultValue="DEFAULT"
               onChange={(e) => handleChange(e)}
             >
-              <option selected>Please Select</option>
+              <option value="DEFAULT">Please Select</option>
               {house.map((el) => (
                 <option key={el} value={el}>
                   {el}
@@ -111,9 +112,10 @@ const Favori = () => {
               className="cursor"
               name="species"
               id=""
+              defaultValue="DEFAULT"
               onChange={(e) => handleChange(e)}
             >
-              <option selected>Please Select</option>
+              <option value="DEFAULT">Please Select</option>
               {specy.map((el) => (
                 <option key={el} value={el}>
                   {el}
@@ -129,9 +131,10 @@ const Favori = () => {
               className="cursor"
               name="ancestry"
               id=""
+              defaultValue="DEFAULT"
               onChange={(e) => handleChange(e)}
             >
-              <option selected>Please Select</option>
+              <option value="DEFAULT">Please Select</option>
               {ancestry.map((el) => (
                 <option key={el} value={el}>
                   {el}
