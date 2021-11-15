@@ -43,10 +43,10 @@ const Header = () => {
           />
         </div>
         <ReactAudioPlayer
-              src={music}
-              autoPlay
-              onPlay={() => console.log('onPlay')}
-            />
+          src={music}
+          autoPlay
+          onPlay={() => console.log('onPlay')}
+        />
         <ul className="nav-bar">
           <li>
             <NavLink
