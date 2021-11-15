@@ -110,8 +110,8 @@
 @media screen and (max-width: 690px) {
   .flip-card {
     background-color: transparent;
-    width: 38vw;
-    height: 42vh;
+    width: 42vw;
+    height: 47vh;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin: 2rem 2rem;
   }
@@ -144,6 +144,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
   }
 
   .flip-card-front .card-details h2 {
