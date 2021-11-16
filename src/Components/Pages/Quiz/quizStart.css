@@ -4,7 +4,7 @@
 
 .quiz-start {
   width: 100vw;
-  height: 84vh;
+  height: 85vh;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url(../../../assets/quiz-bg.jpg);
   background-size: cover;
   background-color: #fbeee6;
@@ -18,11 +18,11 @@
 
 .quiz-rules {
   width: 100%;
-  height: 20%;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.7rem;
+  font-size: 1.7vw;
   background-color: cornsilk;
   margin-bottom: 5vh;
 }
@@ -53,15 +53,16 @@
 
 .question p {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: bold;
 }
 
 .img img {
   background-color: black;
-  padding: 5px;
-  height: 400px;
-  width: 300px;
+  margin-top: 4vh;
+  padding: 0.4vw;
+  height: 44vh;
+  width: 17vw;
 }
 
 .question-answers {
@@ -87,19 +88,19 @@
 .answer {
   width: 45%;
   height: 30%;
-  margin: 10px;
+  margin: 0.2vw;
   background-color: blanchedalmond;
-  border-radius: 20px;
+  border-radius: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: transform 0.3s;
   position: relative;
-  font-size: 1.4rem;
+  font-size: 1.4vw;
 }
 
 .answer img {
-  height: 150px;
+  height: 18vh;
   display: none;
   position: relative;
   left: 20%;

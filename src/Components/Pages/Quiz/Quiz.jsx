@@ -15,7 +15,7 @@ const Quiz = () => {
       </div>
       <button type="button" id="start-quiz" className="cursor">
         <NavLink className="nav-link" exact to="/quiz-start">
-          Let&apos;s start
+          Enter into the Chamber of Secrets
         </NavLink>
       </button>
     </div>

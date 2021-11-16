@@ -42,11 +42,7 @@ const Header = () => {
             alt="I solemnly swear..."
           />
         </div>
-        <ReactAudioPlayer
-          src={music}
-          autoPlay
-          onPlay={() => console.log('onPlay')}
-        />
+        <ReactAudioPlayer src={music} autoPlay />
         <ul className="nav-bar">
           <li>
             <NavLink
