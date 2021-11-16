@@ -28,7 +28,7 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <div className="header-container">
       <div className="header">
         <div>
           <NavLink exact to="/">
