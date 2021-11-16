@@ -204,6 +204,7 @@ function Library() {
               .slice(firstNext, secondNext)
               .map((character) => (
                 <Character
+                  key={character.name}
                   name={character.name}
                   dateOfBirth={character.dateOfBirth}
                   species={character.species}
