@@ -2,6 +2,10 @@
 # Template for Frontend project
 
 ## First steps
+git clone git@github.com:bast44trl/DobbyAndFriends.git
+git checkout dev
+npm install
+npm start
 
 ### Install these extensions
 
