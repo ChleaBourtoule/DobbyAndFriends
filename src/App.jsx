@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
+import Footer from './Components/Footer';
 import QuizStart from './Components/Pages/Quiz/QuizStart';
 import Favori from './Components/Pages/Favorite';
 import Quiz from './Components/Pages/Quiz/Quiz';
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/quiz-start" component={QuizStart} />
           <Route path="/favorite" component={Favori} />
         </Switch>
+        <Footer />
       </HashRouter>
     </div>
   );
