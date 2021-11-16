@@ -13,14 +13,14 @@
   justify-content: center;
 }
 
-form {
+.form_fav {
   display: flex;
   justify-content: space-around;
   padding-top: 2rem;
   padding-bottom: 15rem;
 }
 
-form select,
+.form_fav select,
 span {
   height: 4rem;
   width: 12rem;
@@ -29,7 +29,7 @@ span {
   font-size: larger;
 }
 
-form span {
+.form_fav span {
   border-radius: 5px !important;
   font-weight: bold;
   font-size: 2rem;
@@ -42,7 +42,7 @@ form span {
 }
 
 @media screen and (max-width: 690px) {
-  form {
+  .form_fav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +51,7 @@ form span {
     padding-bottom: 15rem;
   }
 
-  form span {
+  .form_fav span {
     margin-bottom: 2rem;
     font-weight: bold;
     font-size: 2rem;
@@ -59,7 +59,7 @@ form span {
     color: white;
   }
 
-  form div {
+  .form_fav div {
     margin-bottom: 5rem;
   }
 }

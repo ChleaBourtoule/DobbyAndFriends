@@ -7,16 +7,14 @@ const SearchBar = ({ searchName, setSearchName }) => {
     <div className="containerSearch">
       <div className="searchBar">
         <div>
-          <form>
-            {/* <label htmlFor="search">Enter the name</label> */}
-            <input
-              type="text"
-              value={searchName}
-              id="search"
-              placeholder=""
-              onChange={(e) => setSearchName(e.target.value)}
-            />
-          </form>
+          <input
+            className="searchbar"
+            type="text"
+            value={searchName}
+            id="search"
+            placeholder=""
+            onChange={(e) => setSearchName(e.target.value)}
+          />
         </div>
       </div>
     </div>

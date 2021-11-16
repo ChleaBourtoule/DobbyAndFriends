@@ -86,7 +86,7 @@ const Favori = () => {
         <h1 className="title" id="fav">
           Find Your Character
         </h1>
-        <form>
+        <form className="form_fav">
           <div>
             <span>House:</span>
             <select
@@ -153,6 +153,7 @@ const Favori = () => {
             )
             .map((character) => (
               <Character
+                key={character.name}
                 name={character.name}
                 dateOfBirth={character.dateOfBirth}
                 species={character.species}

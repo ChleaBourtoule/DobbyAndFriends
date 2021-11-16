@@ -26,6 +26,11 @@ a {
                                   HEADER STYLE
 
 ================================================================================= */
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
 
 .header {
   height: 8rem;
@@ -34,9 +39,8 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   top: 0;
-  z-index: 2;
 }
 
 .header img {
@@ -137,11 +141,6 @@ a {
     color: white;
     background-color: black;
     border: none;
-  }
-
-  .header {
-    overflow: hidden;
-    background-color: black;
   }
 
   .header .nav-link {

@@ -15,7 +15,6 @@ class QuestionAnswer extends React.Component {
   render() {
     const { characterName, characterImg, isItRightAnswer, trueAnswer } =
       this.props;
-    console.log(characterName);
     return (
       <div className="img-question-answers">
         <div className="img">

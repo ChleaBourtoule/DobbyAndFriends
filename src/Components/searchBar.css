@@ -1,5 +1,6 @@
-input {
-  width: 40%;
+.searchbar {
+  width: 30vw;
   height: 4rem;
   border-radius: 15px;
+  padding-bottom: 1rem;
 }
