@@ -42,7 +42,7 @@
   padding: 3rem;
 }
 
-.title-home {
+.title-bis {
   text-align: center;
   padding: 15rem 0;
   color: #d3a625;
@@ -291,7 +291,7 @@
     width: 40%;
   }
 
-  .title-home {
+  .title-bis {
     font-size: 4rem;
   }
 }
