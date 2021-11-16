@@ -8,6 +8,7 @@ import Quiz from './Components/Pages/Quiz/Quiz';
 import Header from './Components/Header';
 import Library from './Components/Pages/Library';
 import Home from './Components/Pages/Home';
+import Contact from './Components/Pages/Contact';
 import './app.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/quiz-start" component={QuizStart} />
           <Route path="/favorite" component={Favori} />
           <Route path="/quiz-result" component={ResultPage} />
+          <Route path="/contact" component={Contact} />
         </Switch>
         <Footer />
       </HashRouter>
