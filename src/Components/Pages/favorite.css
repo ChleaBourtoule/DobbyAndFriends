@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-around;
   padding-top: 2rem;
-  padding-bottom: 15rem;
+  padding-bottom: 5rem;
 }
 
 .form_fav select,
@@ -41,6 +41,11 @@ span {
   margin-bottom: 10rem;
 }
 
+.form_fav button {
+  padding: 1rem;
+  border-radius: 15px;
+}
+
 @media screen and (max-width: 690px) {
   .form_fav {
     display: flex;
@@ -48,7 +53,7 @@ span {
     align-items: center;
     justify-content: space-around;
     padding-top: 2rem;
-    padding-bottom: 15rem;
+    padding-bottom: 5rem;
   }
 
   .form_fav span {

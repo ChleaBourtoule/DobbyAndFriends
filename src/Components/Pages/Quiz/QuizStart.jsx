@@ -5,8 +5,7 @@ import QuestionAnswer from './QuestionAnswers';
 import ResultPage from './ResultPage';
 
 const QuizStart = () => {
-  const [characters, setCharacters] = useState([{}]);
-  const [randomNb, setRandomNb] = useState(0);
+  const [characters, setCharacters] = useState([]);
   const [characterName, setCharacterName] = useState('this character');
   const [characterImg, setCharacterImg] = useState('photoTest');
   const [characterHouse, setCharacterHouse] = useState('');
@@ -14,36 +13,39 @@ const QuizStart = () => {
   const [questionNb, setQuestionNb] = useState(0);
   const [trueAnswer, setTrueAnswer] = useState(false);
   const [start, setStart] = useState(false);
+  const [randomArray, setRandomArray] = useState([]);
 
   useEffect(async () => {
     await axios
       .get('https://hp-api.herokuapp.com/api/characters')
       .then((res) => res.data)
-      .then((data) =>
+      .then((data) => {
         setCharacters(
           data.filter((character) => character.house && character.image)
-        )
-      )
-      .catch((error) => console.log(error));
+        );
+      });
   }, []);
 
   useEffect(() => {
-    const random = Math.floor(Math.random() * characters.length);
-    setRandomNb(random);
-    setCharacterName(characters[randomNb].name);
-    setCharacterHouse(characters[randomNb].house);
-    setCharacterImg(characters[randomNb].image);
-    setTrueAnswer(false);
+    if (characters.length > 1) {
+      let nextRandom = Math.floor(Math.random() * characters.length);
+      while (randomArray.includes(nextRandom)) {
+        nextRandom = Math.floor(Math.random() * characters.length);
+      }
+      setRandomArray([...randomArray, nextRandom]);
+      setCharacterName(characters[nextRandom].name);
+      setCharacterHouse(characters[nextRandom].house);
+      setCharacterImg(characters[nextRandom].image);
+    }
   }, [start, questionNb]);
 
-  const isItRightAnswer = (e) => {
-    if (e === characterHouse) {
+  const checkCorrectAnswer = (houseName) => {
+    if (houseName === characterHouse) {
       setResult(result + 1);
-      setQuestionNb(questionNb + 1);
-      setTrueAnswer(true);
-    } else {
-      setQuestionNb(questionNb + 1);
+      alert('Bonne réponse');
     }
+    setQuestionNb(questionNb + 1);
+    setTrueAnswer(true);
   };
 
   return (
@@ -67,7 +69,7 @@ const QuizStart = () => {
             </button>
           ) : (
             <QuestionAnswer
-              isItRightAnswer={isItRightAnswer}
+              checkCorrectAnswer={(houseName) => checkCorrectAnswer(houseName)}
               characterName={characterName}
               characterImg={characterImg}
               trueAnswer={trueAnswer}

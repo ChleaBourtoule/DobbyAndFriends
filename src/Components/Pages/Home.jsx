@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-div-video">
-        <h1 className="title">Welcome to Hogwarts</h1>
+        <h1 className="title-bis">Welcome to Hogwarts</h1>
 
         <ReactPlayer
           className="home-video"
