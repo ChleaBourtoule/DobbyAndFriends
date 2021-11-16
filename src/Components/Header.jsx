@@ -15,13 +15,7 @@ const Header = () => (
     <div>
       <img src={solemnlySwear} alt="I solemnly swear..." />
     </div>
-    <ReactAudioPlayer
-      src={music}
-      volume={1}
-      autoPlay
-      loop
-      onPlay={console.log('playing')}
-    />
+    <ReactAudioPlayer src={music} volume={1} autoPlay />
     <ul className="nav-bar">
       <li>
         <NavLink
