@@ -42,7 +42,6 @@ const QuizStart = () => {
   const checkCorrectAnswer = (houseName) => {
     if (houseName === characterHouse) {
       setResult(result + 1);
-      alert('Bonne réponse');
     }
     setQuestionNb(questionNb + 1);
     setTrueAnswer(true);
