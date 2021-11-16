@@ -86,7 +86,7 @@ const Favori = () => {
         <h1 className="title" id="fav">
           Find Your Character
         </h1>
-        <form>
+        <form className="form_fav">
           <div>
             <span>House:</span>
             <select
