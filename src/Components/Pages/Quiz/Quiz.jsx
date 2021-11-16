@@ -5,8 +5,10 @@ import '../../../arrows.css';
 const Quiz = () => {
   return (
     <div className="quiz">
-      <h1 className="title quiz-title">Do you know Dobby&apos;s friends ?</h1>
-      <div className="arrows-div">
+      <h1 className="title-bis quiz-title">
+        Do you know Dobby&apos; friends ?
+      </h1>
+      <div>
         <svg className="arrows">
           <path className="a1" d="M0 0 L30 32 L60 0" />
           <path className="a2" d="M0 20 L30 52 L60 20" />
@@ -15,7 +17,7 @@ const Quiz = () => {
       </div>
       <button type="button" id="start-quiz" className="cursor">
         <NavLink className="nav-link" exact to="/quiz-start">
-          Let&apos;s start
+          Enter into the Chamber of Secrets
         </NavLink>
       </button>
     </div>

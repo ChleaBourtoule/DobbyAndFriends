@@ -13,6 +13,7 @@ const Favori = () => {
   const [houseFilter, setHouseFilter] = useState([]);
   const [specyFilter, setSpecyFilter] = useState([]);
   const [ancestryFilter, setAncestryFilter] = useState([]);
+  const [showMap, setShowMap] = useState(false);
   const houseTemp = [];
   const speciesTemp = [];
   const ancestryTemp = [];
@@ -142,27 +143,33 @@ const Favori = () => {
               ))}
             </select>
           </div>
+          <button type="button" onClick={() => setShowMap(!showMap)}>
+            {' '}
+            Show Search {showMap ? ' On' : null}
+          </button>
         </form>
+
         <div className="cards-container card-fav">
-          {characters
-            .filter(
-              (el) =>
-                el.house === houseFilter &&
-                el.species === specyFilter &&
-                el.ancestry === ancestryFilter
-            )
-            .map((character) => (
-              <Character
-                key={character.name}
-                name={character.name}
-                dateOfBirth={character.dateOfBirth}
-                species={character.species}
-                house={character.house}
-                image={character.image}
-                patronus={character.patronus}
-                ancestry={character.ancestry}
-              />
-            ))}
+          {showMap &&
+            characters
+              .filter(
+                (el) =>
+                  el.house === houseFilter &&
+                  el.species === specyFilter &&
+                  el.ancestry === ancestryFilter
+              )
+              .map((character) => (
+                <Character
+                  key={character.name}
+                  name={character.name}
+                  dateOfBirth={character.dateOfBirth}
+                  species={character.species}
+                  house={character.house}
+                  image={character.image}
+                  patronus={character.patronus}
+                  ancestry={character.ancestry}
+                />
+              ))}
         </div>
       </div>
     </div>

@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Answer from './Answer';
+import photoBomb from '../../../assets/harryPotterPhotoBomb.jpg';
 import gryffindorLogo from '../../../assets/gryffindor.png';
 import ravenclawLogo from '../../../assets/ravenclaw.png';
 import hufflepuffLogo from '../../../assets/hufflepuff.png';
 import slytherinLogo from '../../../assets/slytherin.png';
-import photoBomb from '../../../assets/harryPotterPhotoBomb.jpg';
 
 class QuestionAnswer extends React.Component {
   constructor(props) {
@@ -13,8 +14,36 @@ class QuestionAnswer extends React.Component {
   }
 
   render() {
-    const { characterName, characterImg, isItRightAnswer, trueAnswer } =
+    const { characterName, characterImg, checkCorrectAnswer, trueAnswer } =
       this.props;
+
+    const answers = [
+      {
+        key: 1,
+        houseUpperCase: 'Gryffindor',
+        house: 'gryffindor',
+        logo: gryffindorLogo,
+      },
+      {
+        key: 2,
+        houseUpperCase: 'Hufflepuff',
+        house: 'hufflepuff',
+        logo: hufflepuffLogo,
+      },
+      {
+        key: 3,
+        houseUpperCase: 'Ravenclaw',
+        house: 'ravenclaw',
+        logo: ravenclawLogo,
+      },
+      {
+        key: 4,
+        houseUpperCase: 'Slytherin',
+        house: 'slytherin',
+        logo: slytherinLogo,
+      },
+    ];
+
     return (
       <div className="img-question-answers">
         <div className="img">
@@ -31,76 +60,18 @@ class QuestionAnswer extends React.Component {
           </div>
 
           <div className="answers">
-            <button
-              type="button"
-              id="button-1"
-              value="Gryffindor"
-              className={
-                trueAnswer ? 'answer cursor true-answer' : 'answer cursor'
-              }
-              onClick={(e) => {
-                isItRightAnswer(e.target.value);
-              }}
-            >
-              Gryffindor
-              <img
-                className="house cursor"
-                id="gryffindorImg"
-                src={gryffindorLogo}
-                alt="hufflepuff logo"
+            {answers.map((answer) => (
+              <Answer
+                key={answer.key}
+                house={answer.house}
+                houseUpperCase={answer.houseUpperCase}
+                logo={answer.logo}
+                checkCorrectAnswer={(houseName) =>
+                  checkCorrectAnswer(houseName)
+                }
+                trueAnswer={trueAnswer}
               />
-            </button>
-            <button
-              type="button"
-              id="button-2"
-              value="Ravenclaw"
-              className="answer cursor"
-              onClick={(e) => {
-                isItRightAnswer(e.target.value);
-              }}
-            >
-              Ravenclaw
-              <img
-                className="house cursor"
-                id="ravenclawImg"
-                src={ravenclawLogo}
-                alt="ravenclaw logo"
-              />
-            </button>
-            <button
-              type="button"
-              id="button-3"
-              value="Hufflepuff"
-              className="answer cursor"
-              onClick={(e) => {
-                isItRightAnswer(e.target.value);
-              }}
-            >
-              Hufflepuff
-              <img
-                className="house cursor"
-                id="hufflepuffImg"
-                src={hufflepuffLogo}
-                alt="hufflepuff logo"
-              />
-            </button>
-            <button
-              type="button"
-              id="button-4"
-              value="Slytherin"
-              className="answer cursor"
-              onClick={(e) => {
-                isItRightAnswer(e.target.value);
-              }}
-            >
-              Slytherin
-              <img
-                className="house cursor"
-                id="slytherinImg"
-                src={slytherinLogo}
-                alt="slytherin logo"
-              />
-            </button>
+            ))}
           </div>
         </div>
       </div>
@@ -112,14 +83,14 @@ QuestionAnswer.propTypes = {
   characterName: PropTypes.string,
   characterImg: PropTypes.string,
   trueAnswer: PropTypes.bool,
-  isItRightAnswer: PropTypes.func,
+  checkCorrectAnswer: PropTypes.func,
 };
 
 QuestionAnswer.defaultProps = {
   characterName: 'this character',
   characterImg: photoBomb,
   trueAnswer: false,
-  isItRightAnswer: () => {},
+  checkCorrectAnswer: () => {},
 };
 
 export default QuestionAnswer;
