@@ -1,10 +1,11 @@
 import axios from 'axios';
+
 import { useEffect, useState } from 'react';
 import Character from '../Character';
 
 import './favorite.css';
 
-const Favorite = () => {
+const Favori = () => {
   const [characters, setCharacters] = useState([]);
   const [house, setHouse] = useState([]);
   const [specy, setSpecy] = useState([]);
@@ -27,6 +28,7 @@ const Favorite = () => {
 
   useEffect(() => {
     // Load house data from Characters
+
     for (let i = 0; i < characters.length; i += 1) {
       Object.entries(characters[i]).forEach((entry) => {
         if (entry[0] === 'house') {
@@ -76,7 +78,6 @@ const Favorite = () => {
         break;
       default:
     }
-    console.log(e.target.value, e.target.name);
   }
 
   return (
@@ -85,16 +86,17 @@ const Favorite = () => {
         <h1 className="title" id="fav">
           Find Your Character
         </h1>
-        <form>
+        <form className="form_fav">
           <div>
             <span>House:</span>
             <select
               className="cursor"
               name="house"
               id=""
+              defaultValue="DEFAULT"
               onChange={(e) => handleChange(e)}
             >
-              <option selected>Please Select</option>
+              <option value="DEFAULT">Please Select</option>
               {house.map((el) => (
                 <option key={el} value={el}>
                   {el}
@@ -110,9 +112,10 @@ const Favorite = () => {
               className="cursor"
               name="species"
               id=""
+              defaultValue="DEFAULT"
               onChange={(e) => handleChange(e)}
             >
-              <option selected>Please Select</option>
+              <option value="DEFAULT">Please Select</option>
               {specy.map((el) => (
                 <option key={el} value={el}>
                   {el}
@@ -128,9 +131,10 @@ const Favorite = () => {
               className="cursor"
               name="ancestry"
               id=""
+              defaultValue="DEFAULT"
               onChange={(e) => handleChange(e)}
             >
-              <option selected>Please Select</option>
+              <option value="DEFAULT">Please Select</option>
               {ancestry.map((el) => (
                 <option key={el} value={el}>
                   {el}
@@ -149,6 +153,7 @@ const Favorite = () => {
             )
             .map((character) => (
               <Character
+                key={character.name}
                 name={character.name}
                 dateOfBirth={character.dateOfBirth}
                 species={character.species}
@@ -164,4 +169,4 @@ const Favorite = () => {
   );
 };
 
-export default Favorite;
+export default Favori;

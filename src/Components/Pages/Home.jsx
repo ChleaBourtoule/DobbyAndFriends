@@ -51,7 +51,8 @@ const Home = () => {
             muted
             playing
             loop
-            width="650px"
+            width="100%"
+            height="80%"
           />
         </div>
       </section>
@@ -64,7 +65,8 @@ const Home = () => {
             muted
             playing
             loop
-            width="650px"
+            width="100%"
+            height="80%"
           />
         </div>
 
@@ -87,19 +89,17 @@ const Home = () => {
 
       <section className="home-section-battle">
         <div className="home-div-battle-texte">
-          <h3>Discover the battle</h3>
+          <h3>Discover your favorite character</h3>
           <p>
-            &quot;It matters not what somebody is born but what they grow to
-            be&quot; once said Albus Dumbledore, the famous headteacher of
-            Hogwarts. Twenty years later, Harry Potter&apos;s magic is still
-            operating. The adventures of the wizard with round glasses have
-            enthralled millions of readers and viewers around the world.
-            Discover without further ado our library page dedicated to the
-            characters of Harry Potter&apos;s series.
+            This epic franchise may be known for its magical world and huge
+            battles, but the most memorable aspect is its many characters. The
+            cast is extensive and full of vibrant personalities. Some of the
+            characters are loveable, while others teach fans what not to do in
+            life.
           </p>
           <button type="button" className="cursor">
-            <NavLink className="nav-link" to="/battle">
-              Go to battle
+            <NavLink className="nav-link" to="/favorite">
+              Go to favorite
             </NavLink>
           </button>
         </div>
@@ -111,7 +111,8 @@ const Home = () => {
             muted
             playing
             loop
-            width="650px"
+            width="100%"
+            height="80%"
           />
         </div>
       </section>

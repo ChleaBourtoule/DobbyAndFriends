@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import SearchBar from '../SearchBar';
 import Character from '../Character';
 import './library.css';
 import gryffindorLogo from '../../assets/gryffindor.png';
@@ -21,6 +22,7 @@ function Library() {
   const [font, setFont] = useState(libraryFont);
   const [firstNext, setFirstNext] = useState(0);
   const [secondNext, setSecondNext] = useState(10);
+  const [searchName, setSearchName] = useState('');
 
   useEffect(() => {
     axios
@@ -71,6 +73,10 @@ function Library() {
   return (
     <div id="library" className="library">
       <h1 className="title">Harry Potter&apos;s characters</h1>
+      <div className="search-bar">
+        <h3 className="search-title">Search a character by his name:</h3>
+        <SearchBar searchName={searchName} setSearchName={setSearchName} />
+      </div>
       <div className="library-container">
         <div className="house-container">
           <div
@@ -192,9 +198,13 @@ function Library() {
                   character.house === !house ||
                   character.house === house
               )
+              .filter((character) =>
+                character.name.toUpperCase().includes(searchName.toUpperCase())
+              )
               .slice(firstNext, secondNext)
               .map((character) => (
                 <Character
+                  key={character.name}
                   name={character.name}
                   dateOfBirth={character.dateOfBirth}
                   species={character.species}
@@ -242,7 +252,7 @@ function Library() {
             </div>
             <button
               type="button"
-              className="next cursor"
+              className="next next-return cursor"
               onClick={() => {
                 switchHouse(null);
                 setFont(gryffindorFont);
