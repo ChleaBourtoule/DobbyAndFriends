@@ -5,7 +5,9 @@ import '../../../arrows.css';
 const Quiz = () => {
   return (
     <div className="quiz">
-      <h1 className="title quiz-title">Do you know Dobby&apos; friends ?</h1>
+      <h1 className="title-bis quiz-title">
+        Do you know Dobby&apos; friends ?
+      </h1>
       <div>
         <svg className="arrows">
           <path className="a1" d="M0 0 L30 32 L60 0" />
