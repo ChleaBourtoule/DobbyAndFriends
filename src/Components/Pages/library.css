@@ -133,6 +133,16 @@
   transform: scale(1.2);
 }
 
+.search-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Harry Potter', sans-serif;
+  border-radius: 10px;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 20px 10px black;
+}
+
 /* Responsive */
 
 @media only screen and (max-width: 1310px) {

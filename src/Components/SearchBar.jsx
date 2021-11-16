@@ -10,6 +10,7 @@ const SearchBar = ({ searchName, setSearchName }) => {
           <form>
             {/* <label htmlFor="search">Enter the name</label> */}
             <input
+              className="searchbar"
               type="text"
               value={searchName}
               id="search"
