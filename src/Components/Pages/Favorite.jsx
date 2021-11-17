@@ -143,7 +143,11 @@ const Favori = () => {
               ))}
             </select>
           </div>
-          <button type="button" onClick={() => setShowMap(!showMap)}>
+          <button
+            type="button"
+            className="cursor"
+            onClick={() => setShowMap(!showMap)}
+          >
             {' '}
             Show Search {showMap ? ' On' : null}
           </button>

@@ -16,7 +16,7 @@
 
 .footer-container p {
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
   padding: 2rem 2rem 0 2rem;
 }
 
@@ -24,14 +24,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 25%;
+}
+
+.footer-column:first-child {
+  width: 10%;
 }
 
 .footer-column a {
   align-items: center;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
 }
 
 .footer-column a:hover {
-  transform: scale(1.4);
+  transform: scale(1.3);
   text-decoration: underline;
 }
 
@@ -49,6 +56,7 @@ hr {
 
 .footer-column img {
   height: 8rem;
+  margin: 2rem 0 0 2rem;
 }
 
 /* ==========================================================================

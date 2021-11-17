@@ -11,7 +11,7 @@ const QuizStart = () => {
   const [characterHouse, setCharacterHouse] = useState('');
   const [result, setResult] = useState(0);
   const [questionNb, setQuestionNb] = useState(0);
-  const [trueAnswer, setTrueAnswer] = useState(false);
+  const [trueAnswer, setTrueAnswer] = useState('normal');
   const [start, setStart] = useState(false);
   const [randomArray, setRandomArray] = useState([]);
 
@@ -42,9 +42,12 @@ const QuizStart = () => {
   const checkCorrectAnswer = (houseName) => {
     if (houseName === characterHouse) {
       setResult(result + 1);
+      setQuestionNb(questionNb + 1);
+      setTrueAnswer(null);
+    } else {
+      setQuestionNb(questionNb + 1);
+      setTrueAnswer(null);
     }
-    setQuestionNb(questionNb + 1);
-    setTrueAnswer(true);
   };
 
   return (
@@ -71,7 +74,9 @@ const QuizStart = () => {
               checkCorrectAnswer={(houseName) => checkCorrectAnswer(houseName)}
               characterName={characterName}
               characterImg={characterImg}
+              characterHouse={characterHouse}
               trueAnswer={trueAnswer}
+              setTrueAnswer={setTrueAnswer}
             />
           )}
         </div>
