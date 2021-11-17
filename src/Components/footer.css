@@ -37,6 +37,7 @@
 
 .footer-column h3 {
   padding: 1rem;
+  text-align: center;
 }
 
 hr {
@@ -48,4 +49,26 @@ hr {
 
 .footer-column img {
   height: 8rem;
+}
+
+/* ==========================================================================
+                                      VERSION MOBILE
+============================================================================== */
+
+/* Max 495px */
+
+@media all and (max-width: 495px) {
+  .footer-container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid hsla(200, 10%, 50%, 100);
+    width: 60vw;
+    height: 0;
+    margin: 10vh 0;
+  }
 }

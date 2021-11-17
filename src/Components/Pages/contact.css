@@ -13,7 +13,12 @@
 }
 
 .image img {
-  height: 45vh;
+  width: 25vw;
+}
+
+.image {
+  display: flex;
+  align-items: center;
 }
 
 .form-container {
@@ -27,7 +32,7 @@
   color: white;
 }
 
-form {
+.form-contact {
   display: flex;
   flex-direction: column;
   align-items: wrap;
@@ -38,6 +43,7 @@ input[type=text],
 textarea,
 input[type=email] {
   width: 30vw;
+  height: 5vh;
   padding: 12px;
   margin: 1% 3%;
   border: 1px solid #ccc;
@@ -70,4 +76,34 @@ h3 {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+.off {
+  display: none;
+}
+
+.active {
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .image img {
+    width: 30vw;
+  }
+
+  input[type=text],
+  textarea,
+  input[type=email] {
+    width: 30vw;
+    height: 3vh;
+    padding: 12px;
+    margin: 1% 3%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  .btn-contact {
+    width: 15vw;
+  }
 }

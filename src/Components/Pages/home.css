@@ -260,7 +260,7 @@
 
   .home-section-quizz {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .home-section-battle {
