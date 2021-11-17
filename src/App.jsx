@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
+import Footer from './Components/Footer';
 import ResultPage from './Components/Pages/Quiz/ResultPage';
 import QuizStart from './Components/Pages/Quiz/QuizStart';
 import Favori from './Components/Pages/Favorite';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/quiz-result" component={ResultPage} />
           <Route path="/contact" component={Contact} />
         </Switch>
+        <Footer />
       </HashRouter>
     </div>
   );
