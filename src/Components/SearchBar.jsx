@@ -8,7 +8,7 @@ const SearchBar = ({ searchName, setSearchName }) => {
       <div className="searchBar">
         <div>
           <input
-            className="searchbar"
+            className="searchbar cursor"
             type="text"
             value={searchName}
             id="search"
