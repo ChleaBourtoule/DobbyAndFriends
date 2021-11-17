@@ -1,5 +1,5 @@
 import './quiz.css';
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import '../../../arrows.css';
 
 const Quiz = () => {
@@ -15,11 +15,11 @@ const Quiz = () => {
           <path className="a3" d="M0 40 L30 72 L60 40" />
         </svg>
       </div>
-      <button type="button" id="start-quiz" className="cursor">
-        <NavLink className="nav-link" exact to="/quiz-start">
+      <HashLink className="nav-link" exact to="/quiz-start#root">
+        <button type="button" id="start-quiz" className="cursor">
           Enter into the Chamber of Secrets
-        </NavLink>
-      </button>
+        </button>
+      </HashLink>
     </div>
   );
 };

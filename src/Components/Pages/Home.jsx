@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import './home.css';
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import videoHomeLibrary from '../../assets/videos/video_home_library.mp4';
 import videoHomeBattle from '../../assets/videos/home_video_section_battle.mp4';
 import videoHomeQuizz from '../../assets/videos/home_video_section_quizz.mp4';
@@ -37,11 +37,11 @@ const Home = () => {
             Discover without further ado our library page dedicated to the
             characters of Harry Potter&apos;s series.
           </p>
-          <button type="button" className="cursor">
-            <NavLink to="/library" className="nav-link">
+          <HashLink to="/library#root" className="nav-link">
+            <button type="button" className="cursor">
               Go to library
-            </NavLink>
-          </button>
+            </button>
+          </HashLink>
         </div>
 
         <div className="home-div-library-video">
@@ -79,11 +79,11 @@ const Home = () => {
             challenge themselves with a new top-level quizz that only the most
             complete fans will be able to accomplish.
           </p>
-          <button type="button" className="cursor">
-            <NavLink className="nav-link" to="/quiz">
+          <HashLink className="nav-link" to="/quiz#root">
+            <button type="button" className="cursor">
               Go to quiz
-            </NavLink>
-          </button>
+            </button>
+          </HashLink>
         </div>
       </section>
 
@@ -97,11 +97,11 @@ const Home = () => {
             characters are loveable, while others teach fans what not to do in
             life.
           </p>
-          <button type="button" className="cursor">
-            <NavLink className="nav-link" to="/favorite">
+          <HashLink className="nav-link" to="/favorite#root">
+            <button type="button" className="cursor">
               Go to favorite
-            </NavLink>
-          </button>
+            </button>
+          </HashLink>
         </div>
 
         <div className="home-div-battle-video">
