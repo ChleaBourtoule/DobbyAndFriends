@@ -87,6 +87,14 @@ h3 {
 }
 
 @media screen and (max-width: 720px) {
+  .title-contact {
+    font-size: 3vw;
+  }
+
+  .h3-contact {
+    font-size: 2vw;
+  }
+
   .image img {
     width: 30vw;
   }

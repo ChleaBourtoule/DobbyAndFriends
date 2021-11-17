@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="contact-container">
       <div className="form-container">
         <div>
-          <h1 className="">SEND US AN OWL NOW !</h1>
+          <h1 className="title-contact">SEND US AN OWL NOW !</h1>
         </div>
 
         <div className="image-form">
@@ -23,7 +23,9 @@ const Contact = () => {
             onSubmit=""
             method="post"
           >
-            <h3 htmlFor="firstname">First Name</h3>
+            <h3 className="h3-contact" htmlFor="firstname">
+              First Name
+            </h3>
             <input
               className="cursor"
               type="text"
@@ -34,7 +36,9 @@ const Contact = () => {
               onChange={(e) => setName(e.target.value)}
             />
 
-            <h3 htmlFor="lastname">Last Name</h3>
+            <h3 className="h3-contact" htmlFor="lastname">
+              Last Name
+            </h3>
             <input
               className="cursor"
               type="text"
@@ -44,7 +48,9 @@ const Contact = () => {
               required
             />
 
-            <h3 htmlFor="email">Email Address</h3>
+            <h3 className="h3-contact" htmlFor="email">
+              Email Address
+            </h3>
             <input
               className="cursor"
               type="email"
@@ -54,7 +60,9 @@ const Contact = () => {
               required
             />
 
-            <h3 htmlFor="message">Message</h3>
+            <h3 className="h3-contact" htmlFor="message">
+              Message
+            </h3>
             <textarea
               className="cursor"
               id="message"
