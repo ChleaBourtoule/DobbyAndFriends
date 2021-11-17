@@ -29,6 +29,7 @@ const Header = () => {
 
   return (
     <div className="header-container">
+      <ReactAudioPlayer src={music} autoPlay volume={1} />
       <div className="header">
         <div>
           <HashLink exact to="/#root">
@@ -42,28 +43,19 @@ const Header = () => {
             alt="I solemnly swear..."
           />
         </div>
-        <ReactAudioPlayer src={music} autoPlay />
         <ul className="nav-bar">
-          <li>
-            <HashLink className="cursor nav-link" exact to="/#root">
-              Home
-            </HashLink>
-          </li>
-          <li>
-            <HashLink className="cursor nav-link" to="/quiz#root">
-              Quiz
-            </HashLink>
-          </li>
-          <li>
-            <HashLink className="cursor nav-link" to="/library#root">
-              Library
-            </HashLink>
-          </li>
-          <li>
-            <HashLink className="cursor nav-link" to="/favorite">
-              Your Character
-            </HashLink>
-          </li>
+          <HashLink className="nav-link" exact to="/#root">
+            <li className="cursor">Home</li>
+          </HashLink>
+          <HashLink className="cursor nav-link" to="/quiz#root">
+            <li className="cursor">Quiz</li>
+          </HashLink>
+          <HashLink className="cursor nav-link" to="/library#root">
+            <li className="cursor">Library</li>
+          </HashLink>
+          <HashLink className="cursor nav-link" to="/favorite">
+            <li className="cursor">Your Character</li>
+          </HashLink>
         </ul>
         <button
           type="button"
@@ -76,26 +68,18 @@ const Header = () => {
       </div>
       <div className={isDropdown}>
         <ul className="nav-bar">
-          <li>
-            <HashLink className={isToggle} exact to="/#root">
-              Home
-            </HashLink>
-          </li>
-          <li>
-            <HashLink className={isToggle} to="/quiz#root">
-              Quiz
-            </HashLink>
-          </li>
-          <li>
-            <HashLink className={isToggle} to="/library#root">
-              Library
-            </HashLink>
-          </li>
-          <li>
-            <HashLink className={isToggle} to="/favorite#root">
-              Your Character
-            </HashLink>
-          </li>
+          <HashLink className={isToggle} exact to="/#root">
+            <li>Home</li>
+          </HashLink>
+          <HashLink className={isToggle} to="/quiz#root">
+            <li>Quiz</li>
+          </HashLink>
+          <HashLink className={isToggle} to="/library#root">
+            <li>Library</li>
+          </HashLink>
+          <HashLink className={isToggle} to="/favorite#root">
+            <li>Your Char</li>acter
+          </HashLink>
         </ul>
       </div>
     </div>
