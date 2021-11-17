@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="contact-container">
       <div className="form-container">
         <div>
-          <h1 className="">CONTACT US</h1>
+          <h1 className="">SEND US AN OWL NOW !</h1>
         </div>
 
         <div className="image-form">
