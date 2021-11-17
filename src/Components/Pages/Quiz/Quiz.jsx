@@ -6,7 +6,7 @@ const Quiz = () => {
   return (
     <div className="quiz">
       <h1 className="title-bis quiz-title">
-        Do you know Dobby&apos; friends ?
+        Do you know Dobby&apos;s friends ?
       </h1>
       <div>
         <svg className="arrows">

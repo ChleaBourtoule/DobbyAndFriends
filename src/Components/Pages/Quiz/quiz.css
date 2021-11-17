@@ -34,16 +34,8 @@
 
 /* Responsive */
 
-@media screen and (min-width: 691px) and (max-width: 1310px) {
+@media screen and (max-width: 1310px) {
   .quiz {
-    background-color: cadetblue;
-  }
-
-  .arrows {
-    background-color: blueviolet;
-  }
-
-  #start-quiz {
-    background-color: burlywood;
+    background-image: url("../../../assets/albusResponsive.jpg");
   }
 }
