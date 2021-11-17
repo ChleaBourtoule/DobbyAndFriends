@@ -14,8 +14,14 @@ class QuestionAnswer extends React.Component {
   }
 
   render() {
-    const { characterName, characterImg, checkCorrectAnswer, trueAnswer } =
-      this.props;
+    const {
+      characterName,
+      characterImg,
+      characterHouse,
+      checkCorrectAnswer,
+      trueAnswer,
+      setTrueAnswer,
+    } = this.props;
 
     const answers = [
       {
@@ -66,10 +72,12 @@ class QuestionAnswer extends React.Component {
                 house={answer.house}
                 houseUpperCase={answer.houseUpperCase}
                 logo={answer.logo}
+                characterHouse={characterHouse}
                 checkCorrectAnswer={(houseName) =>
                   checkCorrectAnswer(houseName)
                 }
                 trueAnswer={trueAnswer}
+                setTrueAnswer={setTrueAnswer}
               />
             ))}
           </div>
@@ -82,15 +90,19 @@ class QuestionAnswer extends React.Component {
 QuestionAnswer.propTypes = {
   characterName: PropTypes.string,
   characterImg: PropTypes.string,
-  trueAnswer: PropTypes.bool,
+  characterHouse: PropTypes.string,
+  trueAnswer: PropTypes.string,
   checkCorrectAnswer: PropTypes.func,
+  setTrueAnswer: PropTypes.func,
 };
 
 QuestionAnswer.defaultProps = {
   characterName: 'this character',
   characterImg: photoBomb,
-  trueAnswer: false,
+  characterHouse: 'house',
+  trueAnswer: 'normal',
   checkCorrectAnswer: () => {},
+  setTrueAnswer: () => {},
 };
 
 export default QuestionAnswer;

@@ -11,11 +11,11 @@ const Footer = () => {
       <div className="footer-container-column">
         <div className="footer-column">
           <HashLink to={`${location.pathname}#root`}>
-            <img src={logoFooter} alt="logo du footer" />{' '}
+            <img src={logoFooter} className="cursor" alt="logo du footer" />{' '}
           </HashLink>
         </div>
         <div className="footer-column">
-          <h3>Section</h3>
+          <h3>Dobby and his friends</h3>
           <HashLink className="cursor nav-link" to="/#root">
             Home
           </HashLink>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <hr />
         <div className="footer-column">
-          <h3>Links</h3>
+          <h3>WarnerBros&apos;s Wizarding World</h3>
           <a
             className="cursor nav-link"
             href="https://wizardingworld.warnerbros.fr/"
@@ -48,15 +48,14 @@ const Footer = () => {
         </div>
         <hr />
         <div className="footer-column">
-          <h3>GitHub links of the team </h3>
+          <h3>GitHub links</h3>
           <a
             target="_blank"
             className="cursor nav-link"
             href="https://github.com/bast44trl"
             rel="noreferrer"
           >
-            {' '}
-            GitHub Bastien
+            Bastien
           </a>
           <a
             target="_blank"
@@ -64,7 +63,7 @@ const Footer = () => {
             href="https://github.com/Just4Joy"
             rel="noreferrer"
           >
-            GitHub Laurent{' '}
+            Laurent{' '}
           </a>
           <a
             className="cursor nav-link"
@@ -72,8 +71,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            {' '}
-            GitHub Chléa{' '}
+            Chléa{' '}
           </a>
           <a
             className="cursor nav-link"
@@ -81,8 +79,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            {' '}
-            GitHub Amandine{' '}
+            Amandine
           </a>
         </div>
       </div>
