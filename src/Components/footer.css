@@ -49,3 +49,20 @@ hr {
 .footer-column img {
   height: 8rem;
 }
+
+/* ==========================================================================
+                                      VERSION MOBILE
+============================================================================== */
+
+/* Max 495px */
+
+@media all and (max-width: 495px) {
+  .footer-container-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  hr {
+    height: 10vh;
+  }
+}
