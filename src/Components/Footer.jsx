@@ -16,40 +16,20 @@ const Footer = () => {
         </div>
         <div className="footer-column">
           <h3>Section</h3>
-          <HashLink
-            className="cursor nav-link"
-            activeClassName="active"
-            to="/#root"
-          >
+          <HashLink className="cursor nav-link" to="/#root">
             Home
           </HashLink>
-          <HashLink
-            className="cursor nav-link"
-            activeClassName="active"
-            to="/quiz#root"
-          >
+          <HashLink className="cursor nav-link" to="/quiz#root">
             Quiz
           </HashLink>
-          <HashLink
-            className="cursor nav-link"
-            activeClassName="active"
-            to="/favorite#root"
-          >
+          <HashLink className="cursor nav-link" to="/favorite#root">
             Character
           </HashLink>
-          <HashLink
-            activeClassName="active"
-            className="cursor nav-link"
-            to="/library#root"
-          >
+          <HashLink className="cursor nav-link" to="/library#root">
             Library
           </HashLink>
 
-          <HashLink
-            className="cursor nav-link"
-            activeClassName="active"
-            to="/contact#root"
-          >
+          <HashLink className="cursor nav-link" to="/contact#root">
             Contact us
           </HashLink>
         </div>
