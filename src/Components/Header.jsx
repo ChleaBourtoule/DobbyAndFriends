@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './header.css';
 import { useState } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
@@ -31,9 +31,9 @@ const Header = () => {
     <div className="header-container">
       <div className="header">
         <div>
-          <NavLink exact to="/">
+          <HashLink exact to="/#root">
             <img className="cursor" src={logoNavbar} alt="Dobby" />
-          </NavLink>
+          </HashLink>
         </div>
         <div>
           <img
@@ -45,41 +45,24 @@ const Header = () => {
         <ReactAudioPlayer src={music} autoPlay />
         <ul className="nav-bar">
           <li>
-            <NavLink
-              className="cursor nav-link"
-              activeClassName="active"
-              exact
-              to="/"
-            >
+            <HashLink className="cursor nav-link" exact to="/#root">
               Home
-            </NavLink>
+            </HashLink>
           </li>
           <li>
-            <NavLink
-              className="cursor nav-link"
-              activeClassName="active"
-              to="/quiz"
-            >
+            <HashLink className="cursor nav-link" to="/quiz#root">
               Quiz
-            </NavLink>
+            </HashLink>
           </li>
           <li>
-            <NavLink
-              className="cursor nav-link"
-              activeClassName="active"
-              to="/library"
-            >
+            <HashLink className="cursor nav-link" to="/library#root">
               Library
-            </NavLink>
+            </HashLink>
           </li>
           <li>
-            <NavLink
-              className="cursor nav-link"
-              activeClassName="active"
-              to="/favorite"
-            >
+            <HashLink className="cursor nav-link" to="/favorite">
               Your Character
-            </NavLink>
+            </HashLink>
           </li>
         </ul>
         <button
@@ -94,32 +77,24 @@ const Header = () => {
       <div className={isDropdown}>
         <ul className="nav-bar">
           <li>
-            <NavLink className={isToggle} activeClassName="active" exact to="/">
+            <HashLink className={isToggle} exact to="/#root">
               Home
-            </NavLink>
+            </HashLink>
           </li>
           <li>
-            <NavLink className={isToggle} activeClassName="active" to="/quiz">
+            <HashLink className={isToggle} to="/quiz#root">
               Quiz
-            </NavLink>
+            </HashLink>
           </li>
           <li>
-            <NavLink
-              className={isToggle}
-              activeClassName="active"
-              to="/library"
-            >
+            <HashLink className={isToggle} to="/library#root">
               Library
-            </NavLink>
+            </HashLink>
           </li>
           <li>
-            <NavLink
-              className={isToggle}
-              activeClassName="active"
-              to="/favorite"
-            >
+            <HashLink className={isToggle} to="/favorite#root">
               Your Character
-            </NavLink>
+            </HashLink>
           </li>
         </ul>
       </div>
