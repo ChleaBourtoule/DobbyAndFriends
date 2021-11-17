@@ -14,7 +14,13 @@ const Contact = () => {
           <div className="image">
             <img src={Hedwige} alt="" />
           </div>
-          <form name="myForm" action="" onSubmit="" method="post">
+          <form
+            className="form-contact"
+            name="myForm"
+            action=""
+            onSubmit=""
+            method="post"
+          >
             <h3 htmlFor="firstname">First Name</h3>
             <input
               type="text"

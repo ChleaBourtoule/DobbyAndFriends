@@ -32,7 +32,7 @@
   color: white;
 }
 
-form {
+.form-contact {
   display: flex;
   flex-direction: column;
   align-items: wrap;
