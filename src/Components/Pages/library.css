@@ -23,7 +23,7 @@
   background-position: bottom;
   background-attachment: fixed;
   background-image: url(https://images.unsplash.com/photo-1596426586791-1ec4ecf6083f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80);
-  min-height: 160vh;
+  min-height: 175vh;
 }
 
 .gryffindor-background {
@@ -32,7 +32,7 @@
   background-position: bottom;
   background-attachment: fixed;
   background-image: url(../../assets/gryfindor-hogwarts-house.jpg);
-  min-height: 160vh;
+  min-height: 175vh;
 }
 
 .hufflepuff-background {
@@ -41,7 +41,7 @@
   background-position: bottom;
   background-attachment: fixed;
   background-image: url(../../assets/hufflepuff-d6152588b2379fcac20301584f5b87c9.jpg);
-  min-height: 160vh;
+  min-height: 175vh;
 }
 
 .ravenclaw-background {
@@ -50,7 +50,7 @@
   background-position: bottom;
   background-attachment: fixed;
   background-image: url(../../assets/ravenclaw-a4dfcf4b993b250ddf660525cfbd042b.jpg);
-  min-height: 160vh;
+  min-height: 175vh;
 }
 
 .slytherin-background {
@@ -59,7 +59,7 @@
   background-position: bottom;
   background-attachment: fixed;
   background-image: url(../../assets/slytherin-hogwarts-house.jpg);
-  min-height: 160vh;
+  min-height: 175vh;
 }
 
 .house-container {
