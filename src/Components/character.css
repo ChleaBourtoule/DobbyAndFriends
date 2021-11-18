@@ -77,6 +77,7 @@
 .flip-card-back {
   transform: rotateY(180deg);
   padding-left: 2rem;
+  margin-left: -2rem;
 }
 
 .wand-div {
@@ -149,5 +150,30 @@
 
   .flip-card-front .card-details h2 {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card-img img {
+    height: 39vw;
+    width: 33vw;
+    margin: 0;
+  }
+
+  .flip-card {
+    width: 60vw;
+    margin: 1rem 3.5rem 1rem 0;
+  }
+
+  .card-details {
+    margin: 0 0.7rem;
+    font-size: 1rem;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .card-details h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
 }

@@ -1,6 +1,6 @@
 .house-container div img {
   width: 7vw;
-  height: 15vh;
+  height: 14vh;
   transition: transform 0.2s;
 }
 
@@ -70,7 +70,7 @@
   bottom: 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 10rem;
+  top: 20vh;
   margin-bottom: 11rem;
 }
 
@@ -144,7 +144,6 @@
   border-radius: 10px;
   font-size: 3rem;
   color: white;
-  text-shadow: 20px 10px black;
   text-align: center;
 }
 
@@ -160,7 +159,6 @@
 @media only screen and (max-width: 1310px) {
   .house-container div img {
     width: 10vw;
-    height: 15vh;
   }
 
   .btn_return {
@@ -172,7 +170,6 @@
 @media only screen and (max-width: 950px) {
   .house-container div img {
     width: 15vw;
-    height: 15vh;
   }
 
   .btn_return {
@@ -192,16 +189,38 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
+    margin-top: 10vw;
   }
 
   .house-container div img {
     width: 15vw;
-    height: 12vh;
   }
 
   .next {
     width: 7rem;
     font-size: 1rem;
     margin: 2rem 1rem 1.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search-title {
+    font-size: 2vh;
+
+    /*  text-shadow: 10px 5px 3px black; */
+  }
+
+  .search-bar {
+    text-align: center;
+    padding: 2vw;
+    background-color: rgb(0, 0, 0, 0.9);
+    padding-bottom: 5vw;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0;
+    align-items: center;
   }
 }
