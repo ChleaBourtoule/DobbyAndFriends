@@ -5,7 +5,7 @@ import '../../../arrows.css';
 const Quiz = () => {
   return (
     <div className="quiz">
-      <h1 className="title-bis quiz-title">
+      <h1 className="title-bis" id="quiz-title">
         Do you know Dobby&apos;s friends ?
       </h1>
       <div>
