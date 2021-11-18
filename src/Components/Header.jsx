@@ -68,17 +68,34 @@ const Header = () => {
       </div>
       <div className={isDropdown}>
         <ul className="nav-bar">
-          <HashLink className={isToggle} exact to="/#root">
+          <HashLink
+            className={isToggle}
+            onClick={() => SetIsDropdown('dropdown')}
+            exact
+            to="/#root"
+          >
             <li>Home</li>
           </HashLink>
-          <HashLink className={isToggle} to="/quiz#root">
+          <HashLink
+            className={isToggle}
+            onClick={() => SetIsDropdown('dropdown')}
+            to="/quiz#root"
+          >
             <li>Quiz</li>
           </HashLink>
-          <HashLink className={isToggle} to="/library#root">
+          <HashLink
+            className={isToggle}
+            onClick={() => SetIsDropdown('dropdown')}
+            to="/library#root"
+          >
             <li>Library</li>
           </HashLink>
-          <HashLink className={isToggle} to="/favorite#root">
-            <li>Your Char</li>acter
+          <HashLink
+            className={isToggle}
+            onClick={() => SetIsDropdown('dropdown')}
+            to="/favorite#root"
+          >
+            <li>Your Character</li>
           </HashLink>
         </ul>
       </div>
