@@ -23,8 +23,7 @@ const Favori = () => {
       .get('http://hp-api.herokuapp.com/api/characters')
       // 'http://hp-api.herokuapp.com/api/characters/house/gryffindor
       .then((res) => res.data)
-      .then((data) => setCharacters(data))
-      .catch((error) => console.log(error));
+      .then((data) => setCharacters(data));
   }, []);
 
   useEffect(() => {
