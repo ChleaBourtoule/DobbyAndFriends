@@ -32,25 +32,24 @@
   color: black;
 }
 
-.arrows {
-  width: 60px;
-  height: 72px;
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  bottom: 20px;
+.container-arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Responsive */
 
 @media screen and (max-width: 1456px) {
-  .arrow {
-    bottom: -20%;
-    position: none;
+  #start-quiz {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    font-weight: lighter;
   }
 
   #quiz-title {
     font-size: 5.7rem;
+    padding: -10px;
   }
 }
 
@@ -58,17 +57,9 @@
   .quiz {
     background-image: url("../../../assets/albusResponsive.jpg");
   }
-
-  .arrow {
-    position: none;
-  }
 }
 
 @media screen and (max-width: 800px) {
-  .arrow {
-    bottom: -50px;
-  }
-
   #quiz-title {
     font-size: 4.8rem;
   }
@@ -77,21 +68,13 @@
 @media screen and (max-width: 450px) {
   #quiz-title {
     font-size: 4.2rem;
-  }
-
-  .arrow {
-    bottom: -60px;
+    padding-top: 10px;
   }
 }
 
 @media screen and (max-width: 380px) {
   #quiz-title {
     font-size: 3.5rem;
-  }
-}
-
-@media screen and (max-width: 290px) {
-  .arrow {
-    bottom: -80px;
+    padding-top: 15px;
   }
 }
