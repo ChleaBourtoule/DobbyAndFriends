@@ -66,9 +66,10 @@ class QuestionAnswer extends React.Component {
           </div>
 
           <div className="answers">
-            {answers.map((answer) => (
+            {answers.map((answer, index) => (
               <Answer
-                key={answer.key}
+                key={answer.house}
+                buttonNb={index + 1}
                 house={answer.house}
                 houseUpperCase={answer.houseUpperCase}
                 logo={answer.logo}
