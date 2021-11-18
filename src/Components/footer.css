@@ -32,6 +32,7 @@
 }
 
 .footer-column a {
+  text-align: center;
   align-items: center;
   font-size: 1.2rem;
   transition: transform 0.3s;
@@ -65,11 +66,16 @@ hr {
 
 /* Max 495px */
 
-@media all and (max-width: 495px) {
+@media all and (max-width: 768px) {
   .footer-container-column {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer-column img {
+    height: 8rem;
+    margin: 1rem;
   }
 
   hr {
@@ -78,5 +84,9 @@ hr {
     width: 60vw;
     height: 0;
     margin: 10vh 0;
+  }
+
+  .footer-column h3 {
+    width: 60vw;
   }
 }
