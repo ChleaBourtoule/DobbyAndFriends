@@ -1,0 +1,387 @@
+.result-page {
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url(../../../assets/final-score.jpg) 100% 100%;
+  background-size: cover;
+  background-color: #fbeee6;
+  background-attachment: fixed;
+}
+
+.result-section {
+  height: 60vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: solid 3px black;
+}
+
+.result-page h2 {
+  display: inline-block;
+  text-align: center;
+  padding: 8vh 0 4vh 0;
+  margin: 0;
+  font-size: 4rem;
+}
+
+.final-score-5-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 14vh;
+  width: 35vw;
+  text-align: center;
+}
+
+.final-score-5-div h3 {
+  font-size: 1.5rem;
+}
+
+.final-score-5-div p {
+  font-size: 1.5rem;
+  margin-top: 3vh;
+}
+
+.final-score-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.final-score-div h3,
+.final-score-div p {
+  display: inline-block;
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 2rem;
+}
+
+.play-again-button {
+  width: 15vw;
+  height: 10vh;
+  background-color: firebrick;
+  color: floralwhite;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 4%;
+  border-radius: 2vh;
+  transition: transform 0.3s;
+}
+
+.play-again-button:hover {
+  transform: scale(1.1);
+}
+
+#harry-flying {
+  position: absolute;
+  height: 25vh;
+  left: 0;
+  top: 50vh;
+  animation-name: slideIn;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  transition: transform linear;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(19vw, -20vh);
+  }
+
+  20% {
+    transform: translate(19vw, -19vh);
+  }
+
+  30% {
+    transform: translate(19vw, -20vh);
+  }
+
+  40% {
+    transform: translate(19vw, -19vh);
+  }
+
+  50% {
+    transform: translate(19vw, -20vh);
+  }
+
+  60% {
+    transform: translate(67vw, 11vh);
+  }
+
+  70% {
+    transform: translate(67vw, 12vh);
+  }
+
+  80% {
+    transform: translate(67vw, 11vh);
+  }
+
+  90% {
+    transform: translate(67vw, 12vh);
+  }
+
+  100% {
+    transform: translate(150vw, -100vh);
+  }
+}
+
+/* ===========================================
+
+                  RESPONSIVE
+
+============================================= */
+
+@media screen and (min-width: 691px) and (max-width: 1310px) {
+  .result-section {
+    height: 60vh;
+    width: 60vw;
+  }
+
+  .result-page h2 {
+    padding: 0 0 4vh 0;
+    margin: 0;
+    font-size: 5vw;
+  }
+
+  .final-score-5-div,
+  .final-score-div {
+    height: 14vh;
+    width: 35vw;
+  }
+
+  .final-score-5-div h3 {
+    font-size: 3vw;
+  }
+
+  .final-score-5-div p {
+    font-size: 1.5rem;
+    margin-top: 3vh;
+  }
+
+  .final-score-div h3,
+  .final-score-div p {
+    margin-top: 2vh;
+    font-size: 3vw;
+  }
+
+  .play-again-button {
+    width: 15vw;
+    height: 8vw;
+    font-size: 1.5vw;
+    margin: 4vh 0 0 0;
+  }
+
+  .play-again-button:hover {
+    transform: scale(1.1);
+  }
+
+  #harry-flying {
+    position: absolute;
+    height: 20vh;
+    left: 0;
+    top: 50vh;
+    animation-name: slideIn;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transition: transform linear;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    10% {
+      transform: translate(10vw, -22vh);
+    }
+
+    20% {
+      transform: translate(10vw, -23vh);
+    }
+
+    30% {
+      transform: translate(10vw, -22vh);
+    }
+
+    40% {
+      transform: translate(10vw, -23vh);
+    }
+
+    50% {
+      transform: translate(10vw, -22vh);
+    }
+
+    60% {
+      transform: translate(65vw, 11vh);
+    }
+
+    70% {
+      transform: translate(65vw, 12vh);
+    }
+
+    80% {
+      transform: translate(65vw, 11vh);
+    }
+
+    90% {
+      transform: translate(65vw, 12vh);
+    }
+
+    100% {
+      transform: translate(150vw, -100vh);
+    }
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px) {
+  .result-section {
+    height: 40vh;
+    width: 80vw;
+  }
+
+  .result-page h2 {
+    padding: 4vh 0 4vh 0;
+    margin: 0;
+    font-size: 7vw;
+  }
+
+  .final-score-5-div {
+    height: 14vh;
+    width: 35vw;
+  }
+
+  .final-score-5-div h3 {
+    font-size: 3vw;
+  }
+
+  .final-score-5-div p {
+    font-size: 1.5rem;
+    margin-top: 3vh;
+  }
+
+  .final-score-div {
+    width: 50vw;
+  }
+
+  .final-score-div h3,
+  .final-score-div p {
+    padding: 0 2vw;
+    margin-top: 1vh;
+    font-size: 5vw;
+  }
+
+  .final-score-div p {
+    font-size: 4vw;
+  }
+
+  .play-again-button {
+    width: 25vw;
+    height: 6vh;
+    font-size: 3vw;
+    margin: 3vh;
+  }
+
+  #harry-flying {
+    height: 25vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .result-section {
+    height: 40vh;
+    width: 80vw;
+  }
+
+  .result-page h2 {
+    padding: 4vh 0 4vh 0;
+    margin: 0;
+    font-size: 7vw;
+  }
+
+  .final-score-5-div {
+    height: 14vh;
+    width: 35vw;
+  }
+
+  .final-score-5-div h3 {
+    font-size: 3vw;
+  }
+
+  .final-score-5-div p {
+    font-size: 1.5rem;
+    margin-top: 3vh;
+  }
+
+  .final-score-div h3,
+  .final-score-div p {
+    margin-top: 1vh;
+    font-size: 5vw;
+  }
+
+  .play-again-button {
+    width: 25vw;
+    height: 6vh;
+    font-size: 3vw;
+    margin: 3vh;
+  }
+
+  #harry-flying {
+    height: 30vw;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  10% {
+    transform: translate(8vw, -23vh);
+  }
+
+  20% {
+    transform: translate(8vw, -22vh);
+  }
+
+  30% {
+    transform: translate(8vw, -23vh);
+  }
+
+  40% {
+    transform: translate(8vw, -22vh);
+  }
+
+  50% {
+    transform: translate(8vw, -23vh);
+  }
+
+  60% {
+    transform: translate(65vw, 21vh);
+  }
+
+  70% {
+    transform: translate(65vw, 20vh);
+  }
+
+  80% {
+    transform: translate(65vw, 21vh);
+  }
+
+  90% {
+    transform: translate(65vw, 20vh);
+  }
+
+  100% {
+    transform: translate(150vw, -100vh);
+  }
+}

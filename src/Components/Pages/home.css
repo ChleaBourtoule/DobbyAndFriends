@@ -1,0 +1,297 @@
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  overflow: hidden;
+}
+
+.home-div-video {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.home-video video {
+  object-fit: cover;
+}
+
+.home-div-video h1 {
+  z-index: 1;
+}
+
+.home-section-library {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /* repeat */
+  grid-template-rows: 1fr;
+  text-align: center;
+  margin: auto;
+  padding: 3rem;
+}
+
+.title-bis {
+  text-align: center;
+  padding: 15rem 0;
+  color: #d3a625;
+  font-size: 7rem;
+  text-shadow: 30px 30px 20px black;
+  border-radius: 10px;
+  font-family: 'Harry Potter', sans-serif;
+}
+
+.home-div-library-texte {
+  width: 100%;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.home-div-library-texte h3 {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Harry Potter', sans-serif;
+}
+
+.home-div-library-texte p {
+  padding: 2rem;
+}
+
+.home-div-library-video {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.home-section-quizz {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+  margin: auto;
+  padding: 3rem;
+  background-color: beige;
+}
+
+.home-div-texte-quizz {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-div-quizz-texte {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.home-div-quizz-texte p {
+  text-align: center;
+  padding: 2rem;
+}
+
+.home-div-quizz-texte h3 {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Harry Potter', sans-serif;
+}
+
+.home-div-quizz-video {
+  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.home-section-battle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+  margin: auto;
+  padding: 3rem;
+}
+
+.home-div-battle-texte {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.home-div-battle-texte h3 {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Harry Potter', sans-serif;
+}
+
+.home-div-battle-texte p {
+  padding: 3rem;
+}
+
+.home button {
+  padding: 10px 0;
+  width: 30%;
+  font-size: 1.1rem;
+  margin: 0 auto 3rem auto;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: black solid 2px;
+  transition: transform 0.5s;
+}
+
+.home button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.2);
+}
+
+.home-div-battle-video {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+/* ====================================================================================
+
+                                 VERSION MOBILE
+
+========================================================================================
+
+----------------------------------min 1600px--------max 2560 px-------------------------------------------- */
+
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
+  .home-div-library-texte h3 {
+    font-size: 5rem;
+  }
+
+  .home-div-library-texte p {
+    font-size: 1.8rem;
+  }
+
+  .home-div-library-video {
+    margin: auto;
+  }
+
+  .home-div-quizz-texte {
+    width: 100%;
+  }
+
+  .home-div-quizz-texte h3 {
+    font-size: 5rem;
+  }
+
+  .home-div-quizz-texte p {
+    font-size: 1.8rem;
+  }
+
+  .home-div-battle-texte {
+    width: 100%;
+  }
+
+  .home-div-battle-texte h3 {
+    font-size: 5rem;
+  }
+
+  .home-div-battle-texte p {
+    font-size: 1.8rem;
+  }
+}
+
+/* -----------------------------VERSION MOBILE MAX 950PX-------------------------- */
+@media all and (max-width: 950px) {
+  .home-div-library-texte h3 {
+    font-size: 2rem;
+  }
+
+  .home-div-library-texte p {
+    padding: 2rem 0;
+  }
+
+  .home-div-quizz-texte h3 {
+    font-size: 2rem;
+  }
+
+  .home-div-quizz-texte p {
+    padding: 2rem 0;
+  }
+
+  .home-div-battle-texte h3 {
+    font-size: 2rem;
+  }
+
+  .home-div-battle-texte p {
+    padding: 2rem 0;
+  }
+}
+
+/* ---------------------------VERSION MOBILE MAX 768PX------------------------ */
+@media all and (max-width: 768px) {
+  .home-section-library {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-div-library-texte {
+    padding: 0;
+  }
+
+  .home-section-quizz {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .home-section-battle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* --------------------VERSION MOBILE MAX 767PX---------------------------- */
+@media all and (max-width: 767px) {
+  .home-div-video h1 {
+    font-size: 3.5rem;
+  }
+
+  .home-section-library {
+    padding: 2rem;
+  }
+
+  .home-section-quizz {
+    padding: 6rem 2rem 2rem 2rem;
+  }
+
+  .home-section-battle {
+    padding: 2rem;
+  }
+
+  .home button {
+    width: 40%;
+  }
+
+  .title-bis {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+}
+
+.card {
+  font-size: 1.6rem;
+  color: white;
+  width: 45%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background:
+
+    linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url(https://storage.googleapis.com/minalima/2019/12/option-1-gallery-01-daily-prophet-phone-wallpaper-scaled-1000x1000.jpg);
+  border-radius: 15px;
+  margin: 5rem 2rem;
+  box-shadow: 5px 5px 10px black;
+}
+
+.card img {
+  width: 10rem;
+  height: 12rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+
+.card-details {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+
+  /* color: #740001; */
+  text-shadow: black 1px 1px 5px;
+}
+
+.card-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Flip Effect */
+
+.flip-card {
+  background-color: transparent;
+  width: 30vw;
+  height: 35vh;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 2rem 5rem;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+  padding-left: 2rem;
+  margin-left: -2rem;
+}
+
+.wand-div {
+  font-size: 1.5rem;
+}
+
+.wand {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wand li {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 691px) and (max-width: 1310px) {
+  .flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 250px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .flip-card {
+    background-color: transparent;
+    width: 42vw;
+    height: 47vh;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 2rem 2rem;
+  }
+
+  .flip-card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card img {
+    width: 6rem;
+    height: 8rem;
+    border-radius: 10px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card-details {
+    font-size: 1rem;
+  }
+
+  .card-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .flip-card-front .card-details h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card-img img {
+    height: 39vw;
+    width: 33vw;
+    margin: 0;
+  }
+
+  .flip-card {
+    width: 60vw;
+    margin: 1rem 3.5rem 1rem 0;
+  }
+
+  .card-details {
+    margin: 0 0.7rem;
+    font-size: 1rem;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .card-details h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+}
