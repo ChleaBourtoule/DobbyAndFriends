@@ -3,7 +3,7 @@ import { useState } from 'react';
 import photoBomb from '../../../assets/harryPotterPhotoBomb.jpg';
 
 const Answer = ({
-  key,
+  buttonNb,
   house,
   houseUpperCase,
   logo,
@@ -31,7 +31,7 @@ const Answer = ({
   return (
     <button
       type="button"
-      id={`button-${key}`}
+      id={`button-${buttonNb}`}
       value={houseUpperCase}
       className={chooseClass(answerHouse)}
       onClick={(e) => {
@@ -41,7 +41,7 @@ const Answer = ({
           checkCorrectAnswer(e.target.value);
           setAnswerHouse('');
           setClicked(false);
-        }, 1000);
+        }, 500);
       }}
     >
       {houseUpperCase}
@@ -56,7 +56,7 @@ const Answer = ({
 };
 
 Answer.propTypes = {
-  key: PropTypes.number,
+  buttonNb: PropTypes.number,
   house: PropTypes.string,
   houseUpperCase: PropTypes.string,
   characterHouse: PropTypes.string,
@@ -67,7 +67,7 @@ Answer.propTypes = {
 };
 
 Answer.defaultProps = {
-  key: 0,
+  buttonNb: 1,
   house: 'house',
   houseUpperCase: 'House',
   characterHouse: 'house',

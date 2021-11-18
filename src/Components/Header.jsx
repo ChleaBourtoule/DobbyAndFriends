@@ -71,7 +71,6 @@ const Header = () => {
           <HashLink
             className={isToggle}
             onClick={() => SetIsDropdown('dropdown')}
-            exact
             to="/#root"
           >
             <li>Home</li>

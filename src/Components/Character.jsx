@@ -2,6 +2,7 @@ import React from 'react';
 import './character.css';
 import PropTypes from 'prop-types';
 import haveYouSeenThisWizard from '../assets/have-you-seen-this-wizard.jpg';
+import dobby from '../assets/dobby-img.jpg';
 
 const Character = ({
   name,
@@ -19,11 +20,15 @@ const Character = ({
       <div className="flip-card-inner">
         <div className="card flip-card-front">
           <div className="card-img">
-            {!image ? (
+            {/* eslint-disable */}
+            {name === 'Dobby' ? (
+              <img alt={name} src={dobby} />
+            ) : !image && name !== 'Dobby' ? (
               <img alt={name} src={haveYouSeenThisWizard} />
             ) : (
               <img alt={name} src={image} />
             )}
+            { /* eslint-enable */ }
           </div>
           <div className="card-details" style={font}>
             <h2>{name}</h2>

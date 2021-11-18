@@ -160,10 +160,34 @@ a {
     position: fixed;
     width: 100%;
     z-index: 2;
+    text-align: center;
   }
 
   .nav-bar {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0;
+  }
+
+  .nav-bar a {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .toggle li {
+    font-size: 7vw;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .nav-bar a {
+    margin-right: 0;
   }
 }

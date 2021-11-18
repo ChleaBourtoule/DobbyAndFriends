@@ -72,8 +72,8 @@ function Library() {
   }
   return (
     <div id="library" className="library">
-      <h1 className="title">Harry Potter&apos;s characters</h1>
       <div className="search-bar">
+        <h1 className="title">Harry Potter&apos;s characters</h1>
         <h3 className="search-title">Search a character by his name:</h3>
         <SearchBar searchName={searchName} setSearchName={setSearchName} />
       </div>

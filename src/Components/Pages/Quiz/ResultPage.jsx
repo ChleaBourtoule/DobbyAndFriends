@@ -1,6 +1,6 @@
 import React from 'react';
 import './resultPage.css';
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import flyingHarry from '../../../assets/harry-potter-flying.png';
 
@@ -26,9 +26,9 @@ const ResultPage = ({ result }) => {
           </div>
         )}
         <button type="button" className="play-again-button cursor">
-          <NavLink className="nav-link" exact to="/quiz">
+          <HashLink className="nav-link" exact to="/quiz#root">
             Try again
-          </NavLink>
+          </HashLink>
         </button>
       </div>
     </div>

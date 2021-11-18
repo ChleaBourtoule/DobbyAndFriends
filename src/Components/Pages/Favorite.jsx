@@ -84,64 +84,64 @@ const Favori = () => {
   return (
     <div className="favorite">
       <div className="sub_favorite">
-        <h1 className="title" id="fav">
-          Find Your Character
-        </h1>
         <form className="form_fav">
-          <div>
-            <span>House:</span>
-            <select
-              className="cursor"
-              name="house"
-              id=""
-              defaultValue="DEFAULT"
-              onChange={(e) => handleChange(e)}
-            >
-              <option value="DEFAULT">Please Select</option>
-              {house.map((el) => (
-                <option key={el} value={el}>
-                  {el}
-                </option>
-              ))}
-            </select>
-          </div>
+          <h1 className="title">Find Your Character</h1>
+          <div className="selectors">
+            <div>
+              <span>House</span>
+              <select
+                className="cursor"
+                name="house"
+                id=""
+                defaultValue="DEFAULT"
+                onChange={(e) => handleChange(e)}
+              >
+                <option value="DEFAULT">Please Select</option>
+                {house.map((el) => (
+                  <option key={el} value={el}>
+                    {el}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-          <div>
-            <span>Species:</span>
+            <div>
+              <span>Species</span>
 
-            <select
-              className="cursor"
-              name="species"
-              id=""
-              defaultValue="DEFAULT"
-              onChange={(e) => handleChange(e)}
-            >
-              <option value="DEFAULT">Please Select</option>
-              {specy.map((el) => (
-                <option key={el} value={el}>
-                  {el}
-                </option>
-              ))}
-            </select>
-          </div>
+              <select
+                className="cursor"
+                name="species"
+                id=""
+                defaultValue="DEFAULT"
+                onChange={(e) => handleChange(e)}
+              >
+                <option value="DEFAULT">Please Select</option>
+                {specy.map((el) => (
+                  <option key={el} value={el}>
+                    {el}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-          <div>
-            <span>Ancestry:</span>
+            <div>
+              <span>Ancestry</span>
 
-            <select
-              className="cursor"
-              name="ancestry"
-              id=""
-              defaultValue="DEFAULT"
-              onChange={(e) => handleChange(e)}
-            >
-              <option value="DEFAULT">Please Select</option>
-              {ancestry.map((el) => (
-                <option key={el} value={el}>
-                  {el}
-                </option>
-              ))}
-            </select>
+              <select
+                className="cursor"
+                name="ancestry"
+                id=""
+                defaultValue="DEFAULT"
+                onChange={(e) => handleChange(e)}
+              >
+                <option value="DEFAULT">Please Select</option>
+                {ancestry.map((el) => (
+                  <option key={el} value={el}>
+                    {el}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
           <button
             type="button"

@@ -5,7 +5,6 @@ import logoFooter from '../assets/logo_footer.png';
 
 const Footer = () => {
   const location = useLocation();
-  console.log(location.pathname);
   return (
     <div className="footer-container">
       <div className="footer-container-column">
