@@ -1,6 +1,7 @@
+import React from 'react';
 import './quiz.css';
 import { HashLink } from 'react-router-hash-link';
-import '../../../arrows.css';
+import './arrow.css';
 
 const Quiz = () => {
   return (

@@ -4,8 +4,7 @@
   cursor: url(./assets/cursor/dobby-cursor.png), auto;
 }
 
-.cursor,
-.cursor a {
+.cursor {
   cursor: url(./assets/cursor/sock-cursor.png), auto;
 }
 

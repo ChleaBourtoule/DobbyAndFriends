@@ -48,25 +48,23 @@ const Character = ({
             {!wand.wood && !wand.core && !wand.length ? (
               <div>Wand: Not provided</div>
             ) : (
-              <div className="wand-div">
+              <div>
                 Wand:
-                <ul className="wand">
-                  <li>
-                    {!wand.wood
-                      ? 'Wood: Not provided'
-                      : `Wood: Made of ${wand.wood}`}
-                  </li>
-                  <li>
-                    {!wand.core
-                      ? 'Core: Not provided'
-                      : `Core: Made of ${wand.core}`}
-                  </li>
-                  <li>
-                    {!wand.length
-                      ? 'Length: Not provided'
-                      : `Length: ${wand.length}'`}
-                  </li>
-                </ul>
+                {!wand.wood ? (
+                  <li>Wood: Not provided</li>
+                ) : (
+                  <li>Wood: Made of {wand.wood}</li>
+                )}
+                {!wand.core ? (
+                  <li>Core: Not provided</li>
+                ) : (
+                  <li>Core: Made of {wand.core}</li>
+                )}
+                {!wand.length ? (
+                  <li>Length: Not provided</li>
+                ) : (
+                  <li>Length: {wand.length}&apos;</li>
+                )}
               </div>
             )}
             {!ancestry ? (
