@@ -1,0 +1,82 @@
+.favorite {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-image: url(../../assets/fav_background.jpg);
+}
+
+.sub_favorite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form_fav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+#fav {
+  background-color: rgb(0, 0, 0, 0.9);
+  border-radius: 0;
+}
+
+.form_fav select,
+span {
+  height: 4rem;
+  width: 12rem;
+  border-radius: 25px;
+  text-align: center;
+  font-size: larger;
+}
+
+.form_fav select {
+  background-color: white;
+}
+
+.form_fav span {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Harry Potter', sans-serif;
+  border-radius: 10px;
+  color: white;
+  padding-right: 1rem;
+}
+
+.card-fav {
+  margin-bottom: 10rem;
+}
+
+.form_fav button {
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: white;
+}
+
+@media screen and (max-width: 690px) {
+  .form_fav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .form_fav span {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+  }
+
+  .form_fav div {
+    margin-bottom: 5rem;
+  }
+}

@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   background-image: url("../../../assets/Albus.jpg");
-  background-position: bottom 50% 50%;
+  background-position: top 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -21,7 +21,7 @@
   color: white;
   padding: 2rem 4rem;
   border-radius: 2rem;
-  margin-bottom: 5rem;
+  margin: 10rem 2rem 3rem;
   transition: transform 0.3s;
 }
 
@@ -30,4 +30,12 @@
   background-color: white;
   box-shadow: 2px 2px 5px black;
   color: black;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1310px) {
+  .quiz {
+    background-image: url("../../../assets/albusResponsive.jpg");
+  }
 }

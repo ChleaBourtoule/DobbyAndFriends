@@ -83,7 +83,7 @@ Character.propTypes = {
   wand: PropTypes.shape({
     core: PropTypes.string,
     wood: PropTypes.string,
-    length: PropTypes.string,
+    length: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   }),
   patronus: PropTypes.string,
   ancestry: PropTypes.string,

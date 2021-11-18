@@ -10,10 +10,28 @@
 
 .title {
   text-align: center;
-  padding: 15rem 0;
+  padding: 8vh 5vw;
   color: #d3a625;
-  font-size: 8rem;
+  font-size: 8vw;
   text-shadow: 30px 30px 20px black;
   border-radius: 10px;
   font-family: 'Harry Potter', sans-serif;
+}
+
+/* =================================================================================
+
+                                  RESPONSIVE
+
+================================================================================= */
+
+@media screen and (min-width: 1021px) and (max-width: 1310px) {
+  .title {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .title {
+    font-size: 8vw;
+  }
 }
