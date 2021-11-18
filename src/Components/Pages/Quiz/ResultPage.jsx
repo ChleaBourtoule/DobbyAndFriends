@@ -25,11 +25,12 @@ const ResultPage = ({ result }) => {
             <p>Dobby has faith in you !</p>
           </div>
         )}
-        <button type="button" className="play-again-button cursor">
-          <HashLink className="nav-link" exact to="/quiz#root">
+
+        <HashLink className="nav-link cursor" exact to="/quiz#root">
+          <button type="button" className="play-again-button cursor">
             Try again
-          </HashLink>
-        </button>
+          </button>
+        </HashLink>
       </div>
     </div>
   );
