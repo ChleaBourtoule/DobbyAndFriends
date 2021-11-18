@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import photoBomb from '../../../assets/harryPotterPhotoBomb.jpg';
 
 const Answer = ({
